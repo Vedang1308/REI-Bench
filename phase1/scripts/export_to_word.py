@@ -2,7 +2,44 @@ import os
 import json
 import glob
 from docx import Document
+from docx.shared import Inches
 from docx.enum.text import WD_ALIGN_PARAGRAPH
+
+# Define Error Taxonomy with Descriptions and Examples
+ERROR_TAXONOMY = {
+    "pronoun_failure": {
+        "desc": "Model failed to resolve a pronoun (e.g., 'it', 'them') to the correct object mentioned earlier.",
+        "example": "Instruction: 'Pick up the apple. Heat it.' -> Agent failed to associate 'it' with the apple."
+    },
+    "attributive_misid": {
+        "desc": "Wrong object picked based on descriptions like color, size, or state.",
+        "example": "Instruction: 'Pick up the red apple.' -> Agent picks up a 'green apple' instead."
+    },
+    "noise_distraction": {
+        "desc": "Ambiguous names or irrelevant objects in the scene caused the model to target the wrong thing.",
+        "example": "Instruction: 'Find the book.' -> Agent targets 'book_shelf' or an irrelevant 'newspaper'."
+    },
+    "context_loss": {
+        "desc": "Failure to maintain task context across multiple steps, leading to hallucinations.",
+        "example": "Agent starts a task but forgets the target halfway through and targets a random object."
+    },
+    "action_ordering": {
+        "desc": "Required actions were present but performed in the wrong logical sequence.",
+        "example": "Agent tries to 'pick_up' the apple before using 'find' to locate it."
+    },
+    "action_omission": {
+        "desc": "Missing critical steps required by the ground truth plan.",
+        "example": "Instruction: 'Heat and serve the potato.' -> Agent picks and places but forgets to 'heat'."
+    },
+    "hallucinated_action": {
+        "desc": "Agent attempted actions that are not valid skills or involve non-existent objects.",
+        "example": "Agent generates a 'cook' command when only 'heat' is available."
+    },
+    "wrong_destination": {
+        "desc": "Object was correctly manipulated but placed at the wrong location.",
+        "example": "Instruction: 'Put it in the fridge.' -> Agent puts it on the 'counter'."
+    }
+}
 
 def json_to_word(json_path):
     model_dir = os.path.dirname(json_path)
@@ -35,8 +72,24 @@ def json_to_word(json_path):
     title = doc.add_heading(f'REI-Bench Failure Analysis: {model_name}', 0)
     title.alignment = WD_ALIGN_PARAGRAPH.CENTER
     
+    # Taxonomy Section (Glossary)
+    doc.add_heading('1. Error Taxonomy & Examples', level=1)
+    doc.add_paragraph("This section defines the fine-grained error categories used by the GPT-5 judge to classify failures.")
+    
+    for cat, info in ERROR_TAXONOMY.items():
+        p = doc.add_paragraph(style='List Bullet')
+        p.add_run(f"{cat.replace('_', ' ').title()}: ").bold = True
+        p.add_run(info["desc"])
+        
+        example_p = doc.add_paragraph()
+        example_p.paragraph_format.left_indent = Inches(0.5)
+        example_p.add_run("Example: ").italic = True
+        example_p.add_run(info["example"]).italic = True
+    
+    doc.add_page_break()
+
     # Summary Section
-    doc.add_heading('1. Error Category Distribution', level=1)
+    doc.add_heading('2. Error Category Distribution', level=1)
     doc.add_paragraph(f"Total Failures Analyzed: {analysis_data.get('total_failures', 'N/A')}")
     
     # Table for percentages
@@ -55,7 +108,7 @@ def json_to_word(json_path):
     doc.add_page_break()
     
     # Detailed Section
-    doc.add_heading('2. Detailed Failure Case Analysis', level=1)
+    doc.add_heading('3. Detailed Failure Case Analysis', level=1)
     
     for eval_item in analysis_data.get("detailed_evaluations", []):
         eid = eval_item["example_id"]
