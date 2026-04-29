@@ -258,6 +258,29 @@ class EvaluationResults:
             "error_subcategories": defaultdict(int),
         })
 
+    def load(self, filepath: str) -> set:
+        """
+        Load results from JSON to resume from checkpoint.
+        Returns a set of completed example_ids.
+        """
+        completed_ids = set()
+        if not os.path.exists(filepath):
+            return completed_ids
+
+        with open(filepath, "r") as f:
+            data = json.load(f)
+
+        if "detailed_results" in data:
+            for condition, results_list in data["detailed_results"].items():
+                for result in results_list:
+                    # add_result handles all the total aggregation automatically
+                    self.add_result(condition, result)
+                    if "example_id" in result:
+                        completed_ids.add(result["example_id"])
+                        
+        logger.info(f"Loaded {len(completed_ids)} completed examples from checkpoint.")
+        return completed_ids
+
     def add_result(self, condition: str, result: dict):
         """Add a single evaluation result."""
         self.results[condition].append(result)

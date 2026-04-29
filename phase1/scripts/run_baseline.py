@@ -98,8 +98,17 @@ def run_evaluation(
         max_new_tokens=MAX_NEW_TOKENS,
     )
 
-    # Initialize evaluation results
+    # Initialize evaluation results and load checkpoints
     eval_results = EvaluationResults()
+    model_size_tag = _get_model_size_tag(model_name)
+    model_results_dir = os.path.join(results_dir, model_size_tag)
+    os.makedirs(model_results_dir, exist_ok=True)
+    
+    results_file = os.path.join(
+        model_results_dir,
+        f"results_{device_info['device_type']}.json",
+    )
+    completed_ids = eval_results.load(results_file)
 
     # Determine conditions to evaluate
     if conditions:
@@ -129,6 +138,10 @@ def run_evaluation(
             examples = examples[:max_examples]
 
         for i, example in enumerate(examples):
+            if example["id"] in completed_ids:
+                global_idx += 1
+                continue
+                
             global_idx += 1
 
             # Generate plan
@@ -181,19 +194,16 @@ def run_evaluation(
                 f"{status} | {example['id'][:40]:<35} "
                 f"({rate:.1f} ex/s, ETA: {eta/60:.1f}min)"
             )
+            
+            # Continuous Auto-Save every 5 tasks to prevent progress loss
+            if global_idx % 5 == 0:
+                eval_results.save(results_file)
 
-    # Print summary
+    # Final summary and save
+    # Final print summary
     eval_results.print_summary()
 
-    # Save results — organized by model size subfolder
-    model_size_tag = _get_model_size_tag(model_name)
-    model_results_dir = os.path.join(results_dir, model_size_tag)
-    os.makedirs(model_results_dir, exist_ok=True)
-
-    results_file = os.path.join(
-        model_results_dir,
-        f"results_{device_info['device_type']}.json",
-    )
+    # Final Save results
     eval_results.save(results_file)
 
     # Save run metadata
