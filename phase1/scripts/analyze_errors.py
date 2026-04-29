@@ -319,10 +319,10 @@ def main():
         help="Directory containing result files",
     )
     parser.add_argument(
-        "--models",
-        nargs="+",
+        "--model",
+        type=str,
         default=None,
-        help="Filter analysis to specific model names/sizes (e.g., --models 3B Qwen3-8B)",
+        help="Analyze and print simple scores for a specific model folder only (e.g., '3B' or 'Qwen3-8B')",
     )
     args = parser.parse_args()
 
@@ -335,15 +335,37 @@ def main():
 
     results = load_results(args.results_dir)
 
-    if args.models:
-        results = {k: v for k, v in results.items() if k in args.models}
-
     if not results:
-        print(f"No result files found in {args.results_dir} matching your criteria.")
-        print("Expected files matching results_*.json in model subdirectories.")
+        print(f"No result files found in {args.results_dir}")
+        print("Expected files matching *_results.json")
         sys.exit(1)
 
     print(f"Found results for {len(results)} model(s): {', '.join(results.keys())}")
+
+    if args.model:
+        if args.model not in results:
+            print(f"Error: Model '{args.model}' not found in results directory.")
+            sys.exit(1)
+        
+        print(f"\n============================================")
+        print(f"BASELINE SCORES FOR: {args.model}")
+        print(f"============================================")
+        print(f"{'Condition':<25} {'Success Rate (%)':>20}")
+        print(f"{'-'*46}")
+        
+        summary = results[args.model].get("summary", {})
+        total_success = 0
+        count = 0
+        for cond, s in sorted(summary.items()):
+            print(f"{cond:<25} {s['success_rate']:>19.1f}%")
+            total_success += s['success_rate']
+            count += 1
+            
+        if count > 0:
+            print(f"{'-'*46}")
+            print(f"{'OVERALL AVERAGE':<25} {total_success/count:>19.1f}%")
+        print(f"============================================\n")
+        sys.exit(0)
 
     # Generate all reports
     print_comparative_table(results)
