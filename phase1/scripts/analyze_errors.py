@@ -318,6 +318,12 @@ def main():
         default=RESULTS_DIR,
         help="Directory containing result files",
     )
+    parser.add_argument(
+        "--models",
+        nargs="+",
+        default=None,
+        help="Filter analysis to specific model names/sizes (e.g., --models 3B Qwen3-8B)",
+    )
     args = parser.parse_args()
 
     logging.basicConfig(level=logging.INFO)
@@ -329,9 +335,12 @@ def main():
 
     results = load_results(args.results_dir)
 
+    if args.models:
+        results = {k: v for k, v in results.items() if k in args.models}
+
     if not results:
-        print(f"No result files found in {args.results_dir}")
-        print("Expected files matching *_results.json")
+        print(f"No result files found in {args.results_dir} matching your criteria.")
+        print("Expected files matching results_*.json in model subdirectories.")
         sys.exit(1)
 
     print(f"Found results for {len(results)} model(s): {', '.join(results.keys())}")
