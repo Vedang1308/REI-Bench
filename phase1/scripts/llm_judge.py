@@ -11,7 +11,7 @@ from openai import AsyncOpenAI
 ERROR_CATEGORIES = [
     "pronoun_failure", "attributive_misid", "noise_distraction",
     "context_loss", "action_ordering", "action_omission",
-    "hallucinated_action", "wrong_destination", "other"
+    "hallucinated_action", "wrong_destination"
 ]
 
 SYSTEM_PROMPT = f"""You are an expert robotics judge evaluating an LLM agent's generated plans.
@@ -51,9 +51,9 @@ Generated Plan: {example.get('generated_plan', [])}
             result_json = json.loads(response.choices[0].message.content)
             
             # Ensure valid category
-            cat = result_json.get("error_category", "other")
+            cat = result_json.get("error_category")
             if cat not in ERROR_CATEGORIES:
-                cat = "other"
+                cat = "context_loss" # Default fallback instead of 'other' if the LLM hallucinates a category
                 
             return {
                 "example_id": example.get("example_id", "unknown"),
