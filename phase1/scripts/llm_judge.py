@@ -113,7 +113,7 @@ async def process_model_results(client, model_dir, results_file, judge_model, co
         "detailed_evaluations": evaluated
     }
     
-    report_file = os.path.join(model_dir, "llm_judge_analysis.json")
+    report_file = os.path.join(model_dir, f"{model_name}_llmjudge.json")
     with open(report_file, "w") as f:
         json.dump(report, f, indent=2)
         
@@ -127,14 +127,19 @@ async def main():
     parser = argparse.ArgumentParser(description="Use an LLM to judge model failures.")
     parser.add_argument("--api-key", type=str, required=True, help="OpenAI API Key")
     parser.add_argument("--judge-model", type=str, default="gpt-4o", help="OpenAI model to use as judge")
+    parser.add_argument("--model", type=str, default=None, help="Specific model folder to analyze (e.g., '1B' or 'Qwen3-8B')")
     parser.add_argument("--results-dir", type=str, default="phase1/results", help="Directory containing results")
     parser.add_argument("--concurrency", type=int, default=50, help="Max concurrent API calls")
     args = parser.parse_args()
 
     client = AsyncOpenAI(api_key=args.api_key)
     
-    # Find all result files
-    result_files = glob.glob(os.path.join(args.results_dir, "*/*.json"))
+    # Find result files
+    if args.model:
+        result_files = glob.glob(os.path.join(args.results_dir, args.model, "*.json"))
+    else:
+        result_files = glob.glob(os.path.join(args.results_dir, "*/*.json"))
+        
     result_files = [f for f in result_files if "results_" in os.path.basename(f) and "metadata" not in f]
     
     for results_file in result_files:
