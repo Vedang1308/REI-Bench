@@ -1,0 +1,3446 @@
+{
+  "model": "3B",
+  "total_failures": 572,
+  "error_category_percentages": {
+    "action_omission": 47.2,
+    "action_ordering": 37.41,
+    "hallucinated_action": 5.24,
+    "attributive_misid": 6.12,
+    "wrong_destination": 1.4,
+    "pronoun_failure": 2.62
+  },
+  "detailed_evaluations": [
+    {
+      "example_id": "explicit_standard_pick_and_place_3",
+      "task_type": "pick_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the step to 'find side table' before putting down the remote control, which is necessary to ensure the correct placement of the object."
+    },
+    {
+      "example_id": "explicit_standard_pick_and_place_13",
+      "task_type": "pick_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the step to 'find side table' before putting down the remote control, which is necessary to ensure the correct placement of the object."
+    },
+    {
+      "example_id": "explicit_standard_clean_and_place_0",
+      "task_type": "clean_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the actions 'pick_up apple' and 'find sink', which are necessary to clean the apple and place it on the counter top."
+    },
+    {
+      "example_id": "explicit_standard_clean_and_place_2",
+      "task_type": "clean_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by attempting to clean the mug before picking it up, and it also attempts to put down the mug on the shelf without first picking it up."
+    },
+    {
+      "example_id": "explicit_standard_clean_and_place_3",
+      "task_type": "clean_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to clean the potato before it has been picked up, and it also places the potato on the counter top without first finding and picking it up."
+    },
+    {
+      "example_id": "explicit_standard_clean_and_place_5",
+      "task_type": "clean_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the actions of finding and picking up the apple before cleaning it, and also omits finding the counter top before placing the apple there."
+    },
+    {
+      "example_id": "explicit_standard_clean_and_place_7",
+      "task_type": "clean_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by attempting to clean the mug before picking it up, and it also attempts to put down the mug on the shelf without first picking it up."
+    },
+    {
+      "example_id": "explicit_standard_clean_and_place_8",
+      "task_type": "clean_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to clean the potato before picking it up, which is not possible, and it also omits the action of finding and picking up the potato before cleaning."
+    },
+    {
+      "example_id": "explicit_standard_clean_and_place_10",
+      "task_type": "clean_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the actions of picking up the apple and finding the sink before cleaning it, which are necessary steps in the ground truth plan."
+    },
+    {
+      "example_id": "explicit_standard_clean_and_place_12",
+      "task_type": "clean_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by attempting to clean the mug before picking it up, and it also finds the shelf before finding the mug, disrupting the logical sequence of actions."
+    },
+    {
+      "example_id": "explicit_standard_clean_and_place_15",
+      "task_type": "clean_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the crucial steps of picking up the apple and finding the sink before cleaning it, which are necessary for executing the task correctly."
+    },
+    {
+      "example_id": "explicit_standard_clean_and_place_17",
+      "task_type": "clean_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the crucial actions of picking up the mug and finding the sink, which are necessary steps before cleaning and placing the mug on the shelf."
+    },
+    {
+      "example_id": "explicit_standard_heat_and_place_0",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and use the microwave, specifically 'find microwave', 'open microwave', and 'close microwave', which are necessary to heat the potato."
+    },
+    {
+      "example_id": "explicit_standard_heat_and_place_1",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and open the microwave before heating the bread, and also skips closing the microwave after heating."
+    },
+    {
+      "example_id": "explicit_standard_heat_and_place_2",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several critical actions such as picking up the apple, finding and using the microwave, and closing it after heating, leading to an incomplete and incorrect execution of the task."
+    },
+    {
+      "example_id": "explicit_standard_heat_and_place_3",
+      "task_type": "heat_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly heats the egg before finding and opening the microwave, which disrupts the logical sequence of actions needed to complete the task."
+    },
+    {
+      "example_id": "explicit_standard_heat_and_place_4",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and use the microwave, specifically 'find microwave', 'open microwave', and 'close microwave', which are necessary for heating the tomato."
+    },
+    {
+      "example_id": "explicit_standard_heat_and_place_5",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps of finding the microwave, opening it, and closing it after heating the potato, which are necessary for correctly executing the task."
+    },
+    {
+      "example_id": "explicit_standard_heat_and_place_6",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and open the microwave, as well as closing it after heating, which are necessary for warming up the bread."
+    },
+    {
+      "example_id": "explicit_standard_heat_and_place_7",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several necessary actions such as picking up the apple, finding and opening the microwave, and closing it after heating, which are crucial for successfully completing the task."
+    },
+    {
+      "example_id": "explicit_standard_heat_and_place_8",
+      "task_type": "heat_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to heat the egg before finding and opening the microwave, which disrupts the logical sequence of actions needed to complete the task."
+    },
+    {
+      "example_id": "explicit_standard_heat_and_place_9",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several critical actions such as picking up the tomato, finding and using the microwave, and closing it after heating, which are necessary to correctly execute the task."
+    },
+    {
+      "example_id": "explicit_standard_heat_and_place_10",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and open the microwave before heating the potato, and also skips closing the microwave after heating."
+    },
+    {
+      "example_id": "explicit_standard_heat_and_place_11",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several necessary actions, including finding and opening the microwave, and finding the plate before placing the bread on it."
+    },
+    {
+      "example_id": "explicit_standard_heat_and_place_12",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several necessary actions such as picking up the apple, finding and using the microwave, and closing it after heating, which are crucial for successfully completing the task."
+    },
+    {
+      "example_id": "explicit_standard_heat_and_place_13",
+      "task_type": "heat_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to heat the egg before finding and opening the microwave, which disrupts the logical sequence of actions needed to complete the task."
+    },
+    {
+      "example_id": "explicit_standard_heat_and_place_14",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several critical actions such as picking up the tomato, finding and using the microwave, and finding the dining table before placing the tomato on it."
+    },
+    {
+      "example_id": "explicit_standard_heat_and_place_15",
+      "task_type": "heat_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to heat the potato without specifying the use of a microwave, and it places the potato in the sink before heating, which is out of order."
+    },
+    {
+      "example_id": "explicit_standard_heat_and_place_16",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and open the microwave before heating the bread, and also skips closing the microwave after heating."
+    },
+    {
+      "example_id": "explicit_standard_heat_and_place_17",
+      "task_type": "heat_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to heat the apple before picking it up and placing it in the microwave, which is an incorrect sequence of actions."
+    },
+    {
+      "example_id": "explicit_standard_cool_and_place_0",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to cool the apple before placing it in the fridge, which is incorrect as the apple needs to be placed in the fridge to cool it."
+    },
+    {
+      "example_id": "explicit_standard_cool_and_place_1",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by attempting to cool the potato before it is picked up and placed in the fridge, and it also attempts to put down the potato on the plate without first picking it up."
+    },
+    {
+      "example_id": "explicit_standard_cool_and_place_2",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to cool the bread before it has been picked up, and it also omits the necessary steps of opening and closing the fridge, leading to an incorrect sequence of actions."
+    },
+    {
+      "example_id": "explicit_standard_cool_and_place_3",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to cool the tomato before it is picked up and placed in the fridge, which disrupts the logical sequence of actions needed to chill the tomato."
+    },
+    {
+      "example_id": "explicit_standard_cool_and_place_4",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to cool the lettuce before finding and opening the fridge, which is necessary for cooling, and also incorrectly places the lettuce in the bowl before cooling it."
+    },
+    {
+      "example_id": "explicit_standard_cool_and_place_5",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several necessary actions such as picking up the apple, finding and opening the fridge, and closing the fridge, which are essential for correctly cooling the apple and placing it on the counter top."
+    },
+    {
+      "example_id": "explicit_standard_cool_and_place_6",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by attempting to cool the potato before it is picked up and placed in the fridge, and it also omits the steps to open and close the fridge."
+    },
+    {
+      "example_id": "explicit_standard_cool_and_place_7",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to cool the bread before it is picked up, and it also omits the steps of finding and opening the fridge, leading to an incorrect sequence of actions."
+    },
+    {
+      "example_id": "explicit_standard_cool_and_place_8",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find the fridge, open it, and close it after cooling the tomato, which are necessary for chilling the tomato properly."
+    },
+    {
+      "example_id": "explicit_standard_cool_and_place_9",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to cool the lettuce before it has been picked up, and it also omits the steps to open and close the fridge, leading to an incorrect sequence of actions."
+    },
+    {
+      "example_id": "explicit_standard_cool_and_place_10",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps of finding, opening, and closing the fridge, which are necessary for cooling the apple, leading to an incomplete execution of the task."
+    },
+    {
+      "example_id": "explicit_standard_cool_and_place_11",
+      "task_type": "cool_and_place",
+      "error_category": "hallucinated_action",
+      "reason": "The generated plan includes a 'toggle_on Fridge' action, which is unnecessary and not part of the ground truth plan, indicating a hallucinated action."
+    },
+    {
+      "example_id": "explicit_standard_cool_and_place_12",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to cool the bread before it has been picked up, and it also omits the necessary steps of opening and closing the fridge, leading to an incorrect sequence of actions."
+    },
+    {
+      "example_id": "explicit_standard_cool_and_place_13",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to cool the tomato before it is picked up and placed in the fridge, which is not possible without first finding and picking up the tomato."
+    },
+    {
+      "example_id": "explicit_standard_cool_and_place_14",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find, open, and close the fridge, which are necessary for cooling the lettuce, and also skips finding the bowl before placing the lettuce in it."
+    },
+    {
+      "example_id": "explicit_standard_cool_and_place_15",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find the fridge, open it, and close it after cooling the apple, which are necessary actions for cooling the apple properly."
+    },
+    {
+      "example_id": "explicit_standard_cool_and_place_16",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to cool the potato before picking it up, which is not possible as the potato needs to be picked up and placed in the fridge first."
+    },
+    {
+      "example_id": "explicit_standard_cool_and_place_17",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to cool the bread before it has been picked up, and it also omits the steps of opening and closing the fridge, leading to an incorrect sequence of actions."
+    },
+    {
+      "example_id": "explicit_standard_examine_in_light_0",
+      "task_type": "examine_in_light",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the actions to 'find credit card' and 'pick_up credit card', which are necessary before examining it under the light of the floor lamp."
+    },
+    {
+      "example_id": "explicit_standard_examine_in_light_1",
+      "task_type": "examine_in_light",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the actions 'pick_up pen' and 'toggle_on desk lamp', which are necessary to properly examine the pen under the desk lamp."
+    },
+    {
+      "example_id": "explicit_standard_examine_in_light_2",
+      "task_type": "examine_in_light",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the actions to find and pick up the watch, which are necessary before examining it under the light of the floor lamp."
+    },
+    {
+      "example_id": "explicit_standard_examine_in_light_3",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to examine the key chain before turning on the desk lamp, which is necessary for proper inspection, and also includes an unnecessary duplicate 'done' action."
+    },
+    {
+      "example_id": "explicit_standard_examine_in_light_4",
+      "task_type": "examine_in_light",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the 'find floor lamp' action, which is necessary before toggling it on, and also skips the 'examine pillow' action before completing the task."
+    },
+    {
+      "example_id": "explicit_standard_examine_in_light_5",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by examining the credit card before it is picked up, and it also turns off the lamp before the task is completed."
+    },
+    {
+      "example_id": "explicit_standard_examine_in_light_6",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions, examining the pen before picking it up and turning on the desk lamp, which are necessary steps before examination."
+    },
+    {
+      "example_id": "explicit_standard_examine_in_light_7",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by turning on the floor lamp before finding and picking up the watch, and it omits the steps to find and pick up the watch before examining it."
+    },
+    {
+      "example_id": "explicit_standard_examine_in_light_8",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to examine the key chain before turning on the desk lamp, which is necessary for proper inspection, and also includes redundant 'done' actions."
+    },
+    {
+      "example_id": "explicit_standard_examine_in_light_9",
+      "task_type": "examine_in_light",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the 'find floor lamp' and 'examine pillow' actions, which are necessary steps in the ground truth plan."
+    },
+    {
+      "example_id": "explicit_standard_examine_in_light_10",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to examine the credit card before it has been picked up, which is a misordering of actions necessary to complete the task correctly."
+    },
+    {
+      "example_id": "explicit_standard_examine_in_light_11",
+      "task_type": "examine_in_light",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the actions 'pick_up pen' and 'toggle_on desk lamp', which are necessary to properly examine the pen under the desk lamp."
+    },
+    {
+      "example_id": "explicit_standard_examine_in_light_12",
+      "task_type": "examine_in_light",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the actions to find and pick up the watch, which are necessary before examining it under the light of the floor lamp."
+    },
+    {
+      "example_id": "explicit_standard_examine_in_light_13",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by attempting to examine the key chain before turning on the desk lamp, which is necessary for inspection."
+    },
+    {
+      "example_id": "explicit_noised_pick_and_place_3",
+      "task_type": "pick_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the step to 'find side table' before putting down the remote control, which is necessary to ensure the correct placement of the object."
+    },
+    {
+      "example_id": "explicit_noised_pick_and_place_13",
+      "task_type": "pick_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the step to 'find side table' before putting down the remote control, which is necessary to ensure the correct placement of the object."
+    },
+    {
+      "example_id": "explicit_noised_clean_and_place_3",
+      "task_type": "clean_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to clean the potato before picking it up, which is not possible, and it also omits the action of finding and picking up the potato before cleaning."
+    },
+    {
+      "example_id": "explicit_noised_clean_and_place_8",
+      "task_type": "clean_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to clean the potato before it has been picked up, and it also places the potato on the counter top without first finding and picking it up."
+    },
+    {
+      "example_id": "explicit_noised_clean_and_place_13",
+      "task_type": "clean_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to clean the potato before it has been picked up, and it also places the potato on the counter top without first finding and picking it up."
+    },
+    {
+      "example_id": "explicit_noised_heat_and_place_0",
+      "task_type": "heat_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly heats the potato before placing it in the microwave and attempts to put it down in the microwave twice, disrupting the correct sequence of actions."
+    },
+    {
+      "example_id": "explicit_noised_heat_and_place_1",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several critical actions such as finding the microwave, opening it, and closing it after heating the bread, as well as finding the plate before placing the bread on it."
+    },
+    {
+      "example_id": "explicit_noised_heat_and_place_2",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and use the microwave, specifically 'find microwave', 'open microwave', and 'close microwave', which are necessary for heating the apple."
+    },
+    {
+      "example_id": "explicit_noised_heat_and_place_3",
+      "task_type": "heat_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders actions, such as attempting to heat the egg before placing it in the microwave and putting down the egg in the microwave after heating, which disrupts the logical sequence needed to complete the task."
+    },
+    {
+      "example_id": "explicit_noised_heat_and_place_4",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several critical actions such as finding and using the microwave to heat the tomato, and finding the dining table before placing the tomato on it."
+    },
+    {
+      "example_id": "explicit_noised_heat_and_place_5",
+      "task_type": "heat_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly heats the potato before placing it in the microwave and attempts to put it down in the microwave twice, disrupting the correct sequence of actions."
+    },
+    {
+      "example_id": "explicit_noised_heat_and_place_6",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and open the microwave, as well as closing it after heating the bread, which are necessary for warming up the bread."
+    },
+    {
+      "example_id": "explicit_noised_heat_and_place_7",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and open the microwave, as well as the step to close it after heating the apple, which are necessary for correctly heating the apple."
+    },
+    {
+      "example_id": "explicit_noised_heat_and_place_8",
+      "task_type": "heat_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders actions, such as attempting to heat the egg before placing it in the microwave and putting down the egg in the microwave after heating, which disrupts the logical sequence needed to complete the task."
+    },
+    {
+      "example_id": "explicit_noised_heat_and_place_9",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and use the microwave, specifically 'find microwave', 'open microwave', and 'close microwave', which are necessary for heating the tomato."
+    },
+    {
+      "example_id": "explicit_noised_heat_and_place_10",
+      "task_type": "heat_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly heats the potato before placing it in the microwave and attempts to put it down in the microwave twice, disrupting the correct sequence of actions."
+    },
+    {
+      "example_id": "explicit_noised_heat_and_place_11",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several critical actions such as finding the microwave, opening it, and closing it after heating the bread, as well as finding the plate before placing the bread on it."
+    },
+    {
+      "example_id": "explicit_noised_heat_and_place_12",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps of finding and using the microwave to heat the apple, as well as finding the counter top before placing the apple on it."
+    },
+    {
+      "example_id": "explicit_noised_heat_and_place_13",
+      "task_type": "heat_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions, such as attempting to heat the egg before placing it in the microwave and putting it down in the microwave after heating, which disrupts the logical sequence needed to complete the task."
+    },
+    {
+      "example_id": "explicit_noised_heat_and_place_14",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and use the microwave, specifically 'find microwave', 'open microwave', and 'close microwave', which are necessary for heating the tomato."
+    },
+    {
+      "example_id": "explicit_noised_heat_and_place_15",
+      "task_type": "heat_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly heats the potato before placing it in the microwave and attempts to put it down in the microwave twice, disrupting the correct sequence of actions."
+    },
+    {
+      "example_id": "explicit_noised_heat_and_place_16",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and open the microwave, as well as closing it after heating the bread, which are necessary for warming up the bread."
+    },
+    {
+      "example_id": "explicit_noised_heat_and_place_17",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps of finding and using the microwave to heat the apple, as well as finding the counter top before placing the apple on it."
+    },
+    {
+      "example_id": "explicit_noised_cool_and_place_0",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps of finding the fridge, opening it, and closing it after cooling the apple, which are necessary to properly execute the cooling action."
+    },
+    {
+      "example_id": "explicit_noised_cool_and_place_1",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by attempting to cool the potato before finding and opening the fridge, and it also places the potato on the plate before chilling it."
+    },
+    {
+      "example_id": "explicit_noised_cool_and_place_2",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by attempting to cool the bread before picking it up and without opening the fridge, leading to a failure in executing the task as intended."
+    },
+    {
+      "example_id": "explicit_noised_cool_and_place_3",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the crucial steps of finding the fridge, opening it, and closing it after cooling the tomato, which are necessary for properly chilling the tomato."
+    },
+    {
+      "example_id": "explicit_noised_cool_and_place_4",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to cool the lettuce before finding and opening the fridge, which is necessary for cooling, and also places the lettuce in the bowl before actually cooling it."
+    },
+    {
+      "example_id": "explicit_noised_cool_and_place_5",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps of finding the fridge, opening it, and closing it after cooling the apple, which are necessary to properly execute the cooling action."
+    },
+    {
+      "example_id": "explicit_noised_cool_and_place_6",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by attempting to cool the potato before opening the fridge, and it also places the potato on the plate without first closing the fridge."
+    },
+    {
+      "example_id": "explicit_noised_cool_and_place_7",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by attempting to cool the bread before picking it up and without opening the fridge, leading to a failure in executing the task as intended."
+    },
+    {
+      "example_id": "explicit_noised_cool_and_place_8",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps of finding the fridge, opening it, and closing it after cooling the tomato, which are necessary for chilling the tomato properly."
+    },
+    {
+      "example_id": "explicit_noised_cool_and_place_9",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to cool the lettuce before finding and opening the fridge, which is necessary for cooling, and also places the lettuce in the bowl before actually cooling it."
+    },
+    {
+      "example_id": "explicit_noised_cool_and_place_10",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps of finding the fridge, opening it, and closing it after cooling the apple, which are necessary actions for cooling the apple properly."
+    },
+    {
+      "example_id": "explicit_noised_cool_and_place_11",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by attempting to cool the potato before finding and opening the fridge, which is necessary for chilling the potato."
+    },
+    {
+      "example_id": "explicit_noised_cool_and_place_12",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by attempting to cool the bread before picking it up and without opening the fridge, leading to a failure in executing the task as intended."
+    },
+    {
+      "example_id": "explicit_noised_cool_and_place_13",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to cool the tomato without first finding and opening the fridge, and it places the tomato on the counter top without actually cooling it in the fridge."
+    },
+    {
+      "example_id": "explicit_noised_cool_and_place_14",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to cool the lettuce before finding and opening the fridge, which is necessary for cooling, and also places the lettuce in the bowl before actually cooling it."
+    },
+    {
+      "example_id": "explicit_noised_cool_and_place_15",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find, open, and close the fridge, which are necessary for cooling the apple, leading to an incomplete execution of the task."
+    },
+    {
+      "example_id": "explicit_noised_cool_and_place_16",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by attempting to cool the potato before finding and opening the fridge, which is necessary for chilling the potato."
+    },
+    {
+      "example_id": "explicit_noised_cool_and_place_17",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by attempting to cool the bread before picking it up and without opening the fridge, leading to a failure in executing the task as intended."
+    },
+    {
+      "example_id": "explicit_noised_examine_in_light_0",
+      "task_type": "examine_in_light",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the actions to find and pick up the credit card, which are necessary before examining it under the light of the floor lamp."
+    },
+    {
+      "example_id": "explicit_noised_examine_in_light_1",
+      "task_type": "examine_in_light",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the actions 'pick_up pen' and 'toggle_on desk lamp', which are necessary to properly examine the pen under the desk lamp."
+    },
+    {
+      "example_id": "explicit_noised_examine_in_light_2",
+      "task_type": "examine_in_light",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the crucial actions of finding and picking up the watch before examining it, which are necessary to complete the task as instructed."
+    },
+    {
+      "example_id": "explicit_noised_examine_in_light_3",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by examining the key chain before turning on the desk lamp, which is necessary for proper inspection."
+    },
+    {
+      "example_id": "explicit_noised_examine_in_light_4",
+      "task_type": "examine_in_light",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the 'examine pillow' action before concluding with 'done', which is present in the ground truth plan."
+    },
+    {
+      "example_id": "explicit_noised_examine_in_light_5",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to examine the credit card before it has been found and picked up, which disrupts the logical sequence of actions needed to complete the task."
+    },
+    {
+      "example_id": "explicit_noised_examine_in_light_6",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by attempting to examine the pen before picking it up and turning on the desk lamp, which are necessary steps to properly examine the pen under the lamp."
+    },
+    {
+      "example_id": "explicit_noised_examine_in_light_7",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to examine the watch before it has been found and picked up, which disrupts the logical sequence of actions needed to complete the task."
+    },
+    {
+      "example_id": "explicit_noised_examine_in_light_8",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by attempting to examine the key chain before turning on the desk lamp, which is necessary for inspection."
+    },
+    {
+      "example_id": "explicit_noised_examine_in_light_9",
+      "task_type": "examine_in_light",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the 'examine pillow' action before concluding with 'done', which is present in the ground truth plan."
+    },
+    {
+      "example_id": "explicit_noised_examine_in_light_10",
+      "task_type": "examine_in_light",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the crucial actions of finding and picking up the credit card before examining it, which are necessary steps to complete the task."
+    },
+    {
+      "example_id": "explicit_noised_examine_in_light_11",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by examining the pen before turning on the desk lamp, which is necessary to properly look at the pen."
+    },
+    {
+      "example_id": "explicit_noised_examine_in_light_12",
+      "task_type": "examine_in_light",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the crucial actions of finding and picking up the watch before examining it, which are necessary to complete the task as instructed."
+    },
+    {
+      "example_id": "explicit_noised_examine_in_light_13",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by attempting to examine the key chain before turning on the desk lamp, which is necessary for proper inspection."
+    },
+    {
+      "example_id": "explicit_short_pick_and_place_3",
+      "task_type": "pick_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the action 'find side table' before attempting to put down the remote control, which is necessary to ensure the correct placement of the object."
+    },
+    {
+      "example_id": "explicit_short_pick_and_place_13",
+      "task_type": "pick_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the action 'find side table' before attempting to put down the remote control, which is necessary to ensure the correct placement of the object."
+    },
+    {
+      "example_id": "explicit_short_clean_and_place_0",
+      "task_type": "clean_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the actions of picking up the apple and finding the sink before cleaning it, which are necessary steps in the sequence."
+    },
+    {
+      "example_id": "explicit_short_clean_and_place_3",
+      "task_type": "clean_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to clean the potato before picking it up, which is not possible, and it also places the potato on the counter top without first finding and picking it up."
+    },
+    {
+      "example_id": "explicit_short_clean_and_place_5",
+      "task_type": "clean_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the actions of picking up the apple and finding the sink, which are necessary steps before cleaning and placing the apple on the counter top."
+    },
+    {
+      "example_id": "explicit_short_clean_and_place_8",
+      "task_type": "clean_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to clean the potato before it has been picked up, and it also places the potato on the counter top without first finding and picking it up."
+    },
+    {
+      "example_id": "explicit_short_clean_and_place_10",
+      "task_type": "clean_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the crucial actions of picking up the apple and finding the sink before cleaning it, which are necessary steps in the task."
+    },
+    {
+      "example_id": "explicit_short_clean_and_place_13",
+      "task_type": "clean_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to clean the potato before picking it up, which is not possible, and it also places the potato on the counter top without first finding and picking it up."
+    },
+    {
+      "example_id": "explicit_short_clean_and_place_15",
+      "task_type": "clean_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the actions 'pick_up apple' and 'find sink', which are necessary to clean the apple and place it on the counter top."
+    },
+    {
+      "example_id": "explicit_short_heat_and_place_0",
+      "task_type": "heat_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly heats the potato before placing it in the microwave, and also attempts to put down the potato in the microwave before opening it, disrupting the logical sequence of actions."
+    },
+    {
+      "example_id": "explicit_short_heat_and_place_1",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several critical actions such as picking up the bread, opening and closing the microwave, and finding the plate, which are necessary to complete the task correctly."
+    },
+    {
+      "example_id": "explicit_short_heat_and_place_2",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several critical actions such as picking up the apple, finding and using the microwave, and closing it after heating, leading to an incomplete execution of the task."
+    },
+    {
+      "example_id": "explicit_short_heat_and_place_3",
+      "task_type": "heat_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly heats the egg before picking it up, and places it in the microwave instead of the bowl, disrupting the correct sequence of actions."
+    },
+    {
+      "example_id": "explicit_short_heat_and_place_4",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several critical actions such as 'pick_up tomato', 'find microwave', 'open microwave', and 'close microwave', which are necessary for correctly heating the tomato and placing it on the dining table."
+    },
+    {
+      "example_id": "explicit_short_heat_and_place_5",
+      "task_type": "heat_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by attempting to heat the potato before placing it in the microwave, and it also places the potato in the microwave twice before finally putting it in the sink."
+    },
+    {
+      "example_id": "explicit_short_heat_and_place_6",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several critical actions such as picking up the bread, opening and closing the microwave, and finding the plate, which are necessary to complete the task as instructed."
+    },
+    {
+      "example_id": "explicit_short_heat_and_place_7",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several critical actions such as picking up the apple, finding and using the microwave, and closing it after heating, leading to an incomplete execution of the task."
+    },
+    {
+      "example_id": "explicit_short_heat_and_place_8",
+      "task_type": "heat_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly heats the egg before picking it up and places it in the microwave instead of the bowl, disrupting the correct sequence of actions."
+    },
+    {
+      "example_id": "explicit_short_heat_and_place_9",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several necessary actions such as picking up the tomato, finding and using the microwave, and finding the dining table before placing the tomato on it."
+    },
+    {
+      "example_id": "explicit_short_heat_and_place_10",
+      "task_type": "heat_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to heat the potato before placing it in the microwave, and it incorrectly places the potato in the microwave after heating, disrupting the logical sequence of actions."
+    },
+    {
+      "example_id": "explicit_short_heat_and_place_11",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several critical actions such as picking up the bread, opening and closing the microwave, and finding the plate, which are necessary to complete the task correctly."
+    },
+    {
+      "example_id": "explicit_short_heat_and_place_12",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several necessary actions such as picking up the apple, finding and opening the microwave, and closing the microwave after heating, which are crucial for successfully completing the task."
+    },
+    {
+      "example_id": "explicit_short_heat_and_place_13",
+      "task_type": "heat_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly heats the egg before picking it up, and places the egg in the microwave instead of the bowl, disrupting the correct sequence of actions."
+    },
+    {
+      "example_id": "explicit_short_heat_and_place_14",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several necessary actions such as picking up the tomato, finding and using the microwave, and finding the dining table before placing the tomato on it."
+    },
+    {
+      "example_id": "explicit_short_heat_and_place_15",
+      "task_type": "heat_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by attempting to heat the potato before placing it in the microwave, and also places the potato in the microwave twice, disrupting the logical sequence of actions."
+    },
+    {
+      "example_id": "explicit_short_heat_and_place_16",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several necessary actions such as picking up the bread, opening and closing the microwave, and finding the plate, which are essential for successfully completing the task."
+    },
+    {
+      "example_id": "explicit_short_heat_and_place_17",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several necessary actions such as picking up the apple, finding and opening the microwave, and closing the microwave after heating, which are crucial for successfully completing the task."
+    },
+    {
+      "example_id": "explicit_short_cool_and_place_0",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find, open, and close the fridge, which are necessary for cooling the apple, leading to an incomplete execution of the task."
+    },
+    {
+      "example_id": "explicit_short_cool_and_place_1",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by attempting to cool the potato before picking it up, and it also includes unnecessary actions like 'toggle_on Fridge' and an extra 'done'."
+    },
+    {
+      "example_id": "explicit_short_cool_and_place_2",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to cool the bread before it is picked up, and it also skips the steps of finding and opening the fridge, leading to an incorrect sequence of actions."
+    },
+    {
+      "example_id": "explicit_short_cool_and_place_3",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps of finding the fridge, opening it, and closing it after cooling the tomato, which are necessary for properly chilling the tomato."
+    },
+    {
+      "example_id": "explicit_short_cool_and_place_4",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several critical actions such as 'pick_up lettuce', 'open fridge', and 'close fridge', which are necessary for cooling the lettuce and placing it in the bowl."
+    },
+    {
+      "example_id": "explicit_short_cool_and_place_5",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps of finding the fridge, opening it, and closing it after cooling the apple, which are necessary actions for cooling the apple properly."
+    },
+    {
+      "example_id": "explicit_short_cool_and_place_6",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by attempting to cool the potato before picking it up, and it also includes unnecessary actions like 'toggle_on Fridge' and an extra 'done'."
+    },
+    {
+      "example_id": "explicit_short_cool_and_place_7",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to cool the bread before it is picked up, and it also omits the steps of finding and picking up the bread, leading to an incorrect sequence of actions."
+    },
+    {
+      "example_id": "explicit_short_cool_and_place_8",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps of finding the fridge, opening it, and closing it after cooling the tomato, which are necessary for properly chilling the tomato."
+    },
+    {
+      "example_id": "explicit_short_cool_and_place_9",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to cool the lettuce before picking it up and opening the fridge, which disrupts the logical sequence of actions needed to complete the task."
+    },
+    {
+      "example_id": "explicit_short_cool_and_place_10",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to cool the apple without first finding and opening the fridge, which disrupts the logical sequence of actions needed to achieve the task."
+    },
+    {
+      "example_id": "explicit_short_cool_and_place_11",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by attempting to cool the potato before picking it up, and it also includes unnecessary actions like 'toggle_on Fridge' and an extra 'done'."
+    },
+    {
+      "example_id": "explicit_short_cool_and_place_12",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to cool the bread before it is picked up, and it also skips the steps of finding and opening the fridge, leading to an incorrect sequence of actions."
+    },
+    {
+      "example_id": "explicit_short_cool_and_place_13",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find the fridge, open it, and close it after cooling the tomato, which are necessary for properly chilling the tomato before placing it on the counter top."
+    },
+    {
+      "example_id": "explicit_short_cool_and_place_14",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to cool the lettuce before picking it up and opening the fridge, which disrupts the logical sequence of actions needed to complete the task."
+    },
+    {
+      "example_id": "explicit_short_cool_and_place_15",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps of finding the fridge, opening it, and closing it after cooling the apple, which are necessary for properly cooling the apple."
+    },
+    {
+      "example_id": "explicit_short_cool_and_place_16",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by attempting to cool the potato before picking it up, and it also includes an unnecessary 'toggle_on Fridge' action."
+    },
+    {
+      "example_id": "explicit_short_cool_and_place_17",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to cool the bread before it has been picked up, and it also skips the necessary steps of opening and closing the fridge, leading to an incorrect sequence of actions."
+    },
+    {
+      "example_id": "explicit_short_examine_in_light_0",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to examine the credit card before it has been found and picked up, which disrupts the logical sequence of actions needed to complete the task."
+    },
+    {
+      "example_id": "explicit_short_examine_in_light_1",
+      "task_type": "examine_in_light",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the actions 'pick_up pen' and 'toggle_on desk lamp', which are necessary to properly examine the pen under the desk lamp."
+    },
+    {
+      "example_id": "explicit_short_examine_in_light_2",
+      "task_type": "examine_in_light",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the crucial steps of finding and picking up the watch before examining it, which are necessary to complete the task as instructed."
+    },
+    {
+      "example_id": "explicit_short_examine_in_light_3",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by attempting to examine the key chain before turning on the desk lamp, which is necessary for proper inspection."
+    },
+    {
+      "example_id": "explicit_short_examine_in_light_4",
+      "task_type": "examine_in_light",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the 'examine pillow' action before concluding with 'done', which is present in the ground truth plan."
+    },
+    {
+      "example_id": "explicit_short_examine_in_light_5",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to examine the credit card before it has been picked up, which is a misordering of actions necessary to complete the task correctly."
+    },
+    {
+      "example_id": "explicit_short_examine_in_light_6",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by attempting to examine the pen before picking it up and turning on the desk lamp, which are necessary steps to properly examine the pen under the lamp."
+    },
+    {
+      "example_id": "explicit_short_examine_in_light_7",
+      "task_type": "examine_in_light",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the actions to 'find watch' and 'pick_up watch', which are necessary steps before examining the watch by the light of the floor lamp."
+    },
+    {
+      "example_id": "explicit_short_examine_in_light_8",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by examining the key chain before turning on the desk lamp, which is necessary for proper inspection."
+    },
+    {
+      "example_id": "explicit_short_examine_in_light_9",
+      "task_type": "examine_in_light",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the 'examine pillow' action before concluding with 'done', which is present in the ground truth plan."
+    },
+    {
+      "example_id": "explicit_short_examine_in_light_10",
+      "task_type": "examine_in_light",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the actions to find and pick up the credit card before examining it, which are crucial steps in the task."
+    },
+    {
+      "example_id": "explicit_short_examine_in_light_11",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by attempting to examine the pen before picking it up and turning on the desk lamp, which are necessary steps to properly examine the pen under the lamp."
+    },
+    {
+      "example_id": "explicit_short_examine_in_light_12",
+      "task_type": "examine_in_light",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the actions to 'find watch' and 'pick_up watch', which are necessary before examining it under the light of the floor lamp."
+    },
+    {
+      "example_id": "explicit_short_examine_in_light_13",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by attempting to examine the key chain before turning on the desk lamp, which is necessary for inspection."
+    },
+    {
+      "example_id": "mixed_standard_pick_and_place_2",
+      "task_type": "pick_and_place",
+      "error_category": "attributive_misid",
+      "reason": "The generated plan incorrectly identifies the target object as a 'Plate' instead of the 'mug', leading to the wrong object being manipulated."
+    },
+    {
+      "example_id": "mixed_standard_pick_and_place_3",
+      "task_type": "pick_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the step to 'find side table' before putting down the remote control, which is necessary to ensure the correct placement of the object."
+    },
+    {
+      "example_id": "mixed_standard_pick_and_place_7",
+      "task_type": "pick_and_place",
+      "error_category": "attributive_misid",
+      "reason": "The generated plan incorrectly identifies the target object as a 'container' instead of the 'vase', leading to the wrong object being manipulated."
+    },
+    {
+      "example_id": "mixed_standard_pick_and_place_13",
+      "task_type": "pick_and_place",
+      "error_category": "hallucinated_action",
+      "reason": "The generated plan includes an extra 'done' action at the end, which is unnecessary and not part of the ground truth plan."
+    },
+    {
+      "example_id": "mixed_standard_stack_and_place_6",
+      "task_type": "stack_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the actions related to finding and picking up the bowl, which is necessary to complete the task of placing the container with the apple on the counter top."
+    },
+    {
+      "example_id": "mixed_standard_stack_and_place_9",
+      "task_type": "stack_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the actions related to finding and picking up the bowl, which is necessary to complete the task of placing the container with the apple on the counter top."
+    },
+    {
+      "example_id": "mixed_standard_stack_and_place_12",
+      "task_type": "stack_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the actions related to finding and picking up the bowl, which is necessary to complete the task of placing the container with the apple on the counter top."
+    },
+    {
+      "example_id": "mixed_standard_stack_and_place_18",
+      "task_type": "stack_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the actions related to finding and picking up the bowl, which is necessary to complete the task of placing the container with the apple on the counter top."
+    },
+    {
+      "example_id": "mixed_standard_clean_and_place_0",
+      "task_type": "clean_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to clean the apple before picking it up, which is not possible, and it also omits the action of finding the sink before cleaning."
+    },
+    {
+      "example_id": "mixed_standard_clean_and_place_1",
+      "task_type": "clean_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the crucial actions of 'pick_up plate' and 'find sink', which are necessary to properly clean and place the plate on the dining table."
+    },
+    {
+      "example_id": "mixed_standard_clean_and_place_2",
+      "task_type": "clean_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the actions to find and pick up the mug before cleaning it, and it also skips finding the shelf before putting the mug down."
+    },
+    {
+      "example_id": "mixed_standard_clean_and_place_5",
+      "task_type": "clean_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the 'pick_up apple' action, which is necessary before cleaning and placing the apple on the counter top."
+    },
+    {
+      "example_id": "mixed_standard_clean_and_place_6",
+      "task_type": "clean_and_place",
+      "error_category": "attributive_misid",
+      "reason": "The agent incorrectly identified the 'Sink' as the object to be washed and placed on the dining table, instead of the 'plate', which is the correct target object."
+    },
+    {
+      "example_id": "mixed_standard_clean_and_place_7",
+      "task_type": "clean_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to clean the mug before picking it up, which is not feasible, and it also places the mug on the shelf without first finding the shelf."
+    },
+    {
+      "example_id": "mixed_standard_clean_and_place_10",
+      "task_type": "clean_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several necessary actions such as picking up the apple, finding the sink, and placing the apple on the counter top, leading to an incomplete execution of the task."
+    },
+    {
+      "example_id": "mixed_standard_clean_and_place_11",
+      "task_type": "clean_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the actions to 'find plate' and 'pick_up plate', which are necessary before cleaning it."
+    },
+    {
+      "example_id": "mixed_standard_clean_and_place_12",
+      "task_type": "clean_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the actions of picking up the mug and finding the sink, which are necessary steps before cleaning and placing the mug on the shelf."
+    },
+    {
+      "example_id": "mixed_standard_clean_and_place_15",
+      "task_type": "clean_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to clean the apple before picking it up, which is not possible, and it also omits the action of finding the sink before cleaning."
+    },
+    {
+      "example_id": "mixed_standard_clean_and_place_16",
+      "task_type": "clean_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the 'pick_up plate' action, which is necessary before cleaning the plate, and also skips the 'find sink' action, which is required to locate where to clean the plate."
+    },
+    {
+      "example_id": "mixed_standard_clean_and_place_17",
+      "task_type": "clean_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the actions 'find mug', 'pick_up mug', and 'find shelf', which are necessary to locate, pick up, and place the mug on the shelf after cleaning."
+    },
+    {
+      "example_id": "mixed_standard_heat_and_place_0",
+      "task_type": "heat_and_place",
+      "error_category": "hallucinated_action",
+      "reason": "The generated plan includes an unnecessary 'clean Potato Sink' action that is not part of the ground truth plan, leading to a failure in executing the task correctly."
+    },
+    {
+      "example_id": "mixed_standard_heat_and_place_1",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several critical actions such as picking up the bread, finding and opening the microwave, and closing it after heating, which are necessary to properly execute the task."
+    },
+    {
+      "example_id": "mixed_standard_heat_and_place_2",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and open the microwave, as well as the step to close the microwave after heating the apple, which are necessary for correctly executing the task."
+    },
+    {
+      "example_id": "mixed_standard_heat_and_place_3",
+      "task_type": "heat_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly heats the egg before finding and opening the microwave, which disrupts the logical sequence of actions needed to complete the task."
+    },
+    {
+      "example_id": "mixed_standard_heat_and_place_4",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several necessary actions, including finding and opening the microwave, and closing it after heating, as well as finding the dining table before placing the tomato on it."
+    },
+    {
+      "example_id": "mixed_standard_heat_and_place_5",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several necessary actions such as 'pick_up potato', 'find microwave', 'open microwave', 'close microwave', and 'find sink', which are crucial for correctly executing the task."
+    },
+    {
+      "example_id": "mixed_standard_heat_and_place_6",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and open the microwave, as well as closing it after heating the bread, which are necessary for warming up the bread."
+    },
+    {
+      "example_id": "mixed_standard_heat_and_place_7",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and open the microwave, as well as the step to close the microwave after heating the apple."
+    },
+    {
+      "example_id": "mixed_standard_heat_and_place_8",
+      "task_type": "heat_and_place",
+      "error_category": "wrong_destination",
+      "reason": "The generated plan incorrectly places the egg in the microwave instead of the bowl after heating, which is not the intended destination."
+    },
+    {
+      "example_id": "mixed_standard_heat_and_place_9",
+      "task_type": "heat_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan heats the tomato without specifying the use of a microwave, and it places the tomato on the dining table without finding it first, indicating incorrect sequencing of actions."
+    },
+    {
+      "example_id": "mixed_standard_heat_and_place_10",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and open the microwave before heating the potato, and also skips closing the microwave after heating."
+    },
+    {
+      "example_id": "mixed_standard_heat_and_place_11",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and open the microwave before heating the bread, and also skips closing the microwave after heating."
+    },
+    {
+      "example_id": "mixed_standard_heat_and_place_12",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and open the microwave, as well as the step to close the microwave after heating the apple."
+    },
+    {
+      "example_id": "mixed_standard_heat_and_place_13",
+      "task_type": "heat_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by attempting to heat the egg before finding and opening the microwave, which is necessary for the heating process."
+    },
+    {
+      "example_id": "mixed_standard_heat_and_place_14",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and use the microwave, specifically 'find microwave', 'open microwave', and 'close microwave', which are necessary for heating the tomato."
+    },
+    {
+      "example_id": "mixed_standard_heat_and_place_15",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several critical actions such as 'pick_up potato', 'find microwave', 'open microwave', 'close microwave', and 'find sink', which are necessary to correctly execute the task."
+    },
+    {
+      "example_id": "mixed_standard_heat_and_place_16",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several critical actions such as picking up the bread, finding and opening the microwave, and closing the microwave after heating, which are necessary to complete the task."
+    },
+    {
+      "example_id": "mixed_standard_heat_and_place_17",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and operate the microwave, specifically 'find microwave', 'open microwave', and 'close microwave', which are necessary for heating the apple."
+    },
+    {
+      "example_id": "mixed_standard_cool_and_place_0",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the crucial steps of finding and opening the fridge before cooling the apple, and also fails to close the fridge after cooling."
+    },
+    {
+      "example_id": "mixed_standard_cool_and_place_1",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly heats the potato before cooling it, which contradicts the instruction to chill the already heated potato."
+    },
+    {
+      "example_id": "mixed_standard_cool_and_place_2",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly starts with finding the fridge and cooling the bread before picking it up, and it omits the steps of opening and closing the fridge, leading to an incorrect sequence of actions."
+    },
+    {
+      "example_id": "mixed_standard_cool_and_place_3",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and open the fridge, which are necessary to cool the tomato, and also skips closing the fridge after cooling."
+    },
+    {
+      "example_id": "mixed_standard_cool_and_place_4",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and open the fridge, which are necessary to cool the lettuce, and also skips closing the fridge after cooling."
+    },
+    {
+      "example_id": "mixed_standard_cool_and_place_5",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several necessary actions such as picking up the apple, finding and interacting with the fridge, and closing the fridge, which are essential for cooling the apple before placing it on the counter top."
+    },
+    {
+      "example_id": "mixed_standard_cool_and_place_6",
+      "task_type": "cool_and_place",
+      "error_category": "wrong_destination",
+      "reason": "The generated plan incorrectly places the potato in a bowl instead of chilling it in the fridge, which is the required destination for cooling."
+    },
+    {
+      "example_id": "mixed_standard_cool_and_place_7",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and open the fridge, which are necessary to cool the bread, and it also skips closing the fridge after cooling."
+    },
+    {
+      "example_id": "mixed_standard_cool_and_place_8",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find, open, and close the fridge, which are necessary for chilling the tomato before placing it on the counter top."
+    },
+    {
+      "example_id": "mixed_standard_cool_and_place_9",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several critical actions such as 'find fridge', 'open fridge', and 'close fridge', which are necessary for cooling the lettuce properly."
+    },
+    {
+      "example_id": "mixed_standard_cool_and_place_10",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to cool the apple before placing it in the fridge, which is incorrect as the apple needs to be cooled inside the fridge before being placed on the counter top."
+    },
+    {
+      "example_id": "mixed_standard_cool_and_place_11",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by attempting to cool the potato after picking it up without first opening the fridge, and it also finds the plate before cooling the potato."
+    },
+    {
+      "example_id": "mixed_standard_cool_and_place_12",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several critical actions such as 'find bread', 'pick_up bread', and 'open fridge', which are necessary to properly execute the task of cooling the bread and placing it on the dining table."
+    },
+    {
+      "example_id": "mixed_standard_cool_and_place_13",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to cool the tomato without first finding and opening the fridge, which disrupts the logical sequence of actions needed to chill the vegetable."
+    },
+    {
+      "example_id": "mixed_standard_cool_and_place_14",
+      "task_type": "cool_and_place",
+      "error_category": "wrong_destination",
+      "reason": "The generated plan incorrectly places the lettuce in the fridge instead of cooling it inside and then placing it in the bowl, which is the intended destination."
+    },
+    {
+      "example_id": "mixed_standard_cool_and_place_15",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to cool the apple before placing it in the fridge, which is incorrect as the apple needs to be cooled inside the fridge first."
+    },
+    {
+      "example_id": "mixed_standard_cool_and_place_16",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and open the fridge, as well as closing it after cooling the potato, which are necessary for chilling the potato before placing it on the plate."
+    },
+    {
+      "example_id": "mixed_standard_cool_and_place_17",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the crucial steps of finding and opening the fridge to cool the bread, as well as closing the fridge after cooling."
+    },
+    {
+      "example_id": "mixed_standard_examine_in_light_0",
+      "task_type": "examine_in_light",
+      "error_category": "attributive_misid",
+      "reason": "The agent incorrectly identified the target object as a 'Book' instead of the 'credit card', leading to examining the wrong object."
+    },
+    {
+      "example_id": "mixed_standard_examine_in_light_1",
+      "task_type": "examine_in_light",
+      "error_category": "pronoun_failure",
+      "reason": "The agent misinterpreted 'it' in the instruction, leading to a failure to identify and manipulate the target object, the pen, and instead focused on the desk lamp and desk."
+    },
+    {
+      "example_id": "mixed_standard_examine_in_light_2",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan turns on the floor lamp before picking up the watch, which prevents the agent from examining the watch by the light of the lamp as instructed."
+    },
+    {
+      "example_id": "mixed_standard_examine_in_light_3",
+      "task_type": "examine_in_light",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the actions to find and pick up the key chain, which are necessary before examining it under the desk lamp."
+    },
+    {
+      "example_id": "mixed_standard_examine_in_light_4",
+      "task_type": "examine_in_light",
+      "error_category": "attributive_misid",
+      "reason": "The agent incorrectly identified the target object as 'FloorLamp' instead of 'pillow', leading to a sequence of actions that manipulated the wrong object."
+    },
+    {
+      "example_id": "mixed_standard_examine_in_light_5",
+      "task_type": "examine_in_light",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the actions to find and pick up the credit card before examining it, which are necessary steps to complete the task."
+    },
+    {
+      "example_id": "mixed_standard_examine_in_light_6",
+      "task_type": "examine_in_light",
+      "error_category": "action_omission",
+      "reason": "The generated plan fails to include actions related to finding, picking up, and examining the pen, which are crucial steps in the task."
+    },
+    {
+      "example_id": "mixed_standard_examine_in_light_7",
+      "task_type": "examine_in_light",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the actions to 'find watch' and 'pick_up watch', which are necessary before examining it by the light of the floor lamp."
+    },
+    {
+      "example_id": "mixed_standard_examine_in_light_8",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by attempting to examine the key chain before turning on the desk lamp, which is necessary for inspection."
+    },
+    {
+      "example_id": "mixed_standard_examine_in_light_9",
+      "task_type": "examine_in_light",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the 'examine pillow' action, which is necessary to complete the task as specified in the ground truth plan."
+    },
+    {
+      "example_id": "mixed_standard_examine_in_light_10",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to examine the credit card before it has been found and picked up, which disrupts the logical sequence of actions needed to complete the task."
+    },
+    {
+      "example_id": "mixed_standard_examine_in_light_11",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly prioritizes actions related to the desk lamp and desk, failing to address the primary task of examining the pen under the lamp."
+    },
+    {
+      "example_id": "mixed_standard_examine_in_light_12",
+      "task_type": "examine_in_light",
+      "error_category": "attributive_misid",
+      "reason": "The generated plan incorrectly identifies the target object as 'CellPhone' instead of 'watch', leading to an examination of the wrong object."
+    },
+    {
+      "example_id": "mixed_standard_examine_in_light_13",
+      "task_type": "examine_in_light",
+      "error_category": "attributive_misid",
+      "reason": "The generated plan incorrectly identifies and manipulates objects unrelated to the task, such as 'Desk' and 'Book', instead of focusing on the 'key chain' under the 'desk lamp'."
+    },
+    {
+      "example_id": "mixed_noised_pick_and_place_3",
+      "task_type": "pick_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the step to 'find side table' before putting down the remote control, which is necessary to ensure the correct placement of the object."
+    },
+    {
+      "example_id": "mixed_noised_pick_and_place_7",
+      "task_type": "pick_and_place",
+      "error_category": "attributive_misid",
+      "reason": "The generated plan incorrectly identifies the target object as 'HousePlant' instead of the correct 'vase', leading to manipulation of the wrong object."
+    },
+    {
+      "example_id": "mixed_noised_pick_and_place_13",
+      "task_type": "pick_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the action 'find side table' before attempting to 'put_down RemoteControl SideTable', leading to a failure in correctly executing the task."
+    },
+    {
+      "example_id": "mixed_noised_pick_and_place_14",
+      "task_type": "pick_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly finds the desk before the ink tool, whereas the correct sequence is to find and pick up the pen first before locating the desk."
+    },
+    {
+      "example_id": "mixed_noised_pick_and_place_17",
+      "task_type": "pick_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the actions 'find dining table' and 'put_down vase dining table', failing to complete the task of moving the vase to the dining table."
+    },
+    {
+      "example_id": "mixed_noised_pick_and_place_19",
+      "task_type": "pick_and_place",
+      "error_category": "attributive_misid",
+      "reason": "The generated plan incorrectly identifies the target object as 'CellPhone' instead of the correct 'watch', leading to manipulation of the wrong object."
+    },
+    {
+      "example_id": "mixed_noised_stack_and_place_5",
+      "task_type": "stack_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by attempting to place the ink tool in the mug before picking it up, and it also places the ink tool directly on the desk instead of placing the mug on the desk."
+    },
+    {
+      "example_id": "mixed_noised_stack_and_place_8",
+      "task_type": "stack_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly sequences the actions by attempting to pick up the ink tool after finding the desk, and it also places the ink tool directly on the desk without first placing it in the mug."
+    },
+    {
+      "example_id": "mixed_noised_stack_and_place_17",
+      "task_type": "stack_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by attempting to place the ink tool on the desk before placing it in the mug, which deviates from the required sequence of placing the ink tool in the mug first."
+    },
+    {
+      "example_id": "mixed_noised_clean_and_place_2",
+      "task_type": "clean_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the step to find the sink before cleaning the cup, which is necessary for the cleaning action to be performed correctly."
+    },
+    {
+      "example_id": "mixed_noised_clean_and_place_7",
+      "task_type": "clean_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by attempting to clean the mug before picking it up, and it also finds the shelf before the mug, which disrupts the logical sequence of actions."
+    },
+    {
+      "example_id": "mixed_noised_clean_and_place_12",
+      "task_type": "clean_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by attempting to clean the mug before picking it up, and it also finds the shelf before the mug, which disrupts the logical sequence of actions needed to complete the task."
+    },
+    {
+      "example_id": "mixed_noised_clean_and_place_13",
+      "task_type": "clean_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to clean the potato before picking it up, which is an incorrect sequence of actions."
+    },
+    {
+      "example_id": "mixed_noised_heat_and_place_0",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several necessary actions such as finding and opening the microwave, and finding the sink, which are crucial for correctly heating the potato and placing it in the sink."
+    },
+    {
+      "example_id": "mixed_noised_heat_and_place_1",
+      "task_type": "heat_and_place",
+      "error_category": "hallucinated_action",
+      "reason": "The generated plan includes a 'slice Bread' action which is not present in the ground truth plan, indicating an unnecessary action that was not instructed."
+    },
+    {
+      "example_id": "mixed_noised_heat_and_place_2",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and open the microwave, as well as the step to close it after heating the apple, which are necessary for correctly executing the task."
+    },
+    {
+      "example_id": "mixed_noised_heat_and_place_3",
+      "task_type": "heat_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to heat the egg before finding and opening the microwave, which disrupts the logical sequence of actions needed to complete the task."
+    },
+    {
+      "example_id": "mixed_noised_heat_and_place_4",
+      "task_type": "heat_and_place",
+      "error_category": "hallucinated_action",
+      "reason": "The generated plan includes numerous unnecessary and repetitive actions such as 'slice Tomato' and excessive 'put_down Slice' actions, which are not part of the task and lead to failure."
+    },
+    {
+      "example_id": "mixed_noised_heat_and_place_5",
+      "task_type": "heat_and_place",
+      "error_category": "attributive_misid",
+      "reason": "The generated plan incorrectly identifies 'Plate' as the object to be heated and placed in the sink, instead of the target object 'potato'."
+    },
+    {
+      "example_id": "mixed_noised_heat_and_place_6",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and open the microwave before heating the bread, and also skips closing the microwave after heating."
+    },
+    {
+      "example_id": "mixed_noised_heat_and_place_7",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and open the microwave before heating the apple, and also omits closing the microwave after heating."
+    },
+    {
+      "example_id": "mixed_noised_heat_and_place_8",
+      "task_type": "heat_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly heats the egg before finding and opening the microwave, which disrupts the logical sequence of actions needed to complete the task."
+    },
+    {
+      "example_id": "mixed_noised_heat_and_place_9",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and use the microwave, specifically 'find microwave', 'open microwave', and 'close microwave', which are necessary for heating the tomato."
+    },
+    {
+      "example_id": "mixed_noised_heat_and_place_10",
+      "task_type": "heat_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders actions by attempting to heat the potato before placing it in the microwave and also includes unnecessary actions like 'clean Potato' and redundant 'done' steps."
+    },
+    {
+      "example_id": "mixed_noised_heat_and_place_11",
+      "task_type": "heat_and_place",
+      "error_category": "hallucinated_action",
+      "reason": "The generated plan includes actions like 'slice Bread' and 'open Plate' which are not part of the ground truth plan and are unnecessary for the task of warming and placing the bread on a plate."
+    },
+    {
+      "example_id": "mixed_noised_heat_and_place_12",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and open the microwave, as well as the step to close it after heating the apple, which are necessary for correctly executing the task."
+    },
+    {
+      "example_id": "mixed_noised_heat_and_place_13",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several critical actions such as finding the microwave, opening it, and closing it after heating the egg, which are necessary steps for properly heating the egg."
+    },
+    {
+      "example_id": "mixed_noised_heat_and_place_14",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and open the microwave, as well as the step to close it after heating the tomato, which are necessary for correctly executing the task."
+    },
+    {
+      "example_id": "mixed_noised_heat_and_place_15",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several necessary actions, including finding and opening the microwave, as well as closing it after heating, which are crucial for correctly heating the potato before placing it in the sink."
+    },
+    {
+      "example_id": "mixed_noised_heat_and_place_16",
+      "task_type": "heat_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly heats the bread before placing it in the microwave and attempts to put it down in the microwave after heating, disrupting the logical sequence of actions."
+    },
+    {
+      "example_id": "mixed_noised_heat_and_place_17",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and operate the microwave, specifically 'find microwave', 'open microwave', and 'close microwave', which are necessary to properly heat the apple."
+    },
+    {
+      "example_id": "mixed_noised_cool_and_place_0",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find the fridge, open it, and close it after cooling the apple, which are necessary actions to properly cool the apple before placing it on the counter top."
+    },
+    {
+      "example_id": "mixed_noised_cool_and_place_1",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly places the potato in the fridge before cooling it and then attempts to cool the potato after placing it on the plate, which disrupts the logical sequence of actions needed to chill the potato before placing it on the plate."
+    },
+    {
+      "example_id": "mixed_noised_cool_and_place_2",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by attempting to cool the bread before picking it up and placing it in the fridge, and it also places the bread in the fridge after cooling, which is unnecessary."
+    },
+    {
+      "example_id": "mixed_noised_cool_and_place_3",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and open the fridge, which are necessary to cool the tomato, and also skips closing the fridge after cooling."
+    },
+    {
+      "example_id": "mixed_noised_cool_and_place_4",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by attempting to cool the lettuce before finding and opening the fridge, and it also places the lettuce in the bowl without cooling it first."
+    },
+    {
+      "example_id": "mixed_noised_cool_and_place_5",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several necessary actions such as 'pick_up apple', 'find fridge', 'open fridge', 'close fridge', and 'find counter top', which are essential for correctly cooling the apple and placing it on the counter top."
+    },
+    {
+      "example_id": "mixed_noised_cool_and_place_6",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by placing the potato in the fridge after putting it on the plate, and attempts to cool the potato after it is already placed on the plate."
+    },
+    {
+      "example_id": "mixed_noised_cool_and_place_7",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find the fridge, open it, and close it after cooling the bread, which are necessary actions for cooling the bread properly."
+    },
+    {
+      "example_id": "mixed_noised_cool_and_place_8",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find, open, and close the fridge, which are necessary to cool the tomato before placing it on the counter top."
+    },
+    {
+      "example_id": "mixed_noised_cool_and_place_9",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by attempting to cool the lettuce before finding and opening the fridge, and it also places the lettuce in the bowl before cooling it."
+    },
+    {
+      "example_id": "mixed_noised_cool_and_place_10",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find, open, and close the fridge, which are necessary for cooling the apple."
+    },
+    {
+      "example_id": "mixed_noised_cool_and_place_11",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly places the potato in the fridge after picking it up, and then attempts to cool it after placing it on the plate, which disrupts the logical sequence of chilling the potato before placing it on the plate."
+    },
+    {
+      "example_id": "mixed_noised_cool_and_place_12",
+      "task_type": "cool_and_place",
+      "error_category": "wrong_destination",
+      "reason": "The generated plan incorrectly places the bread in the fridge instead of cooling it there, which deviates from the intended action of cooling the bread in the fridge before placing it on the dining table."
+    },
+    {
+      "example_id": "mixed_noised_cool_and_place_13",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find, open, and close the fridge, which are necessary to cool the tomato before placing it on the counter top."
+    },
+    {
+      "example_id": "mixed_noised_cool_and_place_14",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by attempting to cool the lettuce before finding and opening the fridge, and it also omits the steps to open and close the fridge, leading to a failure in properly cooling the lettuce."
+    },
+    {
+      "example_id": "mixed_noised_cool_and_place_15",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several necessary actions such as 'pick_up apple', 'find fridge', 'open fridge', and 'close fridge', which are essential for cooling the apple and placing it on the counter top."
+    },
+    {
+      "example_id": "mixed_noised_cool_and_place_16",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by placing the potato in the fridge after putting it on the plate, and attempts to cool the potato after it is already placed on the plate."
+    },
+    {
+      "example_id": "mixed_noised_cool_and_place_17",
+      "task_type": "cool_and_place",
+      "error_category": "wrong_destination",
+      "reason": "The generated plan incorrectly places the bread in the fridge instead of cooling it there, which deviates from the intended action of cooling the bread inside the fridge before placing it on the dining table."
+    },
+    {
+      "example_id": "mixed_noised_examine_in_light_0",
+      "task_type": "examine_in_light",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the actions to find and pick up the credit card before examining it, which are crucial steps in the task."
+    },
+    {
+      "example_id": "mixed_noised_examine_in_light_1",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by examining the desk before finding and examining the pen, and it also fails to toggle on the desk lamp before examining the pen."
+    },
+    {
+      "example_id": "mixed_noised_examine_in_light_2",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan turns on the floor lamp before finding and picking up the watch, which is necessary to examine it under the light."
+    },
+    {
+      "example_id": "mixed_noised_examine_in_light_3",
+      "task_type": "examine_in_light",
+      "error_category": "hallucinated_action",
+      "reason": "The generated plan includes actions like 'pick_up Desk' and 'put_down Desk [Desk]' which are not relevant or necessary for the task, indicating a misunderstanding of the task requirements."
+    },
+    {
+      "example_id": "mixed_noised_examine_in_light_4",
+      "task_type": "examine_in_light",
+      "error_category": "attributive_misid",
+      "reason": "The agent incorrectly identified the target object as 'Sofa' instead of 'pillow', leading to the wrong object being manipulated."
+    },
+    {
+      "example_id": "mixed_noised_examine_in_light_5",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to examine the credit card before it has been found and picked up, which disrupts the logical sequence of actions needed to complete the task."
+    },
+    {
+      "example_id": "mixed_noised_examine_in_light_6",
+      "task_type": "examine_in_light",
+      "error_category": "hallucinated_action",
+      "reason": "The generated plan includes a repetitive and irrelevant sequence of actions involving the desk and desk lamp, which are not part of the task to examine the pen under the desk lamp."
+    },
+    {
+      "example_id": "mixed_noised_examine_in_light_7",
+      "task_type": "examine_in_light",
+      "error_category": "attributive_misid",
+      "reason": "The generated plan incorrectly identifies the target object as a 'CellPhone' instead of the 'watch', leading to examining the wrong object."
+    },
+    {
+      "example_id": "mixed_noised_examine_in_light_8",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly starts by interacting with the desk and desk lamp instead of directly finding and picking up the key chain, leading to a misordered sequence of actions."
+    },
+    {
+      "example_id": "mixed_noised_examine_in_light_9",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly starts with turning on the lamp before picking up the cushion, which is the reverse of the required order in the instruction."
+    },
+    {
+      "example_id": "mixed_noised_examine_in_light_10",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to examine the credit card before it has been found and picked up, which disrupts the logical sequence of actions needed to complete the task."
+    },
+    {
+      "example_id": "mixed_noised_examine_in_light_11",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by attempting to interact with the desk before finding and examining the pen, which should occur after locating and turning on the desk lamp."
+    },
+    {
+      "example_id": "mixed_noised_examine_in_light_12",
+      "task_type": "examine_in_light",
+      "error_category": "attributive_misid",
+      "reason": "The generated plan incorrectly identifies the target object as 'CellPhone' instead of the correct 'watch', leading to examining the wrong object."
+    },
+    {
+      "example_id": "mixed_noised_examine_in_light_13",
+      "task_type": "examine_in_light",
+      "error_category": "attributive_misid",
+      "reason": "The generated plan incorrectly identifies and manipulates objects like 'Desk' and 'Book' instead of the target object 'key chain', indicating a misunderstanding of the task's object requirements."
+    },
+    {
+      "example_id": "mixed_short_pick_and_place_3",
+      "task_type": "pick_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the action to 'find side table' before placing the remote control on it, which is necessary to ensure the correct destination is identified."
+    },
+    {
+      "example_id": "mixed_short_pick_and_place_5",
+      "task_type": "pick_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to put down the plate on the countertop before picking it up, which is an incorrect sequence of actions."
+    },
+    {
+      "example_id": "mixed_short_pick_and_place_6",
+      "task_type": "pick_and_place",
+      "error_category": "attributive_misid",
+      "reason": "The agent incorrectly identified the target object as 'TeddyBear' instead of the 'pillow', which is the correct fluffy item to manipulate."
+    },
+    {
+      "example_id": "mixed_short_pick_and_place_12",
+      "task_type": "pick_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to put down the mug on the coffee table before picking it up, which is an incorrect sequence of actions."
+    },
+    {
+      "example_id": "mixed_short_pick_and_place_13",
+      "task_type": "pick_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the action to 'find side table' before putting down the remote control, which is necessary to ensure the correct placement of the object."
+    },
+    {
+      "example_id": "mixed_short_pick_and_place_15",
+      "task_type": "pick_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to put down the plate on the counter top before picking it up, which is an incorrect sequence of actions."
+    },
+    {
+      "example_id": "mixed_short_pick_and_place_16",
+      "task_type": "pick_and_place",
+      "error_category": "attributive_misid",
+      "reason": "The agent incorrectly identified the target object as 'TeddyBear' instead of the 'pillow', which is the correct fluffy item to manipulate."
+    },
+    {
+      "example_id": "mixed_short_pick_and_place_19",
+      "task_type": "pick_and_place",
+      "error_category": "attributive_misid",
+      "reason": "The generated plan incorrectly identifies the target object as 'CellPhone' instead of the correct object 'watch', leading to the wrong object being manipulated."
+    },
+    {
+      "example_id": "mixed_short_stack_and_place_2",
+      "task_type": "stack_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly sequences the actions by attempting to pick up the ink tool after finding the desk, and it also places the ink tool directly on the desk instead of placing the mug on the desk after putting the ink tool in it."
+    },
+    {
+      "example_id": "mixed_short_clean_and_place_1",
+      "task_type": "clean_and_place",
+      "error_category": "hallucinated_action",
+      "reason": "The generated plan includes actions for cleaning and placing additional objects (Fork, Knife, Bowl) that were not part of the instruction, which only specified washing and placing the plate."
+    },
+    {
+      "example_id": "mixed_short_clean_and_place_2",
+      "task_type": "clean_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the step to find the sink before cleaning the cup, which is necessary to complete the cleaning action properly."
+    },
+    {
+      "example_id": "mixed_short_clean_and_place_8",
+      "task_type": "clean_and_place",
+      "error_category": "hallucinated_action",
+      "reason": "The generated plan includes an unnecessary 'heat Potato' action, which is not part of the ground truth plan and leads to a deviation from the intended task of washing the already heated potato."
+    },
+    {
+      "example_id": "mixed_short_heat_and_place_0",
+      "task_type": "heat_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly heats the potato before placing it in the microwave, and also includes actions like slicing the potato and cleaning a bowl, which are unnecessary and out of order for the task."
+    },
+    {
+      "example_id": "mixed_short_heat_and_place_1",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several critical actions such as picking up the bread, opening and closing the microwave, and finding the plate, which are necessary to complete the task correctly."
+    },
+    {
+      "example_id": "mixed_short_heat_and_place_2",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and open the microwave, as well as the step to close the microwave after heating the apple."
+    },
+    {
+      "example_id": "mixed_short_heat_and_place_3",
+      "task_type": "heat_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly heats the egg before picking it up and placing it in the microwave, and also attempts to put down the egg in the microwave instead of the bowl."
+    },
+    {
+      "example_id": "mixed_short_heat_and_place_4",
+      "task_type": "heat_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by attempting to heat the tomato without specifying the use of a microwave, and it places the tomato down before finding the dining table."
+    },
+    {
+      "example_id": "mixed_short_heat_and_place_5",
+      "task_type": "heat_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly heats the potato before placing it in the microwave, and also places the potato in the microwave after heating, which disrupts the logical sequence of actions."
+    },
+    {
+      "example_id": "mixed_short_heat_and_place_6",
+      "task_type": "heat_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly slices the bread after finding it, which is unnecessary as the bread is already sliced, and it attempts to heat the bread before placing it in the microwave, disrupting the logical sequence of actions."
+    },
+    {
+      "example_id": "mixed_short_heat_and_place_7",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and operate the microwave, specifically 'find microwave', 'open microwave', and 'close microwave', which are necessary to properly heat the apple."
+    },
+    {
+      "example_id": "mixed_short_heat_and_place_8",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several critical actions such as finding the microwave, opening it, and closing it after heating the egg, which are necessary steps to properly heat the egg before placing it in the bowl."
+    },
+    {
+      "example_id": "mixed_short_heat_and_place_9",
+      "task_type": "heat_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan heats the tomato without specifying the use of a microwave and places it down before finding the dining table, disrupting the logical sequence of actions."
+    },
+    {
+      "example_id": "mixed_short_heat_and_place_10",
+      "task_type": "heat_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly heats the potato before placing it in the microwave and attempts to put it down in the microwave twice, disrupting the correct sequence of actions."
+    },
+    {
+      "example_id": "mixed_short_heat_and_place_11",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several critical actions such as picking up the bread, opening and closing the microwave, and finding the plate, which are necessary to properly execute the task."
+    },
+    {
+      "example_id": "mixed_short_heat_and_place_12",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and open the microwave, as well as the step to close it after heating the apple, which are necessary for correctly executing the task."
+    },
+    {
+      "example_id": "mixed_short_heat_and_place_13",
+      "task_type": "heat_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly heats the egg before finding and opening the microwave, which disrupts the logical sequence of actions needed to complete the task."
+    },
+    {
+      "example_id": "mixed_short_heat_and_place_14",
+      "task_type": "heat_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to heat the tomato without specifying the use of a microwave, and it places the tomato down before finding the dining table, disrupting the logical sequence of actions."
+    },
+    {
+      "example_id": "mixed_short_heat_and_place_15",
+      "task_type": "heat_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly heats the potato before placing it in the microwave and also places the potato in the microwave after heating, which disrupts the logical sequence of actions."
+    },
+    {
+      "example_id": "mixed_short_heat_and_place_16",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several critical actions such as picking up the bread, opening and closing the microwave, and finding the plate, which are necessary to complete the task correctly."
+    },
+    {
+      "example_id": "mixed_short_heat_and_place_17",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and open the microwave before heating the apple, and also skips closing the microwave after heating."
+    },
+    {
+      "example_id": "mixed_short_cool_and_place_0",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find, open, and close the fridge, which are necessary to cool the apple."
+    },
+    {
+      "example_id": "mixed_short_cool_and_place_1",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find the fridge, open the fridge, and close the fridge, which are necessary for chilling the potato."
+    },
+    {
+      "example_id": "mixed_short_cool_and_place_2",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by attempting to cool the bread without first finding and opening the fridge, and it also places the bread down before finding the dining table."
+    },
+    {
+      "example_id": "mixed_short_cool_and_place_3",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find, open, and close the fridge, which are necessary to cool the tomato before placing it on the counter top."
+    },
+    {
+      "example_id": "mixed_short_cool_and_place_4",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to cool the lettuce without first finding and opening the fridge, and it also places the lettuce in the bowl before cooling it, which is out of order."
+    },
+    {
+      "example_id": "mixed_short_cool_and_place_5",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find, open, and close the fridge, which are necessary for cooling the apple."
+    },
+    {
+      "example_id": "mixed_short_cool_and_place_6",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and open the fridge, which are necessary to cool the potato, and also skips the step to find the plate before placing the potato on it."
+    },
+    {
+      "example_id": "mixed_short_cool_and_place_7",
+      "task_type": "cool_and_place",
+      "error_category": "hallucinated_action",
+      "reason": "The generated plan includes the action 'slice Bread', which is not part of the ground truth plan, indicating a hallucinated action that was not instructed."
+    },
+    {
+      "example_id": "mixed_short_cool_and_place_8",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by attempting to cool the tomato before picking it up and opening the fridge, which disrupts the logical sequence needed to complete the task."
+    },
+    {
+      "example_id": "mixed_short_cool_and_place_9",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to cool the lettuce before picking it up and opening the fridge, which disrupts the logical sequence of actions needed to cool the lettuce properly."
+    },
+    {
+      "example_id": "mixed_short_cool_and_place_10",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the crucial steps of finding, opening, and closing the fridge, which are necessary for cooling the apple."
+    },
+    {
+      "example_id": "mixed_short_cool_and_place_11",
+      "task_type": "cool_and_place",
+      "error_category": "wrong_destination",
+      "reason": "The generated plan incorrectly places the potato in a bowl instead of on a plate, which is the specified destination in the instruction."
+    },
+    {
+      "example_id": "mixed_short_cool_and_place_12",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by cooling the bread without specifying a location, and it places the bread down before finding the dining table, disrupting the logical sequence of actions."
+    },
+    {
+      "example_id": "mixed_short_cool_and_place_13",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to cool the tomato without first finding and opening the fridge, leading to an incorrect sequence of actions."
+    },
+    {
+      "example_id": "mixed_short_cool_and_place_14",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to cool the lettuce before picking it up and opening the fridge, which disrupts the logical sequence of actions needed to cool the lettuce properly."
+    },
+    {
+      "example_id": "mixed_short_cool_and_place_15",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find, open, and close the fridge, which are necessary for cooling the apple."
+    },
+    {
+      "example_id": "mixed_short_cool_and_place_16",
+      "task_type": "cool_and_place",
+      "error_category": "wrong_destination",
+      "reason": "The generated plan incorrectly places the potato in a bowl instead of on a plate, which is the specified destination in the instruction."
+    },
+    {
+      "example_id": "mixed_short_cool_and_place_17",
+      "task_type": "cool_and_place",
+      "error_category": "hallucinated_action",
+      "reason": "The generated plan includes an unnecessary 'slice Bread' action, which was not part of the instruction, and incorrectly involves a 'Plate' that was not mentioned, leading to a deviation from the intended task."
+    },
+    {
+      "example_id": "mixed_short_examine_in_light_0",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly starts by finding and toggling the floor lamp before locating and picking up the credit card, which disrupts the logical sequence of examining the credit card by the light of the lamp."
+    },
+    {
+      "example_id": "mixed_short_examine_in_light_1",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly prioritizes examining the desk lamp before the pen, and includes unnecessary actions like 'open DeskLamp', deviating from the correct sequence of examining the pen under the lamp."
+    },
+    {
+      "example_id": "mixed_short_examine_in_light_2",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan examines the timepiece before picking it up, which is incorrect as the watch needs to be picked up before it can be examined."
+    },
+    {
+      "example_id": "mixed_short_examine_in_light_3",
+      "task_type": "examine_in_light",
+      "error_category": "hallucinated_action",
+      "reason": "The generated plan includes actions like 'pick_up Desk' and 'put_down Desk [Desk]' which are not relevant or possible in the context of the task, indicating a misunderstanding of the task requirements."
+    },
+    {
+      "example_id": "mixed_short_examine_in_light_4",
+      "task_type": "examine_in_light",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the action to 'examine pillow' after turning on the lamp, which is present in the ground truth plan."
+    },
+    {
+      "example_id": "mixed_short_examine_in_light_5",
+      "task_type": "examine_in_light",
+      "error_category": "attributive_misid",
+      "reason": "The agent misidentified the 'small plastic thing' as a generic object rather than specifically identifying it as the 'credit card', leading to an incorrect examination target."
+    },
+    {
+      "example_id": "mixed_short_examine_in_light_6",
+      "task_type": "examine_in_light",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits crucial actions such as finding and picking up the pen, as well as toggling on the desk lamp, which are necessary to examine the pen under the lamp."
+    },
+    {
+      "example_id": "mixed_short_examine_in_light_7",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan examines the timepiece before picking it up, which is incorrect as the watch needs to be picked up before it can be examined by the light of the floor lamp."
+    },
+    {
+      "example_id": "mixed_short_examine_in_light_8",
+      "task_type": "examine_in_light",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several necessary actions, such as finding and picking up the key chain, and toggling on the desk lamp, which are crucial for inspecting the item under the lamp."
+    },
+    {
+      "example_id": "mixed_short_examine_in_light_9",
+      "task_type": "examine_in_light",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the 'examine pillow' action, which is necessary to complete the task as per the ground truth plan."
+    },
+    {
+      "example_id": "mixed_short_examine_in_light_10",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to examine the credit card before it has been picked up, which disrupts the logical sequence of actions needed to complete the task."
+    },
+    {
+      "example_id": "mixed_short_examine_in_light_11",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly starts by finding and examining the desk lamp and desk before locating and examining the writing instrument, which disrupts the logical sequence needed to complete the task."
+    },
+    {
+      "example_id": "mixed_short_examine_in_light_12",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by turning on the floor lamp before finding the timepiece, and it also attempts to examine the timepiece without picking it up first."
+    },
+    {
+      "example_id": "mixed_short_examine_in_light_13",
+      "task_type": "examine_in_light",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the actions to find and pick up the key chain, as well as the action to toggle on the desk lamp, which are necessary steps before examining the key chain under the lamp."
+    },
+    {
+      "example_id": "implicit_standard_pick_and_place_0",
+      "task_type": "pick_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the step to 'find dining table' before attempting to 'put_down the round fruit DiningTable', leading to a failure in correctly executing the task."
+    },
+    {
+      "example_id": "implicit_standard_pick_and_place_3",
+      "task_type": "pick_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the action 'find side table' before attempting to 'put_down RemoteControl SideTable', leading to a failure in correctly executing the task."
+    },
+    {
+      "example_id": "implicit_standard_pick_and_place_7",
+      "task_type": "pick_and_place",
+      "error_category": "attributive_misid",
+      "reason": "The agent incorrectly identified the 'flower holder' as the target object instead of the 'vase', leading to a misidentification of the object to be manipulated."
+    },
+    {
+      "example_id": "implicit_standard_pick_and_place_9",
+      "task_type": "pick_and_place",
+      "error_category": "pronoun_failure",
+      "reason": "The generated plan uses 'it' instead of correctly identifying and manipulating the 'watch', leading to ambiguity and failure to execute the task as intended."
+    },
+    {
+      "example_id": "implicit_standard_pick_and_place_10",
+      "task_type": "pick_and_place",
+      "error_category": "pronoun_failure",
+      "reason": "The generated plan uses 'it' instead of identifying the specific target object 'apple', leading to ambiguity and failure to correctly execute the task."
+    },
+    {
+      "example_id": "implicit_standard_pick_and_place_13",
+      "task_type": "pick_and_place",
+      "error_category": "pronoun_failure",
+      "reason": "The generated plan uses 'it' instead of explicitly identifying the 'remote control', leading to ambiguity and failure to correctly identify and manipulate the target object."
+    },
+    {
+      "example_id": "implicit_standard_pick_and_place_15",
+      "task_type": "pick_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly finds the counter top before the round dish, which disrupts the logical sequence of actions needed to place the dish on the counter top."
+    },
+    {
+      "example_id": "implicit_standard_pick_and_place_17",
+      "task_type": "pick_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by attempting to find the dining table before picking up the flower holder, which deviates from the logical sequence of first picking up the object before moving it to the destination."
+    },
+    {
+      "example_id": "implicit_standard_stack_and_place_0",
+      "task_type": "stack_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly places the round vessel on the counter top before placing the apple inside it, which is the reverse of the required order in the ground truth plan."
+    },
+    {
+      "example_id": "implicit_standard_stack_and_place_1",
+      "task_type": "stack_and_place",
+      "error_category": "hallucinated_action",
+      "reason": "The generated plan includes an extra 'put_down the dinnerware on the dining table' action after placing the bowl on the dining table, which is not part of the ground truth plan and leads to an incorrect sequence of actions."
+    },
+    {
+      "example_id": "implicit_standard_stack_and_place_2",
+      "task_type": "stack_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly sequences the actions by attempting to pick up the ink tool after finding the mug and desk, leading to an incorrect execution order."
+    },
+    {
+      "example_id": "implicit_standard_stack_and_place_6",
+      "task_type": "stack_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the actions related to finding and manipulating the bowl, which is necessary to complete the task as instructed."
+    },
+    {
+      "example_id": "implicit_standard_stack_and_place_7",
+      "task_type": "stack_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly places the round dish directly on the dining table before stacking it on the bowl, which violates the required order of stacking the dish on the bowl first."
+    },
+    {
+      "example_id": "implicit_standard_stack_and_place_16",
+      "task_type": "stack_and_place",
+      "error_category": "pronoun_failure",
+      "reason": "The generated plan uses 'it' instead of specifying the 'plate', leading to ambiguity and incorrect actions, as the agent fails to correctly identify and manipulate the target object."
+    },
+    {
+      "example_id": "implicit_standard_stack_and_place_19",
+      "task_type": "stack_and_place",
+      "error_category": "pronoun_failure",
+      "reason": "The generated plan uses 'it' instead of specifying the 'plate', leading to ambiguity and incorrect actions, as the agent fails to correctly identify and manipulate the target object."
+    },
+    {
+      "example_id": "implicit_standard_clean_and_place_0",
+      "task_type": "clean_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the actions of finding and picking up the apple before cleaning it, as well as finding the sink and counter top, which are necessary steps in the ground truth plan."
+    },
+    {
+      "example_id": "implicit_standard_clean_and_place_1",
+      "task_type": "clean_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the crucial actions of 'pick_up plate' and 'find sink', which are necessary for cleaning and moving the plate to the dining table."
+    },
+    {
+      "example_id": "implicit_standard_clean_and_place_2",
+      "task_type": "clean_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to clean the cup before picking it up, which is an incorrect sequence of actions."
+    },
+    {
+      "example_id": "implicit_standard_clean_and_place_5",
+      "task_type": "clean_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the crucial step of picking up the apple before cleaning it, which is necessary for the task."
+    },
+    {
+      "example_id": "implicit_standard_clean_and_place_6",
+      "task_type": "clean_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the step to find the sink before cleaning the plate, which is necessary for the task."
+    },
+    {
+      "example_id": "implicit_standard_clean_and_place_7",
+      "task_type": "clean_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the step to find the sink before cleaning the cup-like thing, which is necessary for the cleaning action to be correctly executed."
+    },
+    {
+      "example_id": "implicit_standard_clean_and_place_8",
+      "task_type": "clean_and_place",
+      "error_category": "attributive_misid",
+      "reason": "The generated plan incorrectly identifies and refers to the target object as 'heated one' instead of 'potato', leading to a failure in correctly executing the task."
+    },
+    {
+      "example_id": "implicit_standard_clean_and_place_9",
+      "task_type": "clean_and_place",
+      "error_category": "pronoun_failure",
+      "reason": "The generated plan uses 'it' instead of specifying the target object 'lettuce', leading to ambiguity and failure to correctly identify and manipulate the target object."
+    },
+    {
+      "example_id": "implicit_standard_clean_and_place_10",
+      "task_type": "clean_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the actions of picking up the apple and finding the sink before cleaning it, which are necessary steps in the ground truth plan."
+    },
+    {
+      "example_id": "implicit_standard_clean_and_place_11",
+      "task_type": "clean_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the step to find the sink before cleaning the plate, which is necessary for the washing process."
+    },
+    {
+      "example_id": "implicit_standard_clean_and_place_12",
+      "task_type": "clean_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the step to find the sink before cleaning the mug, which is necessary for the cleaning action to be performed correctly."
+    },
+    {
+      "example_id": "implicit_standard_clean_and_place_16",
+      "task_type": "clean_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the actions to 'find plate' and 'pick_up plate', which are necessary before cleaning it."
+    },
+    {
+      "example_id": "implicit_standard_clean_and_place_17",
+      "task_type": "clean_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the step to find the sink before cleaning the cup, which is necessary for the cleaning action to be performed correctly."
+    },
+    {
+      "example_id": "implicit_standard_heat_and_place_0",
+      "task_type": "heat_and_place",
+      "error_category": "pronoun_failure",
+      "reason": "The generated plan uses 'it' without correctly identifying the target object 'potato', leading to a failure in executing the task as intended."
+    },
+    {
+      "example_id": "implicit_standard_heat_and_place_1",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and open the microwave before heating the bread, and also fails to close the microwave after heating."
+    },
+    {
+      "example_id": "implicit_standard_heat_and_place_2",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and use the microwave, specifically 'find microwave', 'open microwave', and 'close microwave', which are necessary for heating the apple."
+    },
+    {
+      "example_id": "implicit_standard_heat_and_place_3",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and use the microwave, which are necessary to heat the egg properly."
+    },
+    {
+      "example_id": "implicit_standard_heat_and_place_4",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and operate the microwave, specifically 'find microwave', 'open microwave', and 'close microwave', which are necessary for heating the tomato."
+    },
+    {
+      "example_id": "implicit_standard_heat_and_place_5",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and use the microwave, specifically opening and closing it, which are necessary for heating the potato."
+    },
+    {
+      "example_id": "implicit_standard_heat_and_place_6",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several necessary actions such as finding the microwave, opening it, and placing the bread on a plate after heating, leading to an incomplete task execution."
+    },
+    {
+      "example_id": "implicit_standard_heat_and_place_7",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps of finding and using the microwave to heat the apple, which are crucial for completing the task as instructed."
+    },
+    {
+      "example_id": "implicit_standard_heat_and_place_8",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and operate the microwave, specifically 'find microwave', 'open microwave', and 'close microwave', which are necessary for heating the egg."
+    },
+    {
+      "example_id": "implicit_standard_heat_and_place_9",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several critical actions such as picking up the tomato, finding and using the microwave, and closing it after heating, which are necessary to complete the task correctly."
+    },
+    {
+      "example_id": "implicit_standard_heat_and_place_10",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several necessary actions such as 'pick_up potato', 'find microwave', 'open microwave', and 'close microwave', which are essential for correctly heating the potato and placing it in the sink."
+    },
+    {
+      "example_id": "implicit_standard_heat_and_place_11",
+      "task_type": "heat_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan heats the bread before placing it in the microwave, and places it on the countertop instead of a plate, indicating incorrect sequencing of actions."
+    },
+    {
+      "example_id": "implicit_standard_heat_and_place_12",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several critical actions such as finding and using the microwave to heat the apple, and finding the counter top before placing the apple on it."
+    },
+    {
+      "example_id": "implicit_standard_heat_and_place_13",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several critical actions such as identifying the target object (egg), finding and interacting with the microwave, and specifying the destination (bowl), leading to an incomplete and non-functional sequence."
+    },
+    {
+      "example_id": "implicit_standard_heat_and_place_14",
+      "task_type": "heat_and_place",
+      "error_category": "pronoun_failure",
+      "reason": "The generated plan uses 'it' instead of specifying the target object 'tomato', leading to ambiguity and failure to correctly identify and manipulate the target object."
+    },
+    {
+      "example_id": "implicit_standard_heat_and_place_15",
+      "task_type": "heat_and_place",
+      "error_category": "hallucinated_action",
+      "reason": "The generated plan includes an unnecessary action 'clean the potato using the sink' which is not part of the ground truth plan, leading to a deviation from the intended task."
+    },
+    {
+      "example_id": "implicit_standard_heat_and_place_16",
+      "task_type": "heat_and_place",
+      "error_category": "hallucinated_action",
+      "reason": "The generated plan includes actions like 'examine the outer layer' and 'slice the outer layer' which are not part of the ground truth plan, indicating the agent added unnecessary steps."
+    },
+    {
+      "example_id": "implicit_standard_heat_and_place_17",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several necessary actions such as picking up the apple, finding and interacting with the microwave, and closing it after heating, leading to an incomplete execution of the task."
+    },
+    {
+      "example_id": "implicit_standard_cool_and_place_0",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several necessary actions such as picking up the apple, finding and interacting with the fridge, and closing the fridge after cooling the apple."
+    },
+    {
+      "example_id": "implicit_standard_cool_and_place_1",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find, open, and close the fridge, which are necessary to properly chill the potato before placing it on the plate."
+    },
+    {
+      "example_id": "implicit_standard_cool_and_place_2",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find, open, and close the fridge, which are necessary for cooling the bread."
+    },
+    {
+      "example_id": "implicit_standard_cool_and_place_3",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the actions of finding and opening the fridge, as well as closing it after cooling the tomato, which are necessary steps in the ground truth plan."
+    },
+    {
+      "example_id": "implicit_standard_cool_and_place_4",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and open the fridge before cooling the lettuce, and it also skips closing the fridge and finding the bowl before placing the lettuce in it."
+    },
+    {
+      "example_id": "implicit_standard_cool_and_place_5",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and open the fridge, which are necessary to cool the apple, and also fails to close the fridge after cooling."
+    },
+    {
+      "example_id": "implicit_standard_cool_and_place_6",
+      "task_type": "cool_and_place",
+      "error_category": "pronoun_failure",
+      "reason": "The generated plan uses 'it' without correctly identifying the target object 'potato', leading to a failure in executing the correct actions on the intended object."
+    },
+    {
+      "example_id": "implicit_standard_cool_and_place_7",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to cool the bread before it is picked up and placed in the fridge, and it incorrectly places the bread in the fridge after cooling instead of on the dining table."
+    },
+    {
+      "example_id": "implicit_standard_cool_and_place_8",
+      "task_type": "cool_and_place",
+      "error_category": "pronoun_failure",
+      "reason": "The generated plan uses 'it' instead of specifying the target object 'tomato', leading to ambiguity and failure to correctly identify and manipulate the target object."
+    },
+    {
+      "example_id": "implicit_standard_cool_and_place_9",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the crucial steps of finding and interacting with the fridge, which are necessary to cool the lettuce before placing it in the bowl."
+    },
+    {
+      "example_id": "implicit_standard_cool_and_place_10",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several necessary actions such as picking up the apple, finding and opening the fridge, and placing the apple on the counter top, leading to an incomplete execution of the task."
+    },
+    {
+      "example_id": "implicit_standard_cool_and_place_11",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the crucial steps of finding and opening the fridge, which are necessary to cool the potato, and it incorrectly assumes the potato can be cooled without these actions."
+    },
+    {
+      "example_id": "implicit_standard_cool_and_place_12",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the crucial steps of finding and opening the fridge to cool the bread, as well as closing the fridge after cooling, which are necessary to properly execute the task."
+    },
+    {
+      "example_id": "implicit_standard_cool_and_place_13",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly attempts to cool the tomato before finding and picking it up, and it also omits the necessary steps of opening and closing the fridge."
+    },
+    {
+      "example_id": "implicit_standard_cool_and_place_14",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several critical actions such as 'find fridge', 'open fridge', and 'close fridge', which are necessary for cooling the lettuce, as well as 'find bowl' before placing the lettuce in it."
+    },
+    {
+      "example_id": "implicit_standard_cool_and_place_15",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several necessary actions such as picking up the apple, finding and opening the fridge, and placing the apple on the counter top."
+    },
+    {
+      "example_id": "implicit_standard_cool_and_place_16",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and open the fridge, which are necessary to cool the potato, and also fails to close the fridge after cooling."
+    },
+    {
+      "example_id": "implicit_standard_cool_and_place_17",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several necessary actions such as picking up the bread, finding and opening the fridge, and placing the bread on the dining table, leading to an incomplete execution of the task."
+    },
+    {
+      "example_id": "implicit_standard_examine_in_light_0",
+      "task_type": "examine_in_light",
+      "error_category": "attributive_misid",
+      "reason": "The agent incorrectly identified the target object as 'CellPhone' instead of the 'credit card', which is the small plastic thing to be examined."
+    },
+    {
+      "example_id": "implicit_standard_examine_in_light_1",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by examining the pen before turning on the desk lamp, which is necessary to see the pen properly."
+    },
+    {
+      "example_id": "implicit_standard_examine_in_light_2",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan turns on the floor lamp before picking up the watch, which prevents examining the watch by the light of the lamp as intended."
+    },
+    {
+      "example_id": "implicit_standard_examine_in_light_3",
+      "task_type": "examine_in_light",
+      "error_category": "hallucinated_action",
+      "reason": "The generated plan includes actions involving objects like 'Desk', 'CellPhone', 'Book', and 'Pen' that are not relevant to the task, indicating hallucinated actions unrelated to the target object 'key chain'."
+    },
+    {
+      "example_id": "implicit_standard_examine_in_light_4",
+      "task_type": "examine_in_light",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the 'examine pillow' action, which is necessary to complete the task as specified in the ground truth plan."
+    },
+    {
+      "example_id": "implicit_standard_examine_in_light_5",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to examine the credit card before it has been picked up, which disrupts the logical sequence of actions needed to complete the task."
+    },
+    {
+      "example_id": "implicit_standard_examine_in_light_6",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by examining the pen before turning on the desk lamp, which is necessary to properly view the pen."
+    },
+    {
+      "example_id": "implicit_standard_examine_in_light_7",
+      "task_type": "examine_in_light",
+      "error_category": "attributive_misid",
+      "reason": "The generated plan incorrectly identifies the target object as 'CellPhone' instead of 'watch', leading to an examination of the wrong object."
+    },
+    {
+      "example_id": "implicit_standard_examine_in_light_8",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by attempting to examine the key chain before turning on the desk lamp, which is necessary for inspection."
+    },
+    {
+      "example_id": "implicit_standard_examine_in_light_10",
+      "task_type": "examine_in_light",
+      "error_category": "attributive_misid",
+      "reason": "The agent incorrectly identified the target object as 'CellPhone' instead of the 'credit card', which is the small plastic thing to be examined."
+    },
+    {
+      "example_id": "implicit_standard_examine_in_light_11",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan examines the pen before turning on the desk lamp, which is necessary to properly look at the pen under the lamp's light."
+    },
+    {
+      "example_id": "implicit_standard_examine_in_light_12",
+      "task_type": "examine_in_light",
+      "error_category": "attributive_misid",
+      "reason": "The generated plan incorrectly identifies the target object as 'CellPhone' instead of 'watch', leading to an examination of the wrong object."
+    },
+    {
+      "example_id": "implicit_standard_examine_in_light_13",
+      "task_type": "examine_in_light",
+      "error_category": "pronoun_failure",
+      "reason": "The generated plan uses 'it' ambiguously, failing to specify the key chain as the object to be examined, leading to incorrect actions and omissions."
+    },
+    {
+      "example_id": "implicit_noised_pick_and_place_3",
+      "task_type": "pick_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the step to 'find side table' before placing the remote control, which is necessary to ensure the correct destination is identified."
+    },
+    {
+      "example_id": "implicit_noised_pick_and_place_13",
+      "task_type": "pick_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the step to 'find side table' before putting down the remote control, which is necessary to ensure the correct placement of the object."
+    },
+    {
+      "example_id": "implicit_noised_pick_and_place_19",
+      "task_type": "pick_and_place",
+      "error_category": "attributive_misid",
+      "reason": "The agent incorrectly identified the target object as 'CellPhone' instead of the 'watch', leading to the wrong object being manipulated throughout the plan."
+    },
+    {
+      "example_id": "implicit_noised_stack_and_place_11",
+      "task_type": "stack_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly sequences actions by attempting to pick up the 'ink tool' before finding it, and it prematurely ends the task without placing the mug on the desk."
+    },
+    {
+      "example_id": "implicit_noised_clean_and_place_13",
+      "task_type": "clean_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to clean the potato before picking it up, which is an incorrect sequence of actions."
+    },
+    {
+      "example_id": "implicit_noised_clean_and_place_15",
+      "task_type": "clean_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to clean the 'red one' before picking it up, which is not possible, leading to an incorrect sequence of actions."
+    },
+    {
+      "example_id": "implicit_noised_clean_and_place_16",
+      "task_type": "clean_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to clean the plate before picking it up, which is an incorrect sequence of actions, leading to the failure in executing the task."
+    },
+    {
+      "example_id": "implicit_noised_heat_and_place_0",
+      "task_type": "heat_and_place",
+      "error_category": "attributive_misid",
+      "reason": "The generated plan incorrectly identifies 'Plate' as the object to be heated and placed in the sink, instead of the correct target object, 'potato'."
+    },
+    {
+      "example_id": "implicit_noised_heat_and_place_1",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and open the microwave before heating the bread, and also skips closing the microwave after heating."
+    },
+    {
+      "example_id": "implicit_noised_heat_and_place_2",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and open the microwave, as well as the step to close the microwave after heating the apple."
+    },
+    {
+      "example_id": "implicit_noised_heat_and_place_3",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and open the microwave before heating the egg, and also fails to close the microwave after heating."
+    },
+    {
+      "example_id": "implicit_noised_heat_and_place_4",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and use the microwave, specifically opening and closing it, which are necessary for heating the tomato."
+    },
+    {
+      "example_id": "implicit_noised_heat_and_place_5",
+      "task_type": "heat_and_place",
+      "error_category": "attributive_misid",
+      "reason": "The generated plan incorrectly identifies 'Microwave' as the object to be manipulated instead of the 'potato', leading to actions being performed on the wrong object."
+    },
+    {
+      "example_id": "implicit_noised_heat_and_place_6",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and open the microwave before heating the bread, and also skips closing the microwave after heating."
+    },
+    {
+      "example_id": "implicit_noised_heat_and_place_7",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and open the microwave, as well as closing it after heating the apple, which are necessary for correctly executing the task."
+    },
+    {
+      "example_id": "implicit_noised_heat_and_place_8",
+      "task_type": "heat_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly heats the egg before placing it in the microwave, and also places the egg in the microwave after heating, which disrupts the logical sequence of actions."
+    },
+    {
+      "example_id": "implicit_noised_heat_and_place_9",
+      "task_type": "heat_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly heats the tomato before placing it in the microwave and also places the tomato on the microwave instead of inside it, disrupting the logical sequence of actions."
+    },
+    {
+      "example_id": "implicit_noised_heat_and_place_11",
+      "task_type": "heat_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to heat the bread before opening the microwave and places the bread in the microwave incorrectly, disrupting the logical sequence of actions needed to warm the bread."
+    },
+    {
+      "example_id": "implicit_noised_heat_and_place_12",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and open the microwave before heating the apple, and also skips closing the microwave after heating."
+    },
+    {
+      "example_id": "implicit_noised_heat_and_place_13",
+      "task_type": "heat_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly heats the egg before placing it in the microwave, and also places the egg in the microwave after heating, which disrupts the logical sequence of actions."
+    },
+    {
+      "example_id": "implicit_noised_heat_and_place_14",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and use the microwave, specifically 'find microwave', 'open microwave', and 'close microwave', which are necessary for heating the tomato."
+    },
+    {
+      "example_id": "implicit_noised_heat_and_place_15",
+      "task_type": "heat_and_place",
+      "error_category": "hallucinated_action",
+      "reason": "The generated plan incorrectly includes actions such as 'heat Microwave' and 'put_down Microwave in Sink', which are not applicable to the task of heating a potato and placing it in the sink."
+    },
+    {
+      "example_id": "implicit_noised_heat_and_place_16",
+      "task_type": "heat_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to heat the bread before opening the microwave, which is an incorrect sequence of actions."
+    },
+    {
+      "example_id": "implicit_noised_heat_and_place_17",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and open the microwave, as well as closing it after heating, which are necessary for correctly heating the apple."
+    },
+    {
+      "example_id": "implicit_noised_cool_and_place_0",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find, open, and close the fridge, which are necessary for cooling the apple."
+    },
+    {
+      "example_id": "implicit_noised_cool_and_place_1",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by attempting to cool the potato before finding and opening the fridge, which is necessary to chill the potato."
+    },
+    {
+      "example_id": "implicit_noised_cool_and_place_2",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the crucial steps of finding the fridge, opening it, and closing it after cooling the bread, which are necessary for the cooling process."
+    },
+    {
+      "example_id": "implicit_noised_cool_and_place_3",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find, open, and close the fridge, which are necessary for chilling the tomato before placing it on the counter top."
+    },
+    {
+      "example_id": "implicit_noised_cool_and_place_4",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several necessary actions such as picking up the lettuce, finding and opening the fridge, and closing the fridge after cooling the lettuce, which are essential for completing the task correctly."
+    },
+    {
+      "example_id": "implicit_noised_cool_and_place_5",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the crucial steps of finding, opening, and closing the fridge, which are necessary for cooling the apple."
+    },
+    {
+      "example_id": "implicit_noised_cool_and_place_6",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several necessary actions, including finding and opening the fridge, cooling the potato inside, closing the fridge, and finding the plate before placing the potato on it."
+    },
+    {
+      "example_id": "implicit_noised_cool_and_place_7",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by attempting to cool the bread before picking it up and opening the fridge, leading to a failure in executing the task as intended."
+    },
+    {
+      "example_id": "implicit_noised_cool_and_place_8",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the actions of finding the fridge, opening the fridge, and closing the fridge, which are necessary steps for chilling the tomato."
+    },
+    {
+      "example_id": "implicit_noised_cool_and_place_9",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to cool the lettuce before finding and opening the fridge, which is necessary for cooling, and also skips the step of placing the lettuce in the bowl after cooling."
+    },
+    {
+      "example_id": "implicit_noised_cool_and_place_10",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find, open, and close the fridge, which are necessary for cooling the apple."
+    },
+    {
+      "example_id": "implicit_noised_cool_and_place_11",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several necessary actions, including finding and opening the fridge to cool the potato, and finding the plate before placing the potato on it."
+    },
+    {
+      "example_id": "implicit_noised_cool_and_place_12",
+      "task_type": "cool_and_place",
+      "error_category": "wrong_destination",
+      "reason": "The generated plan incorrectly places the bread in the fridge instead of cooling it there, which deviates from the intended action of cooling the bread before placing it on the dining table."
+    },
+    {
+      "example_id": "implicit_noised_cool_and_place_13",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to cool the tomato without first finding and opening the fridge, which disrupts the logical sequence of actions needed to chill the tomato."
+    },
+    {
+      "example_id": "implicit_noised_cool_and_place_14",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several critical actions such as picking up the lettuce, finding and opening the fridge, and closing the fridge after cooling the lettuce, which are necessary to complete the task correctly."
+    },
+    {
+      "example_id": "implicit_noised_cool_and_place_15",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find, open, and close the fridge, which are necessary for cooling the apple."
+    },
+    {
+      "example_id": "implicit_noised_cool_and_place_16",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several necessary actions, including finding and opening the fridge to cool the potato, and finding the plate before placing the potato on it."
+    },
+    {
+      "example_id": "implicit_noised_cool_and_place_17",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several necessary actions such as picking up the bread, finding and using the fridge to cool it, and placing it on the dining table."
+    },
+    {
+      "example_id": "implicit_noised_examine_in_light_0",
+      "task_type": "examine_in_light",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the actions to find and pick up the credit card, which are necessary before examining it by the light of the floor lamp."
+    },
+    {
+      "example_id": "implicit_noised_examine_in_light_1",
+      "task_type": "examine_in_light",
+      "error_category": "hallucinated_action",
+      "reason": "The generated plan includes actions like 'put_down Pen Desk' and 'open DeskLamp' which are not part of the ground truth plan and do not logically fit the task of examining the pen under the desk lamp."
+    },
+    {
+      "example_id": "implicit_noised_examine_in_light_2",
+      "task_type": "examine_in_light",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the crucial actions of finding and picking up the watch before examining it, which are necessary to complete the task as instructed."
+    },
+    {
+      "example_id": "implicit_noised_examine_in_light_3",
+      "task_type": "examine_in_light",
+      "error_category": "hallucinated_action",
+      "reason": "The generated plan includes an action 'open DeskLamp' which is not part of the ground truth plan and is not a logical action for a desk lamp, leading to a failure in executing the task correctly."
+    },
+    {
+      "example_id": "implicit_noised_examine_in_light_4",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan turns on the lamp before picking up the pillow, which is the incorrect order according to the ground truth plan."
+    },
+    {
+      "example_id": "implicit_noised_examine_in_light_5",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to examine the credit card before it has been found and picked up, which disrupts the logical sequence of actions needed to complete the task."
+    },
+    {
+      "example_id": "implicit_noised_examine_in_light_6",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by examining the ink tool before turning on the desk lamp, which is necessary to properly look at the pen."
+    },
+    {
+      "example_id": "implicit_noised_examine_in_light_7",
+      "task_type": "examine_in_light",
+      "error_category": "pronoun_failure",
+      "reason": "The generated plan uses the pronoun 'it' without correctly identifying or manipulating the target object 'watch', leading to a failure in examining the correct object."
+    },
+    {
+      "example_id": "implicit_noised_examine_in_light_8",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly starts with actions related to the desk and lamp instead of directly finding and picking up the key chain, leading to a misordered sequence of actions."
+    },
+    {
+      "example_id": "implicit_noised_examine_in_light_9",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan turns on the lamp before picking up the pillow, which is the incorrect order of actions as per the instruction."
+    },
+    {
+      "example_id": "implicit_noised_examine_in_light_10",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to examine the credit card before it has been found and picked up, which disrupts the logical sequence of actions needed to complete the task."
+    },
+    {
+      "example_id": "implicit_noised_examine_in_light_11",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan has actions in an incorrect sequence, such as examining the pen before picking it up and toggling the desk lamp, which disrupts the logical flow needed to complete the task."
+    },
+    {
+      "example_id": "implicit_noised_examine_in_light_12",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan turns on the floor lamp before finding and picking up the watch, which disrupts the correct sequence of examining the watch under the lamp's light."
+    },
+    {
+      "example_id": "implicit_noised_examine_in_light_13",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by attempting to examine the key chain before turning on the desk lamp, which is necessary for inspection."
+    },
+    {
+      "example_id": "implicit_short_pick_and_place_3",
+      "task_type": "pick_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the action 'find side table' before attempting to 'put_down RemoteControl SideTable', which is necessary to correctly execute the task."
+    },
+    {
+      "example_id": "implicit_short_pick_and_place_5",
+      "task_type": "pick_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to put down the plate on the counter top before picking it up, which is an incorrect sequence of actions."
+    },
+    {
+      "example_id": "implicit_short_pick_and_place_6",
+      "task_type": "pick_and_place",
+      "error_category": "attributive_misid",
+      "reason": "The agent incorrectly identified the target object as 'TeddyBear' instead of the 'pillow', which is the correct fluffy item to manipulate."
+    },
+    {
+      "example_id": "implicit_short_pick_and_place_12",
+      "task_type": "pick_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by attempting to find the coffee table before picking up the mug, which disrupts the logical sequence needed to complete the task."
+    },
+    {
+      "example_id": "implicit_short_pick_and_place_13",
+      "task_type": "pick_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the action 'find side table' before attempting to 'put_down RemoteControl SideTable', leading to a failure in correctly executing the task."
+    },
+    {
+      "example_id": "implicit_short_pick_and_place_15",
+      "task_type": "pick_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to put down the plate on the counter top before picking it up, which is an incorrect sequence of actions."
+    },
+    {
+      "example_id": "implicit_short_pick_and_place_16",
+      "task_type": "pick_and_place",
+      "error_category": "attributive_misid",
+      "reason": "The agent incorrectly identified the 'fluffy item' as a 'TeddyBear' instead of the correct target object, 'pillow', leading to the wrong object being manipulated."
+    },
+    {
+      "example_id": "implicit_short_pick_and_place_19",
+      "task_type": "pick_and_place",
+      "error_category": "attributive_misid",
+      "reason": "The agent incorrectly identified the target object as 'CellPhone' instead of the correct object 'watch', leading to the wrong object being manipulated throughout the plan."
+    },
+    {
+      "example_id": "implicit_short_clean_and_place_0",
+      "task_type": "clean_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to clean the apple before picking it up, which is not possible, and it also omits the action of finding the sink before cleaning."
+    },
+    {
+      "example_id": "implicit_short_clean_and_place_1",
+      "task_type": "clean_and_place",
+      "error_category": "attributive_misid",
+      "reason": "The agent mistakenly identified the 'Sink' as the object to be washed and placed on the dining table instead of the 'plate', leading to incorrect actions."
+    },
+    {
+      "example_id": "implicit_short_clean_and_place_2",
+      "task_type": "clean_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the step to find the sink before cleaning the cup, which is necessary for the cleaning action to be performed correctly."
+    },
+    {
+      "example_id": "implicit_short_clean_and_place_3",
+      "task_type": "clean_and_place",
+      "error_category": "hallucinated_action",
+      "reason": "The generated plan includes an unnecessary 'heat Potato' action, which is not part of the ground truth plan and leads to a deviation from the task of washing the already heated potato."
+    },
+    {
+      "example_id": "implicit_short_clean_and_place_6",
+      "task_type": "clean_and_place",
+      "error_category": "hallucinated_action",
+      "reason": "The generated plan includes actions for cleaning and placing additional objects (Fork, Knife, Bowl) that were not part of the instruction, which only specified washing and placing the plate."
+    },
+    {
+      "example_id": "implicit_short_clean_and_place_7",
+      "task_type": "clean_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the 'pick_up mug' action, which is necessary before cleaning and placing the mug on the shelf."
+    },
+    {
+      "example_id": "implicit_short_clean_and_place_8",
+      "task_type": "clean_and_place",
+      "error_category": "hallucinated_action",
+      "reason": "The generated plan includes an unnecessary 'heat Potato' action, which is not part of the ground truth plan and leads to the failure of the task."
+    },
+    {
+      "example_id": "implicit_short_clean_and_place_10",
+      "task_type": "clean_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the actions 'pick_up apple' and 'find sink', which are necessary to clean the apple and place it on the counter top."
+    },
+    {
+      "example_id": "implicit_short_clean_and_place_12",
+      "task_type": "clean_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the 'pick_up mug' action, which is necessary before cleaning and placing the mug on the shelf."
+    },
+    {
+      "example_id": "implicit_short_clean_and_place_17",
+      "task_type": "clean_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the 'pick_up mug' action, which is necessary before cleaning and placing the mug on the shelf."
+    },
+    {
+      "example_id": "implicit_short_heat_and_place_0",
+      "task_type": "heat_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly heats the potato before placing it in the microwave, and also places the potato in the microwave after heating, which disrupts the logical sequence of actions."
+    },
+    {
+      "example_id": "implicit_short_heat_and_place_1",
+      "task_type": "heat_and_place",
+      "error_category": "hallucinated_action",
+      "reason": "The generated plan includes actions like 'slice Bread', 'toggle_on Microwave', and 'cool Bread' which are not part of the ground truth plan and are unnecessary for the task of warming and placing the bread on a plate."
+    },
+    {
+      "example_id": "implicit_short_heat_and_place_2",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several critical actions such as picking up the apple, finding and using the microwave, and closing it after heating, leading to an incomplete execution of the task."
+    },
+    {
+      "example_id": "implicit_short_heat_and_place_3",
+      "task_type": "heat_and_place",
+      "error_category": "hallucinated_action",
+      "reason": "The generated plan includes actions involving 'Egg Edmonds', which is not a recognized object or action, indicating a hallucination rather than following the correct sequence of actions with the target object 'egg'."
+    },
+    {
+      "example_id": "implicit_short_heat_and_place_4",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several critical actions such as picking up the tomato, finding and using the microwave, and closing it after heating, which are necessary to complete the task correctly."
+    },
+    {
+      "example_id": "implicit_short_heat_and_place_5",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several necessary actions such as finding the microwave, opening and closing it, and finding the sink, which are crucial for correctly heating the potato and placing it in the sink."
+    },
+    {
+      "example_id": "implicit_short_heat_and_place_6",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several necessary actions such as picking up the bread, opening and closing the microwave, and finding the plate before placing the bread on it."
+    },
+    {
+      "example_id": "implicit_short_heat_and_place_7",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several necessary actions such as picking up the apple, finding and using the microwave, and closing it after heating, which are essential for completing the task correctly."
+    },
+    {
+      "example_id": "implicit_short_heat_and_place_8",
+      "task_type": "heat_and_place",
+      "error_category": "attributive_misid",
+      "reason": "The agent misidentified the target object as 'Egg Edmonds' instead of 'egg', leading to incorrect actions and failure to follow the correct sequence."
+    },
+    {
+      "example_id": "implicit_short_heat_and_place_9",
+      "task_type": "heat_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly heats the tomato before placing it in the microwave, and also places the tomato on the microwave instead of inside it before heating."
+    },
+    {
+      "example_id": "implicit_short_heat_and_place_10",
+      "task_type": "heat_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by attempting to heat the potato before placing it in the microwave and also includes redundant actions like putting down the potato in the microwave twice."
+    },
+    {
+      "example_id": "implicit_short_heat_and_place_11",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several necessary actions such as picking up the bread, opening and closing the microwave, and finding the plate, which are essential for correctly warming up the bread and placing it on the plate."
+    },
+    {
+      "example_id": "implicit_short_heat_and_place_12",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and open the microwave, as well as the step to close it after heating the apple, which are necessary for correctly executing the task."
+    },
+    {
+      "example_id": "implicit_short_heat_and_place_13",
+      "task_type": "heat_and_place",
+      "error_category": "hallucinated_action",
+      "reason": "The generated plan includes actions involving 'Egg Edmonds', which is not a recognized object or action in the context, indicating a hallucination of an incorrect object or entity."
+    },
+    {
+      "example_id": "implicit_short_heat_and_place_14",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and open the microwave, as well as the step to close it after heating the tomato, which are necessary for correctly executing the task."
+    },
+    {
+      "example_id": "implicit_short_heat_and_place_15",
+      "task_type": "heat_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to heat the potato before placing it in the microwave, which is an incorrect sequence of actions."
+    },
+    {
+      "example_id": "implicit_short_heat_and_place_16",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several critical actions such as picking up the bread, opening and closing the microwave, and finding the plate, which are necessary to complete the task correctly."
+    },
+    {
+      "example_id": "implicit_short_heat_and_place_17",
+      "task_type": "heat_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several necessary actions such as 'pick_up apple', 'find microwave', 'open microwave', and 'close microwave', which are essential for correctly heating the apple and placing it on the counter top."
+    },
+    {
+      "example_id": "implicit_short_cool_and_place_0",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find, open, and close the fridge, which are necessary for cooling the apple."
+    },
+    {
+      "example_id": "implicit_short_cool_and_place_1",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly places the potato in the fridge before cooling it and then moves it to the plate before cooling, which disrupts the logical sequence of actions needed to chill the potato first."
+    },
+    {
+      "example_id": "implicit_short_cool_and_place_2",
+      "task_type": "cool_and_place",
+      "error_category": "hallucinated_action",
+      "reason": "The generated plan includes actions like 'slice Bread' and 'put_down Bread Plate' which are not part of the ground truth plan, indicating the agent added unnecessary steps that were not instructed."
+    },
+    {
+      "example_id": "implicit_short_cool_and_place_3",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to cool the tomato without first finding and opening the fridge, which disrupts the logical sequence of actions needed to chill the vegetable."
+    },
+    {
+      "example_id": "implicit_short_cool_and_place_4",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to cool the lettuce before picking it up and opening the fridge, which disrupts the logical sequence of actions needed to complete the task."
+    },
+    {
+      "example_id": "implicit_short_cool_and_place_5",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps of finding the fridge, opening it, and closing it after cooling the apple, which are necessary to properly execute the cooling action."
+    },
+    {
+      "example_id": "implicit_short_cool_and_place_6",
+      "task_type": "cool_and_place",
+      "error_category": "hallucinated_action",
+      "reason": "The generated plan includes an unnecessary 'heat Potato' action, which is not part of the ground truth plan and contradicts the instruction to chill the already heated potato."
+    },
+    {
+      "example_id": "implicit_short_cool_and_place_7",
+      "task_type": "cool_and_place",
+      "error_category": "hallucinated_action",
+      "reason": "The generated plan includes an unnecessary 'slice Bread' action, which was not part of the instruction, and incorrectly places the bread on a plate before the dining table, deviating from the task of cooling the already sliced bread and placing it directly on the dining table."
+    },
+    {
+      "example_id": "implicit_short_cool_and_place_8",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find and open the fridge, which are necessary to cool the tomato, and also skips closing the fridge after cooling."
+    },
+    {
+      "example_id": "implicit_short_cool_and_place_9",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to cool the lettuce before finding and opening the fridge, which is necessary for cooling, and also places the lettuce in the bowl before cooling it."
+    },
+    {
+      "example_id": "implicit_short_cool_and_place_10",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits several necessary actions such as 'pick_up apple', 'find fridge', 'open fridge', 'close fridge', and 'find counter top', which are essential for correctly executing the task."
+    },
+    {
+      "example_id": "implicit_short_cool_and_place_11",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find the fridge, open it, and close it after cooling the potato, which are necessary for chilling the vegetable."
+    },
+    {
+      "example_id": "implicit_short_cool_and_place_12",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by attempting to cool the bread before picking it up and without opening the fridge, leading to a failure in executing the task as intended."
+    },
+    {
+      "example_id": "implicit_short_cool_and_place_13",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to cool the tomato without first finding and opening the fridge, which disrupts the logical sequence of actions needed to chill the vegetable."
+    },
+    {
+      "example_id": "implicit_short_cool_and_place_14",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to cool the lettuce without first finding and opening the fridge, and it also places the lettuce in the bowl before cooling it, which is out of order."
+    },
+    {
+      "example_id": "implicit_short_cool_and_place_15",
+      "task_type": "cool_and_place",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the steps to find, open, and close the fridge, which are necessary for cooling the apple."
+    },
+    {
+      "example_id": "implicit_short_cool_and_place_16",
+      "task_type": "cool_and_place",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly heats the potato before cooling it, which is unnecessary and deviates from the instruction to chill the already heated potato."
+    },
+    {
+      "example_id": "implicit_short_cool_and_place_17",
+      "task_type": "cool_and_place",
+      "error_category": "hallucinated_action",
+      "reason": "The generated plan includes an unnecessary 'slice Bread' action, which was not part of the instruction, leading to a deviation from the intended task of cooling the already sliced bread."
+    },
+    {
+      "example_id": "implicit_short_examine_in_light_0",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to examine the credit card before it has been picked up, which is a misordering of actions necessary to complete the task correctly."
+    },
+    {
+      "example_id": "implicit_short_examine_in_light_1",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions, examining the desk and desk lamp before finding and picking up the pen, which leads to an incomplete and incorrect sequence of actions."
+    },
+    {
+      "example_id": "implicit_short_examine_in_light_2",
+      "task_type": "examine_in_light",
+      "error_category": "attributive_misid",
+      "reason": "The generated plan incorrectly identifies the target object as 'the small device by the light of FloorLamp' instead of the 'watch', leading to a failure in correctly executing the task."
+    },
+    {
+      "example_id": "implicit_short_examine_in_light_3",
+      "task_type": "examine_in_light",
+      "error_category": "pronoun_failure",
+      "reason": "The generated plan fails to correctly identify 'it' as the 'key chain' and instead focuses on the 'DeskLamp', leading to incorrect actions such as 'open DeskLamp' and missing actions related to the key chain."
+    },
+    {
+      "example_id": "implicit_short_examine_in_light_4",
+      "task_type": "examine_in_light",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the 'examine pillow' action, which is present in the ground truth plan, leading to an incomplete task execution."
+    },
+    {
+      "example_id": "implicit_short_examine_in_light_5",
+      "task_type": "examine_in_light",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the actions to find and pick up the credit card, which are necessary before examining it by the light of the floor lamp."
+    },
+    {
+      "example_id": "implicit_short_examine_in_light_6",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by examining the desk lamp and desk before finding and examining the pen, which should be prioritized as per the instruction."
+    },
+    {
+      "example_id": "implicit_short_examine_in_light_7",
+      "task_type": "examine_in_light",
+      "error_category": "attributive_misid",
+      "reason": "The generated plan incorrectly identifies the target object as 'CellPhone' instead of 'watch', leading to an examination of the wrong object."
+    },
+    {
+      "example_id": "implicit_short_examine_in_light_8",
+      "task_type": "examine_in_light",
+      "error_category": "pronoun_failure",
+      "reason": "The generated plan misinterprets 'it' as referring to the desk lamp instead of the key chain, leading to incorrect actions focused on the lamp rather than inspecting the key chain."
+    },
+    {
+      "example_id": "implicit_short_examine_in_light_9",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan incorrectly orders the actions by turning on the lamp before picking up the pillow, whereas the ground truth plan specifies picking up the pillow first."
+    },
+    {
+      "example_id": "implicit_short_examine_in_light_10",
+      "task_type": "examine_in_light",
+      "error_category": "action_ordering",
+      "reason": "The generated plan attempts to examine the credit card before it has been found and picked up, which disrupts the logical sequence of actions needed to complete the task."
+    },
+    {
+      "example_id": "implicit_short_examine_in_light_11",
+      "task_type": "examine_in_light",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits crucial actions such as finding and picking up the pen, as well as toggling on the desk lamp, which are necessary to examine the pen under the lamp."
+    },
+    {
+      "example_id": "implicit_short_examine_in_light_12",
+      "task_type": "examine_in_light",
+      "error_category": "attributive_misid",
+      "reason": "The generated plan incorrectly identifies the target object as a 'CellPhone' instead of the correct 'watch', leading to an examination of the wrong object."
+    },
+    {
+      "example_id": "implicit_short_examine_in_light_13",
+      "task_type": "examine_in_light",
+      "error_category": "action_omission",
+      "reason": "The generated plan omits the actions to find and pick up the key chain, as well as the action to toggle on the desk lamp, which are necessary to inspect the item under the lamp."
+    }
+  ]
+}
