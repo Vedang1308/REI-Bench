@@ -1,0 +1,221 @@
+2026-04-29 02:13:48,982 [INFO] phase1.src.device_utils: Detected NVIDIA GPU: NVIDIA A100-SXM4-80GB
+2026-04-29 02:13:49,473 [INFO] phase1.src.device_utils: Detected NVIDIA GPU: NVIDIA A100-SXM4-80GB
+2026-04-29 02:13:49,956 [INFO] phase1.src.device_utils: Detected NVIDIA GPU: NVIDIA A100-SXM4-80GB
+2026-04-29 02:13:49,956 [INFO] phase1.src.model_wrapper: Loading model: Qwen/Qwen3-8B on cuda
+2026-04-29 02:13:50,811 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-29 02:13:51,031 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-8B/b968826d9c46dd6066d109eabc6255188de91218/config.json "HTTP/1.1 200 OK"
+2026-04-29 02:13:51,566 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-8B/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-29 02:13:51,767 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-8B/b968826d9c46dd6066d109eabc6255188de91218/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-29 02:13:52,242 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-8B/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-29 02:13:52,693 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-8B/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-29 02:13:54,094 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-8B "HTTP/1.1 200 OK"
+2026-04-29 02:13:54,544 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-8B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-29 02:13:54,743 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-8B/b968826d9c46dd6066d109eabc6255188de91218/config.json "HTTP/1.1 200 OK"
+2026-04-29 02:14:19,352 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-8B/resolve/main/generation_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-29 02:14:19,537 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-8B/b968826d9c46dd6066d109eabc6255188de91218/generation_config.json "HTTP/1.1 200 OK"
+2026-04-29 02:14:20,054 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-8B/resolve/main/custom_generate/generate.py "HTTP/1.1 404 Not Found"
+2026-04-29 02:14:20,061 [INFO] phase1.src.model_wrapper: Model loaded successfully on cuda
+2026-04-29 02:14:20,075 [INFO] phase1.src.data_loader: Loaded 108 examples from explicit_standard
+2026-04-29 02:14:20,101 [INFO] phase1.src.data_loader: Loaded 108 examples from explicit_noised
+2026-04-29 02:14:20,116 [INFO] phase1.src.data_loader: Loaded 108 examples from explicit_short
+2026-04-29 02:14:20,131 [INFO] phase1.src.data_loader: Loaded 108 examples from mixed_standard
+2026-04-29 02:14:20,165 [INFO] phase1.src.data_loader: Loaded 108 examples from mixed_noised
+2026-04-29 02:14:20,180 [INFO] phase1.src.data_loader: Loaded 108 examples from mixed_short
+2026-04-29 02:14:20,192 [INFO] phase1.src.data_loader: Loaded 108 examples from implicit_standard
+2026-04-29 02:14:20,205 [INFO] phase1.src.data_loader: Loaded 108 examples from implicit_noised
+2026-04-29 02:14:20,220 [INFO] phase1.src.data_loader: Loaded 108 examples from implicit_short
+2026-04-29 02:15:09,388 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:15:53,501 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:16:36,419 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:17:20,878 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:18:06,278 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:18:51,705 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:19:37,183 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:20:22,688 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:21:08,320 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:21:53,897 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:22:39,377 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:23:24,890 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:24:10,361 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:24:55,892 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:25:41,482 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:26:27,040 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:27:12,619 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:27:58,165 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:28:43,688 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:29:28,342 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:30:13,926 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:30:59,458 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:31:41,867 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:32:25,318 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:33:07,507 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:33:50,900 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:34:36,279 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:35:21,680 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:36:07,068 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:36:52,514 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:37:37,647 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:38:22,963 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:39:08,340 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:39:53,530 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:40:38,922 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:41:24,351 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:42:09,759 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:42:55,137 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:43:40,530 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:44:26,067 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:45:11,581 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:45:55,067 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:46:38,499 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:47:19,616 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:47:56,570 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:48:36,996 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:49:13,983 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:49:56,684 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:50:41,684 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:51:27,201 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:52:12,699 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:52:55,907 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:53:39,084 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:54:22,167 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:55:06,357 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:55:51,795 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:56:37,214 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:57:22,640 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:58:08,089 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:58:53,585 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 02:59:38,990 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:00:24,379 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:01:09,800 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:01:55,293 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:02:40,696 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:03:26,164 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:04:11,669 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:04:57,212 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:05:40,221 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:06:25,693 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:07:11,144 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:07:56,652 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:08:42,185 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:09:27,674 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:10:13,169 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:10:58,336 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:11:43,823 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:12:29,322 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:13:14,785 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:14:00,200 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:14:45,658 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:15:31,159 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:16:16,664 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:17:02,161 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:17:47,640 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:18:33,111 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:19:18,620 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:20:04,000 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:20:49,442 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:21:32,537 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:22:16,471 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:23:01,935 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:23:47,488 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:24:33,083 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:25:17,437 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:26:02,916 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:26:48,421 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:27:33,961 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:28:19,478 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:29:04,990 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:29:50,464 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:30:36,043 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:31:21,561 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:32:07,213 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:32:52,704 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:33:38,263 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:34:23,711 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:35:09,167 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:35:54,459 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:36:36,751 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:37:19,498 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:38:03,630 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:38:49,112 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:39:34,509 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:40:19,914 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:41:05,418 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:41:50,924 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:42:36,414 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:43:21,829 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:44:07,221 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:44:49,687 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:45:32,159 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:46:14,675 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:47:00,126 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:47:45,627 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:48:31,055 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:49:16,510 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:50:01,986 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:50:47,412 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:51:32,842 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:52:16,347 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:52:59,576 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:53:42,554 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:54:26,567 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:55:12,009 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:55:57,496 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:56:43,026 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:57:28,529 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:58:14,005 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:58:59,440 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 03:59:44,885 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 04:00:30,337 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 04:01:15,822 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 04:02:01,247 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 04:02:46,689 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 04:03:32,195 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 04:04:17,591 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 04:05:03,012 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 04:05:48,443 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 04:06:33,797 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 04:07:19,202 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 04:08:04,697 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 04:08:50,193 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 04:09:35,609 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 04:10:20,533 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 04:11:05,995 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 04:11:51,488 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 04:12:36,964 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 04:13:22,418 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 04:14:07,890 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 04:14:51,608 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 04:15:35,364 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 04:16:20,248 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 04:17:05,701 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 04:17:51,184 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 04:18:36,699 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 04:19:22,156 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 04:20:07,617 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 04:20:53,087 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 04:21:38,550 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 04:22:24,037 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 04:23:09,522 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 04:23:51,700 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 04:24:35,018 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 04:25:16,510 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 04:25:59,472 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 04:26:44,913 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 04:27:30,347 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 04:28:15,806 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 04:29:01,212 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 04:29:46,625 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 04:30:30,669 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 04:31:16,128 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 04:32:01,567 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 04:32:47,046 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 04:33:32,530 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 04:34:15,030 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 04:34:58,919 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 04:35:44,431 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 04:36:29,856 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 04:37:15,338 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 04:38:00,772 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 04:38:46,179 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 04:39:31,603 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json
+2026-04-29 04:39:49,828 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-8B/results_cuda.json

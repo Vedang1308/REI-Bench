@@ -1,0 +1,29 @@
+2026-04-29 01:07:17,881 [INFO] phase1.src.device_utils: Detected Intel Gaudi HPU via hl-smi
+2026-04-29 01:07:19,475 [INFO] phase1.src.device_utils: Detected Intel Gaudi HPU via hl-smi
+2026-04-29 01:07:20,995 [INFO] phase1.src.device_utils: Detected Intel Gaudi HPU via hl-smi
+2026-04-29 01:07:20,995 [INFO] phase1.src.model_wrapper: Loading model: Qwen/Qwen3-4B-Instruct-2507 on hpu
+2026-04-29 01:08:40,292 [INFO] phase1.src.model_wrapper: Model loaded successfully on hpu
+2026-04-29 01:08:40,294 [INFO] phase1.src.data_loader: Loaded 108 examples from explicit_standard
+2026-04-29 01:08:40,296 [INFO] phase1.src.data_loader: Loaded 108 examples from explicit_noised
+2026-04-29 01:08:40,298 [INFO] phase1.src.data_loader: Loaded 108 examples from explicit_short
+2026-04-29 01:08:40,299 [INFO] phase1.src.data_loader: Loaded 108 examples from mixed_standard
+2026-04-29 01:08:40,300 [INFO] phase1.src.data_loader: Loaded 108 examples from mixed_noised
+2026-04-29 01:08:40,302 [INFO] phase1.src.data_loader: Loaded 108 examples from mixed_short
+2026-04-29 01:08:40,303 [INFO] phase1.src.data_loader: Loaded 108 examples from implicit_standard
+2026-04-29 01:08:40,305 [INFO] phase1.src.data_loader: Loaded 108 examples from implicit_noised
+2026-04-29 01:08:40,306 [INFO] phase1.src.data_loader: Loaded 108 examples from implicit_short
+2026-04-29 01:08:55,820 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-4B-Instruct-2507/results_hpu.json
+2026-04-29 01:09:11,473 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-4B-Instruct-2507/results_hpu.json
+2026-04-29 01:09:21,885 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-4B-Instruct-2507/results_hpu.json
+2026-04-29 01:09:29,766 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-4B-Instruct-2507/results_hpu.json
+2026-04-29 01:09:42,210 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-4B-Instruct-2507/results_hpu.json
+2026-04-29 01:09:55,531 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-4B-Instruct-2507/results_hpu.json
+2026-04-29 01:10:09,707 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-4B-Instruct-2507/results_hpu.json
+2026-04-29 01:10:22,496 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-4B-Instruct-2507/results_hpu.json
+2026-04-29 01:10:30,295 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-4B-Instruct-2507/results_hpu.json
+2026-04-29 01:10:34,959 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-4B-Instruct-2507/results_hpu.json
+2026-04-29 01:10:43,229 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-4B-Instruct-2507/results_hpu.json
+2026-04-29 01:10:47,003 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-4B-Instruct-2507/results_hpu.json
+2026-04-29 01:10:53,979 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-4B-Instruct-2507/results_hpu.json
+2026-04-29 01:10:58,523 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-4B-Instruct-2507/results_hpu.json
+2026-04-29 01:11:03,461 [INFO] phase1.src.evaluator: Results saved to /home/vavaghad/REI-Bench/REI-Bench/phase1/results/Qwen3-4B-Instruct-2507/results_hpu.json

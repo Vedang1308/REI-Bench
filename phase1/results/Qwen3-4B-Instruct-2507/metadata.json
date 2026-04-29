@@ -1,0 +1,25 @@
+{
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "model_size": "Qwen3-4B-Instruct-2507",
+  "device": {
+    "device_type": "hpu",
+    "device_name": "HL-225",
+    "memory_gb": 0
+  },
+  "planning_mode": "full",
+  "timestamp": "2026-04-29T01:32:42.341313",
+  "total_examples": 972,
+  "time_analysis": {
+    "model_load_time_seconds": 19.37,
+    "eval_time_seconds": 1254.44,
+    "examples_per_second": 0.77
+  },
+  "token_analysis": {
+    "prompt_tokens": 446737,
+    "completion_tokens": 229632,
+    "total_tokens": 676369
+  },
+  "cost_analysis": {
+    "estimated_cost_usd": 0.1353
+  }
+}

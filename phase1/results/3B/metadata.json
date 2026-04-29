@@ -1,0 +1,14 @@
+{
+  "model": "meta-llama/Llama-3.2-3B-Instruct",
+  "model_size": "3B",
+  "device": {
+    "device_type": "hpu",
+    "device_name": "HL-225",
+    "memory_gb": 0
+  },
+  "planning_mode": "full",
+  "timestamp": "2026-04-29T00:26:40.069962",
+  "total_examples": 972,
+  "model_load_time_seconds": 16.24795889854431,
+  "eval_time_seconds": 3282.4099817276
+}

@@ -1,0 +1,26 @@
+{
+  "model": "Qwen/Qwen3-14B",
+  "model_size": "Qwen3-14B",
+  "device": {
+    "device_type": "cuda",
+    "device_name": "NVIDIA A100-SXM4-80GB",
+    "memory_gb": 79.3,
+    "device_count": 1
+  },
+  "planning_mode": "full",
+  "timestamp": "2026-04-29T04:49:58.159468",
+  "total_examples": 972,
+  "time_analysis": {
+    "model_load_time_seconds": 46.49,
+    "eval_time_seconds": 9221.36,
+    "examples_per_second": 0.11
+  },
+  "token_analysis": {
+    "prompt_tokens": 484920,
+    "completion_tokens": 243485,
+    "total_tokens": 728405
+  },
+  "cost_analysis": {
+    "estimated_cost_usd": 0.1457
+  }
+}
