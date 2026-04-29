@@ -37,6 +37,22 @@ from phase1.src.evaluator import EvaluationResults, compare_plans
 logger = logging.getLogger(__name__)
 
 
+def _get_model_size_tag(model_name: str) -> str:
+    """
+    Extract the model size tag (e.g., '1B', '3B') from the model name.
+
+    Examples:
+        'meta-llama/Llama-3.2-1B-Instruct' -> '1B'
+        'meta-llama/Llama-3.2-3B-Instruct' -> '3B'
+    """
+    import re
+    match = re.search(r'(\d+[Bb])', model_name)
+    if match:
+        return match.group(1).upper()
+    # Fallback: use the full short name
+    return model_name.split('/')[-1]
+
+
 def run_evaluation(
     model_name: str,
     data_dir: str,
@@ -159,18 +175,21 @@ def run_evaluation(
     # Print summary
     eval_results.print_summary()
 
-    # Save results
-    os.makedirs(results_dir, exist_ok=True)
-    model_short = model_name.split("/")[-1]
+    # Save results — organized by model size subfolder
+    model_size_tag = _get_model_size_tag(model_name)
+    model_results_dir = os.path.join(results_dir, model_size_tag)
+    os.makedirs(model_results_dir, exist_ok=True)
+
     results_file = os.path.join(
-        results_dir,
-        f"{model_short}_{device_info['device_type']}_results.json",
+        model_results_dir,
+        f"results_{device_info['device_type']}.json",
     )
     eval_results.save(results_file)
 
     # Save run metadata
     metadata = {
         "model": model_name,
+        "model_size": model_size_tag,
         "device": device_info,
         "planning_mode": planning_mode,
         "timestamp": datetime.now().isoformat(),
@@ -178,7 +197,7 @@ def run_evaluation(
         "model_load_time_seconds": load_time,
         "eval_time_seconds": time.time() - eval_start_time,
     }
-    meta_file = os.path.join(results_dir, f"{model_short}_metadata.json")
+    meta_file = os.path.join(model_results_dir, "metadata.json")
     with open(meta_file, "w") as f:
         json.dump(metadata, f, indent=2)
 
@@ -186,7 +205,9 @@ def run_evaluation(
     print(f"\n{'='*60}")
     print(f"Evaluation complete!")
     print(f"Total time: {total_time/60:.1f} minutes")
-    print(f"Results saved to: {results_file}")
+    print(f"Results saved to: {model_results_dir}/")
+    print(f"  - {os.path.basename(results_file)}")
+    print(f"  - metadata.json")
     print(f"{'='*60}")
 
 
@@ -238,6 +259,11 @@ def main():
     )
     args = parser.parse_args()
 
+    # Create model-size results subdirectory for logs
+    model_size_tag = _get_model_size_tag(args.model)
+    model_results_dir = os.path.join(args.results_dir or RESULTS_DIR, model_size_tag)
+    os.makedirs(model_results_dir, exist_ok=True)
+
     logging.basicConfig(
         level=logging.INFO,
         format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
@@ -245,7 +271,7 @@ def main():
             logging.StreamHandler(),
             logging.FileHandler(
                 os.path.join(
-                    args.results_dir or RESULTS_DIR,
+                    model_results_dir,
                     f"run_{datetime.now().strftime('%Y%m%d_%H%M%S')}.log",
                 ),
                 mode="w",
@@ -257,9 +283,6 @@ def main():
     if args.hf_token:
         import phase1.config as config
         config.HF_TOKEN = args.hf_token
-
-    # Create results directory
-    os.makedirs(args.results_dir or RESULTS_DIR, exist_ok=True)
 
     run_evaluation(
         model_name=args.model,

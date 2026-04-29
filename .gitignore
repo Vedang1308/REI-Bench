@@ -24,8 +24,10 @@ env/
 Thumbs.db
 
 # Results (large files - keep structure but not data)
-phase1/results/*.json
-phase2/results/*.json
+phase1/results/**/*.json
+phase1/results/**/*.log
+phase2/results/**/*.json
+phase2/results/**/*.log
 
 # Model cache
 .cache/

@@ -77,18 +77,61 @@ PAPER_BASELINES = {
 
 
 def load_results(results_dir: str) -> dict:
-    """Load all result files from the results directory."""
+    """
+    Load all result files from model-size subdirectories.
+
+    Expected structure:
+        results_dir/
+        ├── 1B/
+        │   ├── results_cuda.json   (or results_hpu.json)
+        │   └── metadata.json
+        └── 3B/
+            ├── results_cuda.json
+            └── metadata.json
+    """
     results = {}
+
+    # Scan subdirectories (1B, 3B, etc.)
+    if not os.path.exists(results_dir):
+        return results
+
+    for entry in sorted(os.listdir(results_dir)):
+        subdir = os.path.join(results_dir, entry)
+        if not os.path.isdir(subdir):
+            continue
+
+        # Look for results JSON files in each model-size folder
+        for filename in os.listdir(subdir):
+            if filename.startswith("results_") and filename.endswith(".json"):
+                filepath = os.path.join(subdir, filename)
+                with open(filepath, "r") as f:
+                    data = json.load(f)
+
+                # Use the folder name (e.g., "1B", "3B") as the model key
+                # Optionally enrich with metadata
+                model_label = entry
+                meta_path = os.path.join(subdir, "metadata.json")
+                if os.path.exists(meta_path):
+                    with open(meta_path, "r") as mf:
+                        meta = json.load(mf)
+                        model_label = meta.get("model_size", entry)
+
+                results[model_label] = data
+
+    # Fallback: also check for flat result files (backward compatibility)
     for filename in os.listdir(results_dir):
-        if filename.endswith("_results.json"):
+        if filename.endswith("_results.json") and os.path.isfile(
+            os.path.join(results_dir, filename)
+        ):
             filepath = os.path.join(results_dir, filename)
             with open(filepath, "r") as f:
                 data = json.load(f)
                 model_name = filename.replace("_results.json", "")
-                # Remove device suffix if present
                 for suffix in ["_cuda", "_hpu", "_cpu"]:
                     model_name = model_name.replace(suffix, "")
-                results[model_name] = data
+                if model_name not in results:
+                    results[model_name] = data
+
     return results
 
 
