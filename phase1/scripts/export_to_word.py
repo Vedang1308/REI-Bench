@@ -2,7 +2,6 @@ import os
 import json
 import glob
 from docx import Document
-from docx.shared import Pt, Inches
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 
 def json_to_word(json_path):
