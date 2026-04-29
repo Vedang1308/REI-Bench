@@ -57,6 +57,7 @@ class ModelWrapper:
             self._load_cpu(model_name, hf_token)
 
         self.model.eval()
+        self.usage_stats = {"prompt_tokens": 0, "completion_tokens": 0}
         logger.info(f"Model loaded successfully on {self.device_type}")
 
     def _load_cuda(self, model_name: str, hf_token: str):
@@ -146,6 +147,10 @@ class ModelWrapper:
         generated_text = self.tokenizer.decode(
             generated_ids, skip_special_tokens=True
         )
+
+        # Update token usage stats
+        self.usage_stats["prompt_tokens"] += input_length
+        self.usage_stats["completion_tokens"] += generated_ids.shape[0]
 
         # Sync HPU if needed
         if self.device_type == "hpu":

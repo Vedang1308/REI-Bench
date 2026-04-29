@@ -206,6 +206,37 @@ def run_evaluation(
     # Final Save results
     eval_results.save(results_file)
 
+    # Calculate costs and tokens
+    p_tokens = model.usage_stats["prompt_tokens"]
+    c_tokens = model.usage_stats["completion_tokens"]
+    
+    # Load previous metadata if exists to accumulate stats across checkpoints
+    meta_file = os.path.join(model_results_dir, "metadata.json")
+    prev_time = 0.0
+    if os.path.exists(meta_file):
+        try:
+            with open(meta_file, "r") as f:
+                prev_meta = json.load(f)
+            prev_time = prev_meta.get("time_analysis", {}).get("eval_time_seconds", 0.0)
+            p_tokens += prev_meta.get("token_analysis", {}).get("prompt_tokens", 0)
+            c_tokens += prev_meta.get("token_analysis", {}).get("completion_tokens", 0)
+        except Exception:
+            pass
+
+    eval_time = time.time() - eval_start_time + prev_time
+    
+    # Example rough prices per 1M tokens based on parameter size
+    prices = {
+        "1B": (0.05, 0.05),
+        "3B": (0.10, 0.10),
+        "4B": (0.15, 0.15),
+        "8B": (0.20, 0.20),
+        "14B": (0.40, 0.40),
+        "32B": (0.80, 0.80),
+    }
+    p_in, p_out = prices.get(model_size_tag, (0.20, 0.20))
+    cost = (p_tokens / 1_000_000) * p_in + (c_tokens / 1_000_000) * p_out
+
     # Save run metadata
     metadata = {
         "model": model_name,
@@ -214,10 +245,20 @@ def run_evaluation(
         "planning_mode": planning_mode,
         "timestamp": datetime.now().isoformat(),
         "total_examples": total_examples,
-        "model_load_time_seconds": load_time,
-        "eval_time_seconds": time.time() - eval_start_time,
+        "time_analysis": {
+            "model_load_time_seconds": round(load_time, 2),
+            "eval_time_seconds": round(eval_time, 2),
+            "examples_per_second": round(total_examples / eval_time, 2) if eval_time > 0 else 0,
+        },
+        "token_analysis": {
+            "prompt_tokens": p_tokens,
+            "completion_tokens": c_tokens,
+            "total_tokens": p_tokens + c_tokens,
+        },
+        "cost_analysis": {
+            "estimated_cost_usd": round(cost, 4)
+        }
     }
-    meta_file = os.path.join(model_results_dir, "metadata.json")
     with open(meta_file, "w") as f:
         json.dump(metadata, f, indent=2)
 
