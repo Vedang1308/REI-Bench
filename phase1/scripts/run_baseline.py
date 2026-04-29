@@ -43,17 +43,19 @@ logger = logging.getLogger(__name__)
 
 def _get_model_size_tag(model_name: str) -> str:
     """
-    Extract the model size tag (e.g., '1B', '3B') from the model name.
-
-    Examples:
-        'meta-llama/Llama-3.2-1B-Instruct' -> '1B'
-        'meta-llama/Llama-3.2-3B-Instruct' -> '3B'
+    Get the folder name for the model's results.
+    For Llama models (already run), keep it as just the size (e.g., '1B', '3B').
+    For Qwen and other models, use the full short name (e.g., 'Qwen3-4B-Instruct').
     """
     import re
-    match = re.search(r'(\d+[Bb])', model_name)
-    if match:
-        return match.group(1).upper()
-    # Fallback: use the full short name
+    
+    # Preserve original behavior for Llama models as requested
+    if "llama" in model_name.lower():
+        match = re.search(r'(\d+[Bb])', model_name)
+        if match:
+            return match.group(1).upper()
+            
+    # For Qwen and other new models, include the model name and size
     return model_name.split('/')[-1]
 
 
