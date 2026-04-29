@@ -17,6 +17,10 @@ import os
 import sys
 import time
 from datetime import datetime
+import transformers
+
+# Suppress annoying "temperature is not valid" warnings from HuggingFace
+transformers.logging.set_verbosity_error()
 
 # Add project root to path
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
@@ -160,17 +164,23 @@ def run_evaluation(
 
             eval_results.add_result(condition, result)
 
-            # Progress logging
-            if (i + 1) % 10 == 0 or (i + 1) == len(examples):
-                elapsed = time.time() - eval_start_time
-                rate = global_idx / elapsed if elapsed > 0 else 0
-                eta = (total_examples - global_idx) / rate if rate > 0 else 0
-                status = "✓" if result["success"] else "✗"
-                print(
-                    f"  [{global_idx}/{total_examples}] "
-                    f"{status} {example['id'][:40]:<40} "
-                    f"({rate:.1f} ex/s, ETA: {eta/60:.1f}min)"
-                )
+            # Progress logging (real-time for every task)
+            elapsed = time.time() - eval_start_time
+            rate = global_idx / elapsed if elapsed > 0 else 0
+            eta = (total_examples - global_idx) / rate if rate > 0 else 0
+            
+            if result["success"]:
+                status = "✓ SUCCESS "
+            elif result["object_omission"]:
+                status = "✗ OMITTED "
+            else:
+                status = "✗ EXEC_ERR"
+                
+            print(
+                f"  [{global_idx:03d}/{total_examples}] "
+                f"{status} | {example['id'][:40]:<35} "
+                f"({rate:.1f} ex/s, ETA: {eta/60:.1f}min)"
+            )
 
     # Print summary
     eval_results.print_summary()
