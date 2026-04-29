@@ -1,0 +1,3067 @@
+[
+  {
+    "id": "implicit_short_pick_and_place_0",
+    "task_type": "pick_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Apple Jack was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the red one Jack said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "put the the round fruit on the dining table.",
+    "target_object": "apple",
+    "scene_objects": [
+      "Apple",
+      "DiningTable",
+      "Plate",
+      "Bowl",
+      "Fork",
+      "CoffeeTable",
+      "Mug",
+      "Book",
+      "Pen"
+    ],
+    "ground_truth_plan": [
+      "find apple",
+      "pick_up apple",
+      "find dining table",
+      "put_down apple dining table",
+      "done"
+    ],
+    "seed_instruction": "Put the apple on the dining table."
+  },
+  {
+    "id": "implicit_short_pick_and_place_1",
+    "task_type": "pick_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Book Barnes was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. it Barnes said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "place the it on the shelf.",
+    "target_object": "book",
+    "scene_objects": [
+      "Book",
+      "Shelf",
+      "Desk",
+      "Pen",
+      "Laptop",
+      "CoffeeTable",
+      "Mug",
+      "Pillow"
+    ],
+    "ground_truth_plan": [
+      "find book",
+      "pick_up book",
+      "find shelf",
+      "put_down book shelf",
+      "done"
+    ],
+    "seed_instruction": "Place the book on the shelf."
+  },
+  {
+    "id": "implicit_short_pick_and_place_2",
+    "task_type": "pick_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Mug Star was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the container Star said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "put the the cup-like thing on the coffee table.",
+    "target_object": "mug",
+    "scene_objects": [
+      "Mug",
+      "CoffeeTable",
+      "Book",
+      "RemoteControl",
+      "Plate",
+      "Bowl",
+      "Laptop"
+    ],
+    "ground_truth_plan": [
+      "find mug",
+      "pick_up mug",
+      "find coffee table",
+      "put_down mug coffee table",
+      "done"
+    ],
+    "seed_instruction": "Put the mug on the coffee table."
+  },
+  {
+    "id": "implicit_short_pick_and_place_3",
+    "task_type": "pick_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Remote Remington was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. Remote Remington said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "move the the controller to the side table.",
+    "target_object": "remote control",
+    "scene_objects": [
+      "RemoteControl",
+      "SideTable",
+      "Television",
+      "Sofa",
+      "Pillow",
+      "CoffeeTable"
+    ],
+    "ground_truth_plan": [
+      "find remote control",
+      "pick_up remote control",
+      "find side table",
+      "put_down remote control side table",
+      "done"
+    ],
+    "seed_instruction": "Move the remote control to the side table."
+  },
+  {
+    "id": "implicit_short_pick_and_place_4",
+    "task_type": "pick_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Pen Palmer was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the writing tool Palmer said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "put the the ink tool on the desk.",
+    "target_object": "pen",
+    "scene_objects": [
+      "Pen",
+      "Desk",
+      "Book",
+      "Laptop",
+      "Pencil",
+      "CellPhone",
+      "Cup"
+    ],
+    "ground_truth_plan": [
+      "find pen",
+      "pick_up pen",
+      "find desk",
+      "put_down pen desk",
+      "done"
+    ],
+    "seed_instruction": "Put the pen on the desk."
+  },
+  {
+    "id": "implicit_short_pick_and_place_5",
+    "task_type": "pick_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Plate Patterson was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. it Patterson said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "place the the round dish on the counter top.",
+    "target_object": "plate",
+    "scene_objects": [
+      "Plate",
+      "CounterTop",
+      "Bowl",
+      "Fork",
+      "Knife",
+      "Mug",
+      "Apple",
+      "Bread"
+    ],
+    "ground_truth_plan": [
+      "find plate",
+      "pick_up plate",
+      "find counter top",
+      "put_down plate counter top",
+      "done"
+    ],
+    "seed_instruction": "Place the plate on the counter top."
+  },
+  {
+    "id": "implicit_short_pick_and_place_6",
+    "task_type": "pick_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Pillow Prince was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. it Prince said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "put the the fluffy item on the sofa.",
+    "target_object": "pillow",
+    "scene_objects": [
+      "Pillow",
+      "Sofa",
+      "ArmChair",
+      "CoffeeTable",
+      "Book",
+      "RemoteControl",
+      "TeddyBear"
+    ],
+    "ground_truth_plan": [
+      "find pillow",
+      "pick_up pillow",
+      "find sofa",
+      "put_down pillow sofa",
+      "done"
+    ],
+    "seed_instruction": "Put the pillow on the sofa."
+  },
+  {
+    "id": "implicit_short_pick_and_place_7",
+    "task_type": "pick_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Vase Valentine was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the decorative piece Valentine said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "move the the container to the dining table.",
+    "target_object": "vase",
+    "scene_objects": [
+      "Vase",
+      "DiningTable",
+      "Plate",
+      "Fork",
+      "CoffeeTable",
+      "HousePlant",
+      "Candle"
+    ],
+    "ground_truth_plan": [
+      "find vase",
+      "pick_up vase",
+      "find dining table",
+      "put_down vase dining table",
+      "done"
+    ],
+    "seed_instruction": "Move the vase to the dining table."
+  },
+  {
+    "id": "implicit_short_pick_and_place_8",
+    "task_type": "pick_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Cell Calloway was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. Cell Calloway said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "place the the electronic gadget on the dresser.",
+    "target_object": "cellphone",
+    "scene_objects": [
+      "CellPhone",
+      "Dresser",
+      "AlarmClock",
+      "Book",
+      "Pen",
+      "Watch",
+      "Bed"
+    ],
+    "ground_truth_plan": [
+      "find cellphone",
+      "pick_up cellphone",
+      "find dresser",
+      "put_down cellphone dresser",
+      "done"
+    ],
+    "seed_instruction": "Place the cellphone on the dresser."
+  },
+  {
+    "id": "implicit_short_pick_and_place_9",
+    "task_type": "pick_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Watch Wellington was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the wrist accessory Wellington said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "put the it on the side table.",
+    "target_object": "watch",
+    "scene_objects": [
+      "Watch",
+      "SideTable",
+      "AlarmClock",
+      "CellPhone",
+      "Book",
+      "Bed",
+      "DeskLamp"
+    ],
+    "ground_truth_plan": [
+      "find watch",
+      "pick_up watch",
+      "find side table",
+      "put_down watch side table",
+      "done"
+    ],
+    "seed_instruction": "Put the watch on the side table."
+  },
+  {
+    "id": "implicit_short_pick_and_place_10",
+    "task_type": "pick_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Apple Jack was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the red one Jack said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "put the the round fruit on the dining table.",
+    "target_object": "apple",
+    "scene_objects": [
+      "Apple",
+      "DiningTable",
+      "Plate",
+      "Bowl",
+      "Fork",
+      "CoffeeTable",
+      "Mug",
+      "Book",
+      "Pen"
+    ],
+    "ground_truth_plan": [
+      "find apple",
+      "pick_up apple",
+      "find dining table",
+      "put_down apple dining table",
+      "done"
+    ],
+    "seed_instruction": "Put the apple on the dining table."
+  },
+  {
+    "id": "implicit_short_pick_and_place_11",
+    "task_type": "pick_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Book Barnes was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the reading material Barnes said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "place the it on the shelf.",
+    "target_object": "book",
+    "scene_objects": [
+      "Book",
+      "Shelf",
+      "Desk",
+      "Pen",
+      "Laptop",
+      "CoffeeTable",
+      "Mug",
+      "Pillow"
+    ],
+    "ground_truth_plan": [
+      "find book",
+      "pick_up book",
+      "find shelf",
+      "put_down book shelf",
+      "done"
+    ],
+    "seed_instruction": "Place the book on the shelf."
+  },
+  {
+    "id": "implicit_short_pick_and_place_12",
+    "task_type": "pick_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Mug Star was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the cup-like thing Star said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "put the it on the coffee table.",
+    "target_object": "mug",
+    "scene_objects": [
+      "Mug",
+      "CoffeeTable",
+      "Book",
+      "RemoteControl",
+      "Plate",
+      "Bowl",
+      "Laptop"
+    ],
+    "ground_truth_plan": [
+      "find mug",
+      "pick_up mug",
+      "find coffee table",
+      "put_down mug coffee table",
+      "done"
+    ],
+    "seed_instruction": "Put the mug on the coffee table."
+  },
+  {
+    "id": "implicit_short_pick_and_place_13",
+    "task_type": "pick_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Remote Remington was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. Remote Remington said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "move the the controller to the side table.",
+    "target_object": "remote control",
+    "scene_objects": [
+      "RemoteControl",
+      "SideTable",
+      "Television",
+      "Sofa",
+      "Pillow",
+      "CoffeeTable"
+    ],
+    "ground_truth_plan": [
+      "find remote control",
+      "pick_up remote control",
+      "find side table",
+      "put_down remote control side table",
+      "done"
+    ],
+    "seed_instruction": "Move the remote control to the side table."
+  },
+  {
+    "id": "implicit_short_pick_and_place_14",
+    "task_type": "pick_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Pen Palmer was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the ink tool Palmer said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "put the the ink tool on the desk.",
+    "target_object": "pen",
+    "scene_objects": [
+      "Pen",
+      "Desk",
+      "Book",
+      "Laptop",
+      "Pencil",
+      "CellPhone",
+      "Cup"
+    ],
+    "ground_truth_plan": [
+      "find pen",
+      "pick_up pen",
+      "find desk",
+      "put_down pen desk",
+      "done"
+    ],
+    "seed_instruction": "Put the pen on the desk."
+  },
+  {
+    "id": "implicit_short_pick_and_place_15",
+    "task_type": "pick_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Plate Patterson was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the flat thing Patterson said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "place the the flat thing on the counter top.",
+    "target_object": "plate",
+    "scene_objects": [
+      "Plate",
+      "CounterTop",
+      "Bowl",
+      "Fork",
+      "Knife",
+      "Mug",
+      "Apple",
+      "Bread"
+    ],
+    "ground_truth_plan": [
+      "find plate",
+      "pick_up plate",
+      "find counter top",
+      "put_down plate counter top",
+      "done"
+    ],
+    "seed_instruction": "Place the plate on the counter top."
+  },
+  {
+    "id": "implicit_short_pick_and_place_16",
+    "task_type": "pick_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Pillow Prince was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. it Prince said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "put the the fluffy item on the sofa.",
+    "target_object": "pillow",
+    "scene_objects": [
+      "Pillow",
+      "Sofa",
+      "ArmChair",
+      "CoffeeTable",
+      "Book",
+      "RemoteControl",
+      "TeddyBear"
+    ],
+    "ground_truth_plan": [
+      "find pillow",
+      "pick_up pillow",
+      "find sofa",
+      "put_down pillow sofa",
+      "done"
+    ],
+    "seed_instruction": "Put the pillow on the sofa."
+  },
+  {
+    "id": "implicit_short_pick_and_place_17",
+    "task_type": "pick_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Vase Valentine was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. it Valentine said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "move the it to the dining table.",
+    "target_object": "vase",
+    "scene_objects": [
+      "Vase",
+      "DiningTable",
+      "Plate",
+      "Fork",
+      "CoffeeTable",
+      "HousePlant",
+      "Candle"
+    ],
+    "ground_truth_plan": [
+      "find vase",
+      "pick_up vase",
+      "find dining table",
+      "put_down vase dining table",
+      "done"
+    ],
+    "seed_instruction": "Move the vase to the dining table."
+  },
+  {
+    "id": "implicit_short_pick_and_place_18",
+    "task_type": "pick_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Cell Calloway was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. Cell Calloway said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "place the the device on the dresser.",
+    "target_object": "cellphone",
+    "scene_objects": [
+      "CellPhone",
+      "Dresser",
+      "AlarmClock",
+      "Book",
+      "Pen",
+      "Watch",
+      "Bed"
+    ],
+    "ground_truth_plan": [
+      "find cellphone",
+      "pick_up cellphone",
+      "find dresser",
+      "put_down cellphone dresser",
+      "done"
+    ],
+    "seed_instruction": "Place the cellphone on the dresser."
+  },
+  {
+    "id": "implicit_short_pick_and_place_19",
+    "task_type": "pick_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Watch Wellington was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the wrist accessory Wellington said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "put the the small device on the side table.",
+    "target_object": "watch",
+    "scene_objects": [
+      "Watch",
+      "SideTable",
+      "AlarmClock",
+      "CellPhone",
+      "Book",
+      "Bed",
+      "DeskLamp"
+    ],
+    "ground_truth_plan": [
+      "find watch",
+      "pick_up watch",
+      "find side table",
+      "put_down watch side table",
+      "done"
+    ],
+    "seed_instruction": "Put the watch on the side table."
+  },
+  {
+    "id": "implicit_short_stack_and_place_0",
+    "task_type": "stack_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Bowl Brighton was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the container Brighton said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "put the the round vessel with the apple inside on the counter top.",
+    "target_object": "bowl",
+    "scene_objects": [
+      "Bowl",
+      "Apple",
+      "CounterTop",
+      "Plate",
+      "Fork",
+      "Mug",
+      "Bread"
+    ],
+    "ground_truth_plan": [
+      "find bowl",
+      "pick_up bowl",
+      "find apple",
+      "put_down bowl apple",
+      "find counter top",
+      "pick_up apple",
+      "put_down apple counter top",
+      "done"
+    ],
+    "seed_instruction": "Put the bowl with the apple inside on the counter top."
+  },
+  {
+    "id": "implicit_short_stack_and_place_1",
+    "task_type": "stack_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Plate Patterson was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the round dish Patterson said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "stack the the flat thing on the bowl and put them on the dining table.",
+    "target_object": "plate",
+    "scene_objects": [
+      "Plate",
+      "Bowl",
+      "DiningTable",
+      "Fork",
+      "Knife",
+      "Mug",
+      "Apple"
+    ],
+    "ground_truth_plan": [
+      "find plate",
+      "pick_up plate",
+      "find bowl",
+      "put_down plate bowl",
+      "find dining table",
+      "pick_up bowl",
+      "put_down bowl dining table",
+      "done"
+    ],
+    "seed_instruction": "Stack the plate on the bowl and put them on the dining table."
+  },
+  {
+    "id": "implicit_short_stack_and_place_2",
+    "task_type": "stack_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Pen Palmer was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the writing instrument Palmer said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "put the the ink tool in the mug and place it on the desk.",
+    "target_object": "pen",
+    "scene_objects": [
+      "Pen",
+      "Mug",
+      "Desk",
+      "Book",
+      "Laptop",
+      "Pencil",
+      "Cup"
+    ],
+    "ground_truth_plan": [
+      "find pen",
+      "pick_up pen",
+      "find mug",
+      "put_down pen mug",
+      "find desk",
+      "pick_up mug",
+      "put_down mug desk",
+      "done"
+    ],
+    "seed_instruction": "Put the pen in the mug and place it on the desk."
+  },
+  {
+    "id": "implicit_short_stack_and_place_3",
+    "task_type": "stack_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Bowl Brighton was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the deep dish Brighton said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "put the the round vessel with the apple inside on the counter top.",
+    "target_object": "bowl",
+    "scene_objects": [
+      "Bowl",
+      "Apple",
+      "CounterTop",
+      "Plate",
+      "Fork",
+      "Mug",
+      "Bread"
+    ],
+    "ground_truth_plan": [
+      "find bowl",
+      "pick_up bowl",
+      "find apple",
+      "put_down bowl apple",
+      "find counter top",
+      "pick_up apple",
+      "put_down apple counter top",
+      "done"
+    ],
+    "seed_instruction": "Put the bowl with the apple inside on the counter top."
+  },
+  {
+    "id": "implicit_short_stack_and_place_4",
+    "task_type": "stack_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Plate Patterson was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the dinnerware Patterson said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "stack the the round dish on the bowl and put them on the dining table.",
+    "target_object": "plate",
+    "scene_objects": [
+      "Plate",
+      "Bowl",
+      "DiningTable",
+      "Fork",
+      "Knife",
+      "Mug",
+      "Apple"
+    ],
+    "ground_truth_plan": [
+      "find plate",
+      "pick_up plate",
+      "find bowl",
+      "put_down plate bowl",
+      "find dining table",
+      "pick_up bowl",
+      "put_down bowl dining table",
+      "done"
+    ],
+    "seed_instruction": "Stack the plate on the bowl and put them on the dining table."
+  },
+  {
+    "id": "implicit_short_stack_and_place_5",
+    "task_type": "stack_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Pen Palmer was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the writing tool Palmer said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "put the the ink tool in the mug and place it on the desk.",
+    "target_object": "pen",
+    "scene_objects": [
+      "Pen",
+      "Mug",
+      "Desk",
+      "Book",
+      "Laptop",
+      "Pencil",
+      "Cup"
+    ],
+    "ground_truth_plan": [
+      "find pen",
+      "pick_up pen",
+      "find mug",
+      "put_down pen mug",
+      "find desk",
+      "pick_up mug",
+      "put_down mug desk",
+      "done"
+    ],
+    "seed_instruction": "Put the pen in the mug and place it on the desk."
+  },
+  {
+    "id": "implicit_short_stack_and_place_6",
+    "task_type": "stack_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Bowl Brighton was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the deep dish Brighton said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "put the it with the apple inside on the counter top.",
+    "target_object": "bowl",
+    "scene_objects": [
+      "Bowl",
+      "Apple",
+      "CounterTop",
+      "Plate",
+      "Fork",
+      "Mug",
+      "Bread"
+    ],
+    "ground_truth_plan": [
+      "find bowl",
+      "pick_up bowl",
+      "find apple",
+      "put_down bowl apple",
+      "find counter top",
+      "pick_up apple",
+      "put_down apple counter top",
+      "done"
+    ],
+    "seed_instruction": "Put the bowl with the apple inside on the counter top."
+  },
+  {
+    "id": "implicit_short_stack_and_place_7",
+    "task_type": "stack_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Plate Patterson was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. it Patterson said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "stack the the round dish on the bowl and put them on the dining table.",
+    "target_object": "plate",
+    "scene_objects": [
+      "Plate",
+      "Bowl",
+      "DiningTable",
+      "Fork",
+      "Knife",
+      "Mug",
+      "Apple"
+    ],
+    "ground_truth_plan": [
+      "find plate",
+      "pick_up plate",
+      "find bowl",
+      "put_down plate bowl",
+      "find dining table",
+      "pick_up bowl",
+      "put_down bowl dining table",
+      "done"
+    ],
+    "seed_instruction": "Stack the plate on the bowl and put them on the dining table."
+  },
+  {
+    "id": "implicit_short_stack_and_place_8",
+    "task_type": "stack_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Pen Palmer was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the ink tool Palmer said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "put the the writing tool in the mug and place it on the desk.",
+    "target_object": "pen",
+    "scene_objects": [
+      "Pen",
+      "Mug",
+      "Desk",
+      "Book",
+      "Laptop",
+      "Pencil",
+      "Cup"
+    ],
+    "ground_truth_plan": [
+      "find pen",
+      "pick_up pen",
+      "find mug",
+      "put_down pen mug",
+      "find desk",
+      "pick_up mug",
+      "put_down mug desk",
+      "done"
+    ],
+    "seed_instruction": "Put the pen in the mug and place it on the desk."
+  },
+  {
+    "id": "implicit_short_stack_and_place_9",
+    "task_type": "stack_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Bowl Brighton was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the round vessel Brighton said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "put the it with the apple inside on the counter top.",
+    "target_object": "bowl",
+    "scene_objects": [
+      "Bowl",
+      "Apple",
+      "CounterTop",
+      "Plate",
+      "Fork",
+      "Mug",
+      "Bread"
+    ],
+    "ground_truth_plan": [
+      "find bowl",
+      "pick_up bowl",
+      "find apple",
+      "put_down bowl apple",
+      "find counter top",
+      "pick_up apple",
+      "put_down apple counter top",
+      "done"
+    ],
+    "seed_instruction": "Put the bowl with the apple inside on the counter top."
+  },
+  {
+    "id": "implicit_short_stack_and_place_10",
+    "task_type": "stack_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Plate Patterson was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the flat thing Patterson said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "stack the the round dish on the bowl and put them on the dining table.",
+    "target_object": "plate",
+    "scene_objects": [
+      "Plate",
+      "Bowl",
+      "DiningTable",
+      "Fork",
+      "Knife",
+      "Mug",
+      "Apple"
+    ],
+    "ground_truth_plan": [
+      "find plate",
+      "pick_up plate",
+      "find bowl",
+      "put_down plate bowl",
+      "find dining table",
+      "pick_up bowl",
+      "put_down bowl dining table",
+      "done"
+    ],
+    "seed_instruction": "Stack the plate on the bowl and put them on the dining table."
+  },
+  {
+    "id": "implicit_short_stack_and_place_11",
+    "task_type": "stack_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Pen Palmer was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the writing tool Palmer said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "put the it in the mug and place it on the desk.",
+    "target_object": "pen",
+    "scene_objects": [
+      "Pen",
+      "Mug",
+      "Desk",
+      "Book",
+      "Laptop",
+      "Pencil",
+      "Cup"
+    ],
+    "ground_truth_plan": [
+      "find pen",
+      "pick_up pen",
+      "find mug",
+      "put_down pen mug",
+      "find desk",
+      "pick_up mug",
+      "put_down mug desk",
+      "done"
+    ],
+    "seed_instruction": "Put the pen in the mug and place it on the desk."
+  },
+  {
+    "id": "implicit_short_stack_and_place_12",
+    "task_type": "stack_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Bowl Brighton was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the round vessel Brighton said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "put the the container with the apple inside on the counter top.",
+    "target_object": "bowl",
+    "scene_objects": [
+      "Bowl",
+      "Apple",
+      "CounterTop",
+      "Plate",
+      "Fork",
+      "Mug",
+      "Bread"
+    ],
+    "ground_truth_plan": [
+      "find bowl",
+      "pick_up bowl",
+      "find apple",
+      "put_down bowl apple",
+      "find counter top",
+      "pick_up apple",
+      "put_down apple counter top",
+      "done"
+    ],
+    "seed_instruction": "Put the bowl with the apple inside on the counter top."
+  },
+  {
+    "id": "implicit_short_stack_and_place_13",
+    "task_type": "stack_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Plate Patterson was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the flat thing Patterson said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "stack the the flat thing on the bowl and put them on the dining table.",
+    "target_object": "plate",
+    "scene_objects": [
+      "Plate",
+      "Bowl",
+      "DiningTable",
+      "Fork",
+      "Knife",
+      "Mug",
+      "Apple"
+    ],
+    "ground_truth_plan": [
+      "find plate",
+      "pick_up plate",
+      "find bowl",
+      "put_down plate bowl",
+      "find dining table",
+      "pick_up bowl",
+      "put_down bowl dining table",
+      "done"
+    ],
+    "seed_instruction": "Stack the plate on the bowl and put them on the dining table."
+  },
+  {
+    "id": "implicit_short_stack_and_place_14",
+    "task_type": "stack_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Pen Palmer was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. it Palmer said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "put the it in the mug and place it on the desk.",
+    "target_object": "pen",
+    "scene_objects": [
+      "Pen",
+      "Mug",
+      "Desk",
+      "Book",
+      "Laptop",
+      "Pencil",
+      "Cup"
+    ],
+    "ground_truth_plan": [
+      "find pen",
+      "pick_up pen",
+      "find mug",
+      "put_down pen mug",
+      "find desk",
+      "pick_up mug",
+      "put_down mug desk",
+      "done"
+    ],
+    "seed_instruction": "Put the pen in the mug and place it on the desk."
+  },
+  {
+    "id": "implicit_short_stack_and_place_15",
+    "task_type": "stack_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Bowl Brighton was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. it Brighton said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "put the the container with the apple inside on the counter top.",
+    "target_object": "bowl",
+    "scene_objects": [
+      "Bowl",
+      "Apple",
+      "CounterTop",
+      "Plate",
+      "Fork",
+      "Mug",
+      "Bread"
+    ],
+    "ground_truth_plan": [
+      "find bowl",
+      "pick_up bowl",
+      "find apple",
+      "put_down bowl apple",
+      "find counter top",
+      "pick_up apple",
+      "put_down apple counter top",
+      "done"
+    ],
+    "seed_instruction": "Put the bowl with the apple inside on the counter top."
+  },
+  {
+    "id": "implicit_short_stack_and_place_16",
+    "task_type": "stack_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Plate Patterson was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the round dish Patterson said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "stack the the dinnerware on the bowl and put them on the dining table.",
+    "target_object": "plate",
+    "scene_objects": [
+      "Plate",
+      "Bowl",
+      "DiningTable",
+      "Fork",
+      "Knife",
+      "Mug",
+      "Apple"
+    ],
+    "ground_truth_plan": [
+      "find plate",
+      "pick_up plate",
+      "find bowl",
+      "put_down plate bowl",
+      "find dining table",
+      "pick_up bowl",
+      "put_down bowl dining table",
+      "done"
+    ],
+    "seed_instruction": "Stack the plate on the bowl and put them on the dining table."
+  },
+  {
+    "id": "implicit_short_stack_and_place_17",
+    "task_type": "stack_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Pen Palmer was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the writing instrument Palmer said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "put the the writing tool in the mug and place it on the desk.",
+    "target_object": "pen",
+    "scene_objects": [
+      "Pen",
+      "Mug",
+      "Desk",
+      "Book",
+      "Laptop",
+      "Pencil",
+      "Cup"
+    ],
+    "ground_truth_plan": [
+      "find pen",
+      "pick_up pen",
+      "find mug",
+      "put_down pen mug",
+      "find desk",
+      "pick_up mug",
+      "put_down mug desk",
+      "done"
+    ],
+    "seed_instruction": "Put the pen in the mug and place it on the desk."
+  },
+  {
+    "id": "implicit_short_stack_and_place_18",
+    "task_type": "stack_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Bowl Brighton was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the container Brighton said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "put the the round vessel with the apple inside on the counter top.",
+    "target_object": "bowl",
+    "scene_objects": [
+      "Bowl",
+      "Apple",
+      "CounterTop",
+      "Plate",
+      "Fork",
+      "Mug",
+      "Bread"
+    ],
+    "ground_truth_plan": [
+      "find bowl",
+      "pick_up bowl",
+      "find apple",
+      "put_down bowl apple",
+      "find counter top",
+      "pick_up apple",
+      "put_down apple counter top",
+      "done"
+    ],
+    "seed_instruction": "Put the bowl with the apple inside on the counter top."
+  },
+  {
+    "id": "implicit_short_stack_and_place_19",
+    "task_type": "stack_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Plate Patterson was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the dinnerware Patterson said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "stack the the dinnerware on the bowl and put them on the dining table.",
+    "target_object": "plate",
+    "scene_objects": [
+      "Plate",
+      "Bowl",
+      "DiningTable",
+      "Fork",
+      "Knife",
+      "Mug",
+      "Apple"
+    ],
+    "ground_truth_plan": [
+      "find plate",
+      "pick_up plate",
+      "find bowl",
+      "put_down plate bowl",
+      "find dining table",
+      "pick_up bowl",
+      "put_down bowl dining table",
+      "done"
+    ],
+    "seed_instruction": "Stack the plate on the bowl and put them on the dining table."
+  },
+  {
+    "id": "implicit_short_clean_and_place_0",
+    "task_type": "clean_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Apple Jack was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the fruit Jack said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "clean the it and put it on the counter top.",
+    "target_object": "apple",
+    "scene_objects": [
+      "Apple",
+      "CounterTop",
+      "Sink",
+      "Plate",
+      "Bowl",
+      "Knife",
+      "Bread"
+    ],
+    "ground_truth_plan": [
+      "find apple",
+      "pick_up apple",
+      "find sink",
+      "clean apple",
+      "find counter top",
+      "put_down apple counter top",
+      "done"
+    ],
+    "seed_instruction": "Clean the apple and put it on the counter top."
+  },
+  {
+    "id": "implicit_short_clean_and_place_1",
+    "task_type": "clean_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Plate Patterson was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the round dish Patterson said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "wash the the flat thing and place it on the dining table.",
+    "target_object": "plate",
+    "scene_objects": [
+      "Plate",
+      "DiningTable",
+      "Sink",
+      "Fork",
+      "Knife",
+      "Bowl",
+      "Mug"
+    ],
+    "ground_truth_plan": [
+      "find plate",
+      "pick_up plate",
+      "find sink",
+      "clean plate",
+      "find dining table",
+      "put_down plate dining table",
+      "done"
+    ],
+    "seed_instruction": "Wash the plate and place it on the dining table."
+  },
+  {
+    "id": "implicit_short_clean_and_place_2",
+    "task_type": "clean_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Mug Star was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the cup-like thing Star said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "clean the the cup-like thing and put it on the shelf.",
+    "target_object": "mug",
+    "scene_objects": [
+      "Mug",
+      "Shelf",
+      "Sink",
+      "Cup",
+      "Plate",
+      "Bowl",
+      "CoffeeTable"
+    ],
+    "ground_truth_plan": [
+      "find mug",
+      "pick_up mug",
+      "find sink",
+      "clean mug",
+      "find shelf",
+      "put_down mug shelf",
+      "done"
+    ],
+    "seed_instruction": "Clean the mug and put it on the shelf."
+  },
+  {
+    "id": "implicit_short_clean_and_place_3",
+    "task_type": "clean_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Potato Pete was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the one Pete said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "wash the the heated one and put it on the counter top.",
+    "target_object": "potato",
+    "scene_objects": [
+      "Potato",
+      "CounterTop",
+      "Sink",
+      "Bowl",
+      "Plate",
+      "Knife",
+      "Tomato"
+    ],
+    "ground_truth_plan": [
+      "find potato",
+      "pick_up potato",
+      "find sink",
+      "clean potato",
+      "find counter top",
+      "put_down potato counter top",
+      "done"
+    ],
+    "seed_instruction": "Wash the potato and put it on the counter top."
+  },
+  {
+    "id": "implicit_short_clean_and_place_4",
+    "task_type": "clean_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Lettuce Lou was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the leafy one Lou said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "clean the the salad ingredient and place it on the plate.",
+    "target_object": "lettuce",
+    "scene_objects": [
+      "Lettuce",
+      "Plate",
+      "Sink",
+      "CounterTop",
+      "Bowl",
+      "Knife",
+      "Tomato"
+    ],
+    "ground_truth_plan": [
+      "find lettuce",
+      "pick_up lettuce",
+      "find sink",
+      "clean lettuce",
+      "find plate",
+      "put_down lettuce plate",
+      "done"
+    ],
+    "seed_instruction": "Clean the lettuce and place it on the plate."
+  },
+  {
+    "id": "implicit_short_clean_and_place_5",
+    "task_type": "clean_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Apple Jack was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the red one Jack said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "clean the the red one and put it on the counter top.",
+    "target_object": "apple",
+    "scene_objects": [
+      "Apple",
+      "CounterTop",
+      "Sink",
+      "Plate",
+      "Bowl",
+      "Knife",
+      "Bread"
+    ],
+    "ground_truth_plan": [
+      "find apple",
+      "pick_up apple",
+      "find sink",
+      "clean apple",
+      "find counter top",
+      "put_down apple counter top",
+      "done"
+    ],
+    "seed_instruction": "Clean the apple and put it on the counter top."
+  },
+  {
+    "id": "implicit_short_clean_and_place_6",
+    "task_type": "clean_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Plate Patterson was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the flat thing Patterson said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "wash the the dinnerware and place it on the dining table.",
+    "target_object": "plate",
+    "scene_objects": [
+      "Plate",
+      "DiningTable",
+      "Sink",
+      "Fork",
+      "Knife",
+      "Bowl",
+      "Mug"
+    ],
+    "ground_truth_plan": [
+      "find plate",
+      "pick_up plate",
+      "find sink",
+      "clean plate",
+      "find dining table",
+      "put_down plate dining table",
+      "done"
+    ],
+    "seed_instruction": "Wash the plate and place it on the dining table."
+  },
+  {
+    "id": "implicit_short_clean_and_place_7",
+    "task_type": "clean_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Mug Star was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the drinking vessel Star said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "clean the the container and put it on the shelf.",
+    "target_object": "mug",
+    "scene_objects": [
+      "Mug",
+      "Shelf",
+      "Sink",
+      "Cup",
+      "Plate",
+      "Bowl",
+      "CoffeeTable"
+    ],
+    "ground_truth_plan": [
+      "find mug",
+      "pick_up mug",
+      "find sink",
+      "clean mug",
+      "find shelf",
+      "put_down mug shelf",
+      "done"
+    ],
+    "seed_instruction": "Clean the mug and put it on the shelf."
+  },
+  {
+    "id": "implicit_short_clean_and_place_8",
+    "task_type": "clean_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Potato Pete was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the one Pete said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "wash the the heated one and put it on the counter top.",
+    "target_object": "potato",
+    "scene_objects": [
+      "Potato",
+      "CounterTop",
+      "Sink",
+      "Bowl",
+      "Plate",
+      "Knife",
+      "Tomato"
+    ],
+    "ground_truth_plan": [
+      "find potato",
+      "pick_up potato",
+      "find sink",
+      "clean potato",
+      "find counter top",
+      "put_down potato counter top",
+      "done"
+    ],
+    "seed_instruction": "Wash the potato and put it on the counter top."
+  },
+  {
+    "id": "implicit_short_clean_and_place_9",
+    "task_type": "clean_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Lettuce Lou was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the leafy one Lou said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "clean the the leafy one and place it on the plate.",
+    "target_object": "lettuce",
+    "scene_objects": [
+      "Lettuce",
+      "Plate",
+      "Sink",
+      "CounterTop",
+      "Bowl",
+      "Knife",
+      "Tomato"
+    ],
+    "ground_truth_plan": [
+      "find lettuce",
+      "pick_up lettuce",
+      "find sink",
+      "clean lettuce",
+      "find plate",
+      "put_down lettuce plate",
+      "done"
+    ],
+    "seed_instruction": "Clean the lettuce and place it on the plate."
+  },
+  {
+    "id": "implicit_short_clean_and_place_10",
+    "task_type": "clean_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Apple Jack was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the round fruit Jack said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "clean the the fruit and put it on the counter top.",
+    "target_object": "apple",
+    "scene_objects": [
+      "Apple",
+      "CounterTop",
+      "Sink",
+      "Plate",
+      "Bowl",
+      "Knife",
+      "Bread"
+    ],
+    "ground_truth_plan": [
+      "find apple",
+      "pick_up apple",
+      "find sink",
+      "clean apple",
+      "find counter top",
+      "put_down apple counter top",
+      "done"
+    ],
+    "seed_instruction": "Clean the apple and put it on the counter top."
+  },
+  {
+    "id": "implicit_short_clean_and_place_11",
+    "task_type": "clean_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Plate Patterson was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the dinnerware Patterson said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "wash the the round dish and place it on the dining table.",
+    "target_object": "plate",
+    "scene_objects": [
+      "Plate",
+      "DiningTable",
+      "Sink",
+      "Fork",
+      "Knife",
+      "Bowl",
+      "Mug"
+    ],
+    "ground_truth_plan": [
+      "find plate",
+      "pick_up plate",
+      "find sink",
+      "clean plate",
+      "find dining table",
+      "put_down plate dining table",
+      "done"
+    ],
+    "seed_instruction": "Wash the plate and place it on the dining table."
+  },
+  {
+    "id": "implicit_short_clean_and_place_12",
+    "task_type": "clean_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Mug Star was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the drinking vessel Star said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "clean the the drinking vessel and put it on the shelf.",
+    "target_object": "mug",
+    "scene_objects": [
+      "Mug",
+      "Shelf",
+      "Sink",
+      "Cup",
+      "Plate",
+      "Bowl",
+      "CoffeeTable"
+    ],
+    "ground_truth_plan": [
+      "find mug",
+      "pick_up mug",
+      "find sink",
+      "clean mug",
+      "find shelf",
+      "put_down mug shelf",
+      "done"
+    ],
+    "seed_instruction": "Clean the mug and put it on the shelf."
+  },
+  {
+    "id": "implicit_short_clean_and_place_13",
+    "task_type": "clean_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Potato Pete was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. it Pete said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "wash the the heated one and put it on the counter top.",
+    "target_object": "potato",
+    "scene_objects": [
+      "Potato",
+      "CounterTop",
+      "Sink",
+      "Bowl",
+      "Plate",
+      "Knife",
+      "Tomato"
+    ],
+    "ground_truth_plan": [
+      "find potato",
+      "pick_up potato",
+      "find sink",
+      "clean potato",
+      "find counter top",
+      "put_down potato counter top",
+      "done"
+    ],
+    "seed_instruction": "Wash the potato and put it on the counter top."
+  },
+  {
+    "id": "implicit_short_clean_and_place_14",
+    "task_type": "clean_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Lettuce Lou was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the salad ingredient Lou said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "clean the the salad ingredient and place it on the plate.",
+    "target_object": "lettuce",
+    "scene_objects": [
+      "Lettuce",
+      "Plate",
+      "Sink",
+      "CounterTop",
+      "Bowl",
+      "Knife",
+      "Tomato"
+    ],
+    "ground_truth_plan": [
+      "find lettuce",
+      "pick_up lettuce",
+      "find sink",
+      "clean lettuce",
+      "find plate",
+      "put_down lettuce plate",
+      "done"
+    ],
+    "seed_instruction": "Clean the lettuce and place it on the plate."
+  },
+  {
+    "id": "implicit_short_clean_and_place_15",
+    "task_type": "clean_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Apple Jack was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the fruit Jack said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "clean the the red one and put it on the counter top.",
+    "target_object": "apple",
+    "scene_objects": [
+      "Apple",
+      "CounterTop",
+      "Sink",
+      "Plate",
+      "Bowl",
+      "Knife",
+      "Bread"
+    ],
+    "ground_truth_plan": [
+      "find apple",
+      "pick_up apple",
+      "find sink",
+      "clean apple",
+      "find counter top",
+      "put_down apple counter top",
+      "done"
+    ],
+    "seed_instruction": "Clean the apple and put it on the counter top."
+  },
+  {
+    "id": "implicit_short_clean_and_place_16",
+    "task_type": "clean_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Plate Patterson was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. it Patterson said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "wash the the round dish and place it on the dining table.",
+    "target_object": "plate",
+    "scene_objects": [
+      "Plate",
+      "DiningTable",
+      "Sink",
+      "Fork",
+      "Knife",
+      "Bowl",
+      "Mug"
+    ],
+    "ground_truth_plan": [
+      "find plate",
+      "pick_up plate",
+      "find sink",
+      "clean plate",
+      "find dining table",
+      "put_down plate dining table",
+      "done"
+    ],
+    "seed_instruction": "Wash the plate and place it on the dining table."
+  },
+  {
+    "id": "implicit_short_clean_and_place_17",
+    "task_type": "clean_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Mug Star was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. it Star said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "clean the the drinking vessel and put it on the shelf.",
+    "target_object": "mug",
+    "scene_objects": [
+      "Mug",
+      "Shelf",
+      "Sink",
+      "Cup",
+      "Plate",
+      "Bowl",
+      "CoffeeTable"
+    ],
+    "ground_truth_plan": [
+      "find mug",
+      "pick_up mug",
+      "find sink",
+      "clean mug",
+      "find shelf",
+      "put_down mug shelf",
+      "done"
+    ],
+    "seed_instruction": "Clean the mug and put it on the shelf."
+  },
+  {
+    "id": "implicit_short_heat_and_place_0",
+    "task_type": "heat_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Potato Pete was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the round vegetable Pete said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "heat the the heated one and put it in the sink.",
+    "target_object": "potato",
+    "scene_objects": [
+      "Potato",
+      "Sink",
+      "Microwave",
+      "CounterTop",
+      "Plate",
+      "Bowl",
+      "Tomato"
+    ],
+    "ground_truth_plan": [
+      "find potato",
+      "pick_up potato",
+      "find microwave",
+      "open microwave",
+      "heat potato",
+      "close microwave",
+      "find sink",
+      "put_down potato sink",
+      "done"
+    ],
+    "seed_instruction": "Heat the potato and put it in the sink."
+  },
+  {
+    "id": "implicit_short_heat_and_place_1",
+    "task_type": "heat_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Bread Baker was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the sliced one Baker said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "warm up the the outer layer and place it on the plate.",
+    "target_object": "bread",
+    "scene_objects": [
+      "Bread",
+      "Plate",
+      "Microwave",
+      "CounterTop",
+      "Knife",
+      "Bowl",
+      "Mug"
+    ],
+    "ground_truth_plan": [
+      "find bread",
+      "pick_up bread",
+      "find microwave",
+      "open microwave",
+      "heat bread",
+      "close microwave",
+      "find plate",
+      "put_down bread plate",
+      "done"
+    ],
+    "seed_instruction": "Warm up the bread and place it on the plate."
+  },
+  {
+    "id": "implicit_short_heat_and_place_2",
+    "task_type": "heat_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Apple Jack was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the fruit Jack said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "heat the the fruit and put it on the counter top.",
+    "target_object": "apple",
+    "scene_objects": [
+      "Apple",
+      "CounterTop",
+      "Microwave",
+      "Plate",
+      "Bowl",
+      "Mug",
+      "Knife"
+    ],
+    "ground_truth_plan": [
+      "find apple",
+      "pick_up apple",
+      "find microwave",
+      "open microwave",
+      "heat apple",
+      "close microwave",
+      "find counter top",
+      "put_down apple counter top",
+      "done"
+    ],
+    "seed_instruction": "Heat the apple and put it on the counter top."
+  },
+  {
+    "id": "implicit_short_heat_and_place_3",
+    "task_type": "heat_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Egg Edmonds was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the oval item Edmonds said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "heat the the oval item and place it in the bowl.",
+    "target_object": "egg",
+    "scene_objects": [
+      "Egg",
+      "Bowl",
+      "Microwave",
+      "CounterTop",
+      "Plate",
+      "Fork",
+      "Mug"
+    ],
+    "ground_truth_plan": [
+      "find egg",
+      "pick_up egg",
+      "find microwave",
+      "open microwave",
+      "heat egg",
+      "close microwave",
+      "find bowl",
+      "put_down egg bowl",
+      "done"
+    ],
+    "seed_instruction": "Heat the egg and place it in the bowl."
+  },
+  {
+    "id": "implicit_short_heat_and_place_4",
+    "task_type": "heat_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Tomato Tim was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. it Tim said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "heat the the fruit and put it on the dining table.",
+    "target_object": "tomato",
+    "scene_objects": [
+      "Tomato",
+      "DiningTable",
+      "Microwave",
+      "CounterTop",
+      "Plate",
+      "Bowl",
+      "Lettuce"
+    ],
+    "ground_truth_plan": [
+      "find tomato",
+      "pick_up tomato",
+      "find microwave",
+      "open microwave",
+      "heat tomato",
+      "close microwave",
+      "find dining table",
+      "put_down tomato dining table",
+      "done"
+    ],
+    "seed_instruction": "Heat the tomato and put it on the dining table."
+  },
+  {
+    "id": "implicit_short_heat_and_place_5",
+    "task_type": "heat_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Potato Pete was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the one Pete said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "heat the the one and put it in the sink.",
+    "target_object": "potato",
+    "scene_objects": [
+      "Potato",
+      "Sink",
+      "Microwave",
+      "CounterTop",
+      "Plate",
+      "Bowl",
+      "Tomato"
+    ],
+    "ground_truth_plan": [
+      "find potato",
+      "pick_up potato",
+      "find microwave",
+      "open microwave",
+      "heat potato",
+      "close microwave",
+      "find sink",
+      "put_down potato sink",
+      "done"
+    ],
+    "seed_instruction": "Heat the potato and put it in the sink."
+  },
+  {
+    "id": "implicit_short_heat_and_place_6",
+    "task_type": "heat_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Bread Baker was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the baked item Baker said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "warm up the it and place it on the plate.",
+    "target_object": "bread",
+    "scene_objects": [
+      "Bread",
+      "Plate",
+      "Microwave",
+      "CounterTop",
+      "Knife",
+      "Bowl",
+      "Mug"
+    ],
+    "ground_truth_plan": [
+      "find bread",
+      "pick_up bread",
+      "find microwave",
+      "open microwave",
+      "heat bread",
+      "close microwave",
+      "find plate",
+      "put_down bread plate",
+      "done"
+    ],
+    "seed_instruction": "Warm up the bread and place it on the plate."
+  },
+  {
+    "id": "implicit_short_heat_and_place_7",
+    "task_type": "heat_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Apple Jack was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. it Jack said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "heat the the fruit and put it on the counter top.",
+    "target_object": "apple",
+    "scene_objects": [
+      "Apple",
+      "CounterTop",
+      "Microwave",
+      "Plate",
+      "Bowl",
+      "Mug",
+      "Knife"
+    ],
+    "ground_truth_plan": [
+      "find apple",
+      "pick_up apple",
+      "find microwave",
+      "open microwave",
+      "heat apple",
+      "close microwave",
+      "find counter top",
+      "put_down apple counter top",
+      "done"
+    ],
+    "seed_instruction": "Heat the apple and put it on the counter top."
+  },
+  {
+    "id": "implicit_short_heat_and_place_8",
+    "task_type": "heat_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Egg Edmonds was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the breakfast ingredient Edmonds said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "heat the it and place it in the bowl.",
+    "target_object": "egg",
+    "scene_objects": [
+      "Egg",
+      "Bowl",
+      "Microwave",
+      "CounterTop",
+      "Plate",
+      "Fork",
+      "Mug"
+    ],
+    "ground_truth_plan": [
+      "find egg",
+      "pick_up egg",
+      "find microwave",
+      "open microwave",
+      "heat egg",
+      "close microwave",
+      "find bowl",
+      "put_down egg bowl",
+      "done"
+    ],
+    "seed_instruction": "Heat the egg and place it in the bowl."
+  },
+  {
+    "id": "implicit_short_heat_and_place_9",
+    "task_type": "heat_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Tomato Tim was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the juicy one Tim said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "heat the the red vegetable and put it on the dining table.",
+    "target_object": "tomato",
+    "scene_objects": [
+      "Tomato",
+      "DiningTable",
+      "Microwave",
+      "CounterTop",
+      "Plate",
+      "Bowl",
+      "Lettuce"
+    ],
+    "ground_truth_plan": [
+      "find tomato",
+      "pick_up tomato",
+      "find microwave",
+      "open microwave",
+      "heat tomato",
+      "close microwave",
+      "find dining table",
+      "put_down tomato dining table",
+      "done"
+    ],
+    "seed_instruction": "Heat the tomato and put it on the dining table."
+  },
+  {
+    "id": "implicit_short_heat_and_place_10",
+    "task_type": "heat_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Potato Pete was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the one Pete said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "heat the it and put it in the sink.",
+    "target_object": "potato",
+    "scene_objects": [
+      "Potato",
+      "Sink",
+      "Microwave",
+      "CounterTop",
+      "Plate",
+      "Bowl",
+      "Tomato"
+    ],
+    "ground_truth_plan": [
+      "find potato",
+      "pick_up potato",
+      "find microwave",
+      "open microwave",
+      "heat potato",
+      "close microwave",
+      "find sink",
+      "put_down potato sink",
+      "done"
+    ],
+    "seed_instruction": "Heat the potato and put it in the sink."
+  },
+  {
+    "id": "implicit_short_heat_and_place_11",
+    "task_type": "heat_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Bread Baker was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the baked item Baker said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "warm up the it and place it on the plate.",
+    "target_object": "bread",
+    "scene_objects": [
+      "Bread",
+      "Plate",
+      "Microwave",
+      "CounterTop",
+      "Knife",
+      "Bowl",
+      "Mug"
+    ],
+    "ground_truth_plan": [
+      "find bread",
+      "pick_up bread",
+      "find microwave",
+      "open microwave",
+      "heat bread",
+      "close microwave",
+      "find plate",
+      "put_down bread plate",
+      "done"
+    ],
+    "seed_instruction": "Warm up the bread and place it on the plate."
+  },
+  {
+    "id": "implicit_short_heat_and_place_12",
+    "task_type": "heat_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Apple Jack was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the round fruit Jack said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "heat the the round fruit and put it on the counter top.",
+    "target_object": "apple",
+    "scene_objects": [
+      "Apple",
+      "CounterTop",
+      "Microwave",
+      "Plate",
+      "Bowl",
+      "Mug",
+      "Knife"
+    ],
+    "ground_truth_plan": [
+      "find apple",
+      "pick_up apple",
+      "find microwave",
+      "open microwave",
+      "heat apple",
+      "close microwave",
+      "find counter top",
+      "put_down apple counter top",
+      "done"
+    ],
+    "seed_instruction": "Heat the apple and put it on the counter top."
+  },
+  {
+    "id": "implicit_short_heat_and_place_13",
+    "task_type": "heat_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Egg Edmonds was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the fragile one Edmonds said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "heat the the breakfast ingredient and place it in the bowl.",
+    "target_object": "egg",
+    "scene_objects": [
+      "Egg",
+      "Bowl",
+      "Microwave",
+      "CounterTop",
+      "Plate",
+      "Fork",
+      "Mug"
+    ],
+    "ground_truth_plan": [
+      "find egg",
+      "pick_up egg",
+      "find microwave",
+      "open microwave",
+      "heat egg",
+      "close microwave",
+      "find bowl",
+      "put_down egg bowl",
+      "done"
+    ],
+    "seed_instruction": "Heat the egg and place it in the bowl."
+  },
+  {
+    "id": "implicit_short_heat_and_place_14",
+    "task_type": "heat_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Tomato Tim was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the red vegetable Tim said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "heat the the red vegetable and put it on the dining table.",
+    "target_object": "tomato",
+    "scene_objects": [
+      "Tomato",
+      "DiningTable",
+      "Microwave",
+      "CounterTop",
+      "Plate",
+      "Bowl",
+      "Lettuce"
+    ],
+    "ground_truth_plan": [
+      "find tomato",
+      "pick_up tomato",
+      "find microwave",
+      "open microwave",
+      "heat tomato",
+      "close microwave",
+      "find dining table",
+      "put_down tomato dining table",
+      "done"
+    ],
+    "seed_instruction": "Heat the tomato and put it on the dining table."
+  },
+  {
+    "id": "implicit_short_heat_and_place_15",
+    "task_type": "heat_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Potato Pete was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. it Pete said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "heat the the heated one and put it in the sink.",
+    "target_object": "potato",
+    "scene_objects": [
+      "Potato",
+      "Sink",
+      "Microwave",
+      "CounterTop",
+      "Plate",
+      "Bowl",
+      "Tomato"
+    ],
+    "ground_truth_plan": [
+      "find potato",
+      "pick_up potato",
+      "find microwave",
+      "open microwave",
+      "heat potato",
+      "close microwave",
+      "find sink",
+      "put_down potato sink",
+      "done"
+    ],
+    "seed_instruction": "Heat the potato and put it in the sink."
+  },
+  {
+    "id": "implicit_short_heat_and_place_16",
+    "task_type": "heat_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Bread Baker was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the baked item Baker said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "warm up the it and place it on the plate.",
+    "target_object": "bread",
+    "scene_objects": [
+      "Bread",
+      "Plate",
+      "Microwave",
+      "CounterTop",
+      "Knife",
+      "Bowl",
+      "Mug"
+    ],
+    "ground_truth_plan": [
+      "find bread",
+      "pick_up bread",
+      "find microwave",
+      "open microwave",
+      "heat bread",
+      "close microwave",
+      "find plate",
+      "put_down bread plate",
+      "done"
+    ],
+    "seed_instruction": "Warm up the bread and place it on the plate."
+  },
+  {
+    "id": "implicit_short_heat_and_place_17",
+    "task_type": "heat_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Apple Jack was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the fruit Jack said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "heat the it and put it on the counter top.",
+    "target_object": "apple",
+    "scene_objects": [
+      "Apple",
+      "CounterTop",
+      "Microwave",
+      "Plate",
+      "Bowl",
+      "Mug",
+      "Knife"
+    ],
+    "ground_truth_plan": [
+      "find apple",
+      "pick_up apple",
+      "find microwave",
+      "open microwave",
+      "heat apple",
+      "close microwave",
+      "find counter top",
+      "put_down apple counter top",
+      "done"
+    ],
+    "seed_instruction": "Heat the apple and put it on the counter top."
+  },
+  {
+    "id": "implicit_short_cool_and_place_0",
+    "task_type": "cool_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Apple Jack was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the fruit Jack said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "cool the the round fruit and put it on the counter top.",
+    "target_object": "apple",
+    "scene_objects": [
+      "Apple",
+      "CounterTop",
+      "Fridge",
+      "Plate",
+      "Bowl",
+      "Mug",
+      "Bread"
+    ],
+    "ground_truth_plan": [
+      "find apple",
+      "pick_up apple",
+      "find fridge",
+      "open fridge",
+      "cool apple",
+      "close fridge",
+      "find counter top",
+      "put_down apple counter top",
+      "done"
+    ],
+    "seed_instruction": "Cool the apple and put it on the counter top."
+  },
+  {
+    "id": "implicit_short_cool_and_place_1",
+    "task_type": "cool_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Potato Pete was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the round vegetable Pete said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "chill the it and place it on the plate.",
+    "target_object": "potato",
+    "scene_objects": [
+      "Potato",
+      "Plate",
+      "Fridge",
+      "CounterTop",
+      "Bowl",
+      "Mug",
+      "Tomato"
+    ],
+    "ground_truth_plan": [
+      "find potato",
+      "pick_up potato",
+      "find fridge",
+      "open fridge",
+      "cool potato",
+      "close fridge",
+      "find plate",
+      "put_down potato plate",
+      "done"
+    ],
+    "seed_instruction": "Chill the potato and place it on the plate."
+  },
+  {
+    "id": "implicit_short_cool_and_place_2",
+    "task_type": "cool_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Bread Baker was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the baked item Baker said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "cool the the sliced one and put it on the dining table.",
+    "target_object": "bread",
+    "scene_objects": [
+      "Bread",
+      "DiningTable",
+      "Fridge",
+      "Plate",
+      "Bowl",
+      "Knife",
+      "Mug"
+    ],
+    "ground_truth_plan": [
+      "find bread",
+      "pick_up bread",
+      "find fridge",
+      "open fridge",
+      "cool bread",
+      "close fridge",
+      "find dining table",
+      "put_down bread dining table",
+      "done"
+    ],
+    "seed_instruction": "Cool the bread and put it on the dining table."
+  },
+  {
+    "id": "implicit_short_cool_and_place_3",
+    "task_type": "cool_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Tomato Tim was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. it Tim said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "chill the the red vegetable and place it on the counter top.",
+    "target_object": "tomato",
+    "scene_objects": [
+      "Tomato",
+      "CounterTop",
+      "Fridge",
+      "Plate",
+      "Bowl",
+      "Lettuce",
+      "Potato"
+    ],
+    "ground_truth_plan": [
+      "find tomato",
+      "pick_up tomato",
+      "find fridge",
+      "open fridge",
+      "cool tomato",
+      "close fridge",
+      "find counter top",
+      "put_down tomato counter top",
+      "done"
+    ],
+    "seed_instruction": "Chill the tomato and place it on the counter top."
+  },
+  {
+    "id": "implicit_short_cool_and_place_4",
+    "task_type": "cool_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Lettuce Lou was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the leafy one Lou said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "cool the it and put it in the bowl.",
+    "target_object": "lettuce",
+    "scene_objects": [
+      "Lettuce",
+      "Bowl",
+      "Fridge",
+      "CounterTop",
+      "Plate",
+      "Tomato",
+      "Potato"
+    ],
+    "ground_truth_plan": [
+      "find lettuce",
+      "pick_up lettuce",
+      "find fridge",
+      "open fridge",
+      "cool lettuce",
+      "close fridge",
+      "find bowl",
+      "put_down lettuce bowl",
+      "done"
+    ],
+    "seed_instruction": "Cool the lettuce and put it in the bowl."
+  },
+  {
+    "id": "implicit_short_cool_and_place_5",
+    "task_type": "cool_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Apple Jack was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the red one Jack said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "cool the it and put it on the counter top.",
+    "target_object": "apple",
+    "scene_objects": [
+      "Apple",
+      "CounterTop",
+      "Fridge",
+      "Plate",
+      "Bowl",
+      "Mug",
+      "Bread"
+    ],
+    "ground_truth_plan": [
+      "find apple",
+      "pick_up apple",
+      "find fridge",
+      "open fridge",
+      "cool apple",
+      "close fridge",
+      "find counter top",
+      "put_down apple counter top",
+      "done"
+    ],
+    "seed_instruction": "Cool the apple and put it on the counter top."
+  },
+  {
+    "id": "implicit_short_cool_and_place_6",
+    "task_type": "cool_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Potato Pete was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the round vegetable Pete said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "chill the the heated one and place it on the plate.",
+    "target_object": "potato",
+    "scene_objects": [
+      "Potato",
+      "Plate",
+      "Fridge",
+      "CounterTop",
+      "Bowl",
+      "Mug",
+      "Tomato"
+    ],
+    "ground_truth_plan": [
+      "find potato",
+      "pick_up potato",
+      "find fridge",
+      "open fridge",
+      "cool potato",
+      "close fridge",
+      "find plate",
+      "put_down potato plate",
+      "done"
+    ],
+    "seed_instruction": "Chill the potato and place it on the plate."
+  },
+  {
+    "id": "implicit_short_cool_and_place_7",
+    "task_type": "cool_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Bread Baker was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the baked item Baker said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "cool the the sliced one and put it on the dining table.",
+    "target_object": "bread",
+    "scene_objects": [
+      "Bread",
+      "DiningTable",
+      "Fridge",
+      "Plate",
+      "Bowl",
+      "Knife",
+      "Mug"
+    ],
+    "ground_truth_plan": [
+      "find bread",
+      "pick_up bread",
+      "find fridge",
+      "open fridge",
+      "cool bread",
+      "close fridge",
+      "find dining table",
+      "put_down bread dining table",
+      "done"
+    ],
+    "seed_instruction": "Cool the bread and put it on the dining table."
+  },
+  {
+    "id": "implicit_short_cool_and_place_8",
+    "task_type": "cool_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Tomato Tim was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the red vegetable Tim said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "chill the the juicy one and place it on the counter top.",
+    "target_object": "tomato",
+    "scene_objects": [
+      "Tomato",
+      "CounterTop",
+      "Fridge",
+      "Plate",
+      "Bowl",
+      "Lettuce",
+      "Potato"
+    ],
+    "ground_truth_plan": [
+      "find tomato",
+      "pick_up tomato",
+      "find fridge",
+      "open fridge",
+      "cool tomato",
+      "close fridge",
+      "find counter top",
+      "put_down tomato counter top",
+      "done"
+    ],
+    "seed_instruction": "Chill the tomato and place it on the counter top."
+  },
+  {
+    "id": "implicit_short_cool_and_place_9",
+    "task_type": "cool_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Lettuce Lou was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. it Lou said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "cool the the green one and put it in the bowl.",
+    "target_object": "lettuce",
+    "scene_objects": [
+      "Lettuce",
+      "Bowl",
+      "Fridge",
+      "CounterTop",
+      "Plate",
+      "Tomato",
+      "Potato"
+    ],
+    "ground_truth_plan": [
+      "find lettuce",
+      "pick_up lettuce",
+      "find fridge",
+      "open fridge",
+      "cool lettuce",
+      "close fridge",
+      "find bowl",
+      "put_down lettuce bowl",
+      "done"
+    ],
+    "seed_instruction": "Cool the lettuce and put it in the bowl."
+  },
+  {
+    "id": "implicit_short_cool_and_place_10",
+    "task_type": "cool_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Apple Jack was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the fruit Jack said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "cool the the red one and put it on the counter top.",
+    "target_object": "apple",
+    "scene_objects": [
+      "Apple",
+      "CounterTop",
+      "Fridge",
+      "Plate",
+      "Bowl",
+      "Mug",
+      "Bread"
+    ],
+    "ground_truth_plan": [
+      "find apple",
+      "pick_up apple",
+      "find fridge",
+      "open fridge",
+      "cool apple",
+      "close fridge",
+      "find counter top",
+      "put_down apple counter top",
+      "done"
+    ],
+    "seed_instruction": "Cool the apple and put it on the counter top."
+  },
+  {
+    "id": "implicit_short_cool_and_place_11",
+    "task_type": "cool_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Potato Pete was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the heated one Pete said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "chill the the round vegetable and place it on the plate.",
+    "target_object": "potato",
+    "scene_objects": [
+      "Potato",
+      "Plate",
+      "Fridge",
+      "CounterTop",
+      "Bowl",
+      "Mug",
+      "Tomato"
+    ],
+    "ground_truth_plan": [
+      "find potato",
+      "pick_up potato",
+      "find fridge",
+      "open fridge",
+      "cool potato",
+      "close fridge",
+      "find plate",
+      "put_down potato plate",
+      "done"
+    ],
+    "seed_instruction": "Chill the potato and place it on the plate."
+  },
+  {
+    "id": "implicit_short_cool_and_place_12",
+    "task_type": "cool_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Bread Baker was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. it Baker said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "cool the the baked item and put it on the dining table.",
+    "target_object": "bread",
+    "scene_objects": [
+      "Bread",
+      "DiningTable",
+      "Fridge",
+      "Plate",
+      "Bowl",
+      "Knife",
+      "Mug"
+    ],
+    "ground_truth_plan": [
+      "find bread",
+      "pick_up bread",
+      "find fridge",
+      "open fridge",
+      "cool bread",
+      "close fridge",
+      "find dining table",
+      "put_down bread dining table",
+      "done"
+    ],
+    "seed_instruction": "Cool the bread and put it on the dining table."
+  },
+  {
+    "id": "implicit_short_cool_and_place_13",
+    "task_type": "cool_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Tomato Tim was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the red vegetable Tim said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "chill the the red vegetable and place it on the counter top.",
+    "target_object": "tomato",
+    "scene_objects": [
+      "Tomato",
+      "CounterTop",
+      "Fridge",
+      "Plate",
+      "Bowl",
+      "Lettuce",
+      "Potato"
+    ],
+    "ground_truth_plan": [
+      "find tomato",
+      "pick_up tomato",
+      "find fridge",
+      "open fridge",
+      "cool tomato",
+      "close fridge",
+      "find counter top",
+      "put_down tomato counter top",
+      "done"
+    ],
+    "seed_instruction": "Chill the tomato and place it on the counter top."
+  },
+  {
+    "id": "implicit_short_cool_and_place_14",
+    "task_type": "cool_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Lettuce Lou was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the green one Lou said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "cool the the green one and put it in the bowl.",
+    "target_object": "lettuce",
+    "scene_objects": [
+      "Lettuce",
+      "Bowl",
+      "Fridge",
+      "CounterTop",
+      "Plate",
+      "Tomato",
+      "Potato"
+    ],
+    "ground_truth_plan": [
+      "find lettuce",
+      "pick_up lettuce",
+      "find fridge",
+      "open fridge",
+      "cool lettuce",
+      "close fridge",
+      "find bowl",
+      "put_down lettuce bowl",
+      "done"
+    ],
+    "seed_instruction": "Cool the lettuce and put it in the bowl."
+  },
+  {
+    "id": "implicit_short_cool_and_place_15",
+    "task_type": "cool_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Apple Jack was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the round fruit Jack said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "cool the the round fruit and put it on the counter top.",
+    "target_object": "apple",
+    "scene_objects": [
+      "Apple",
+      "CounterTop",
+      "Fridge",
+      "Plate",
+      "Bowl",
+      "Mug",
+      "Bread"
+    ],
+    "ground_truth_plan": [
+      "find apple",
+      "pick_up apple",
+      "find fridge",
+      "open fridge",
+      "cool apple",
+      "close fridge",
+      "find counter top",
+      "put_down apple counter top",
+      "done"
+    ],
+    "seed_instruction": "Cool the apple and put it on the counter top."
+  },
+  {
+    "id": "implicit_short_cool_and_place_16",
+    "task_type": "cool_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Potato Pete was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. it Pete said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "chill the the heated one and place it on the plate.",
+    "target_object": "potato",
+    "scene_objects": [
+      "Potato",
+      "Plate",
+      "Fridge",
+      "CounterTop",
+      "Bowl",
+      "Mug",
+      "Tomato"
+    ],
+    "ground_truth_plan": [
+      "find potato",
+      "pick_up potato",
+      "find fridge",
+      "open fridge",
+      "cool potato",
+      "close fridge",
+      "find plate",
+      "put_down potato plate",
+      "done"
+    ],
+    "seed_instruction": "Chill the potato and place it on the plate."
+  },
+  {
+    "id": "implicit_short_cool_and_place_17",
+    "task_type": "cool_and_place",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Bread Baker was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. it Baker said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "cool the the sliced one and put it on the dining table.",
+    "target_object": "bread",
+    "scene_objects": [
+      "Bread",
+      "DiningTable",
+      "Fridge",
+      "Plate",
+      "Bowl",
+      "Knife",
+      "Mug"
+    ],
+    "ground_truth_plan": [
+      "find bread",
+      "pick_up bread",
+      "find fridge",
+      "open fridge",
+      "cool bread",
+      "close fridge",
+      "find dining table",
+      "put_down bread dining table",
+      "done"
+    ],
+    "seed_instruction": "Cool the bread and put it on the dining table."
+  },
+  {
+    "id": "implicit_short_examine_in_light_0",
+    "task_type": "examine_in_light",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Card Carlton was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. Card Carlton said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "examine a the card by the light of a floor lamp.",
+    "target_object": "credit card",
+    "scene_objects": [
+      "CreditCard",
+      "FloorLamp",
+      "Desk",
+      "CoffeeTable",
+      "Book",
+      "Pen",
+      "CellPhone"
+    ],
+    "ground_truth_plan": [
+      "find credit card",
+      "pick_up credit card",
+      "find floor lamp",
+      "toggle_on floor lamp",
+      "examine credit card",
+      "done"
+    ],
+    "seed_instruction": "Examine a credit card by the light of a floor lamp."
+  },
+  {
+    "id": "implicit_short_examine_in_light_1",
+    "task_type": "examine_in_light",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Pen Palmer was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the writing tool Palmer said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "look at the the writing instrument under the desk lamp.",
+    "target_object": "pen",
+    "scene_objects": [
+      "Pen",
+      "DeskLamp",
+      "Desk",
+      "Book",
+      "Laptop",
+      "Pencil",
+      "CellPhone"
+    ],
+    "ground_truth_plan": [
+      "find pen",
+      "pick_up pen",
+      "find desk lamp",
+      "toggle_on desk lamp",
+      "examine pen",
+      "done"
+    ],
+    "seed_instruction": "Look at the pen under the desk lamp."
+  },
+  {
+    "id": "implicit_short_examine_in_light_2",
+    "task_type": "examine_in_light",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Watch Wellington was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the timepiece Wellington said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "examine the the small device by the light of a floor lamp.",
+    "target_object": "watch",
+    "scene_objects": [
+      "Watch",
+      "FloorLamp",
+      "SideTable",
+      "AlarmClock",
+      "CellPhone",
+      "Book"
+    ],
+    "ground_truth_plan": [
+      "find watch",
+      "pick_up watch",
+      "find floor lamp",
+      "toggle_on floor lamp",
+      "examine watch",
+      "done"
+    ],
+    "seed_instruction": "Examine the watch by the light of a floor lamp."
+  },
+  {
+    "id": "implicit_short_examine_in_light_3",
+    "task_type": "examine_in_light",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Key King was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. Key King said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "inspect the it under the desk lamp.",
+    "target_object": "key chain",
+    "scene_objects": [
+      "KeyChain",
+      "DeskLamp",
+      "Desk",
+      "CellPhone",
+      "Book",
+      "Pen",
+      "Watch"
+    ],
+    "ground_truth_plan": [
+      "find key chain",
+      "pick_up key chain",
+      "find desk lamp",
+      "toggle_on desk lamp",
+      "examine key chain",
+      "done"
+    ],
+    "seed_instruction": "Inspect the key chain under the desk lamp."
+  },
+  {
+    "id": "implicit_short_examine_in_light_4",
+    "task_type": "examine_in_light",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Pillow Prince was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the fluffy item Prince said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "pick up a the cushion and turn a lamp on.",
+    "target_object": "pillow",
+    "scene_objects": [
+      "Pillow",
+      "FloorLamp",
+      "Sofa",
+      "ArmChair",
+      "CoffeeTable",
+      "Book",
+      "TeddyBear"
+    ],
+    "ground_truth_plan": [
+      "find pillow",
+      "pick_up pillow",
+      "find floor lamp",
+      "toggle_on floor lamp",
+      "examine pillow",
+      "done"
+    ],
+    "seed_instruction": "Pick up a pillow and turn a lamp on."
+  },
+  {
+    "id": "implicit_short_examine_in_light_5",
+    "task_type": "examine_in_light",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Card Carlton was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. Card Carlton said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "examine a the card by the light of a floor lamp.",
+    "target_object": "credit card",
+    "scene_objects": [
+      "CreditCard",
+      "FloorLamp",
+      "Desk",
+      "CoffeeTable",
+      "Book",
+      "Pen",
+      "CellPhone"
+    ],
+    "ground_truth_plan": [
+      "find credit card",
+      "pick_up credit card",
+      "find floor lamp",
+      "toggle_on floor lamp",
+      "examine credit card",
+      "done"
+    ],
+    "seed_instruction": "Examine a credit card by the light of a floor lamp."
+  },
+  {
+    "id": "implicit_short_examine_in_light_6",
+    "task_type": "examine_in_light",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Pen Palmer was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the ink tool Palmer said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "look at the the writing tool under the desk lamp.",
+    "target_object": "pen",
+    "scene_objects": [
+      "Pen",
+      "DeskLamp",
+      "Desk",
+      "Book",
+      "Laptop",
+      "Pencil",
+      "CellPhone"
+    ],
+    "ground_truth_plan": [
+      "find pen",
+      "pick_up pen",
+      "find desk lamp",
+      "toggle_on desk lamp",
+      "examine pen",
+      "done"
+    ],
+    "seed_instruction": "Look at the pen under the desk lamp."
+  },
+  {
+    "id": "implicit_short_examine_in_light_7",
+    "task_type": "examine_in_light",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Watch Wellington was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the small device Wellington said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "examine the the small device by the light of a floor lamp.",
+    "target_object": "watch",
+    "scene_objects": [
+      "Watch",
+      "FloorLamp",
+      "SideTable",
+      "AlarmClock",
+      "CellPhone",
+      "Book"
+    ],
+    "ground_truth_plan": [
+      "find watch",
+      "pick_up watch",
+      "find floor lamp",
+      "toggle_on floor lamp",
+      "examine watch",
+      "done"
+    ],
+    "seed_instruction": "Examine the watch by the light of a floor lamp."
+  },
+  {
+    "id": "implicit_short_examine_in_light_8",
+    "task_type": "examine_in_light",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Key King was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. Key King said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "inspect the it under the desk lamp.",
+    "target_object": "key chain",
+    "scene_objects": [
+      "KeyChain",
+      "DeskLamp",
+      "Desk",
+      "CellPhone",
+      "Book",
+      "Pen",
+      "Watch"
+    ],
+    "ground_truth_plan": [
+      "find key chain",
+      "pick_up key chain",
+      "find desk lamp",
+      "toggle_on desk lamp",
+      "examine key chain",
+      "done"
+    ],
+    "seed_instruction": "Inspect the key chain under the desk lamp."
+  },
+  {
+    "id": "implicit_short_examine_in_light_9",
+    "task_type": "examine_in_light",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Pillow Prince was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the cushion Prince said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "pick up a the cushion and turn a lamp on.",
+    "target_object": "pillow",
+    "scene_objects": [
+      "Pillow",
+      "FloorLamp",
+      "Sofa",
+      "ArmChair",
+      "CoffeeTable",
+      "Book",
+      "TeddyBear"
+    ],
+    "ground_truth_plan": [
+      "find pillow",
+      "pick_up pillow",
+      "find floor lamp",
+      "toggle_on floor lamp",
+      "examine pillow",
+      "done"
+    ],
+    "seed_instruction": "Pick up a pillow and turn a lamp on."
+  },
+  {
+    "id": "implicit_short_examine_in_light_10",
+    "task_type": "examine_in_light",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Card Carlton was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. Card Carlton said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "examine a the card by the light of a floor lamp.",
+    "target_object": "credit card",
+    "scene_objects": [
+      "CreditCard",
+      "FloorLamp",
+      "Desk",
+      "CoffeeTable",
+      "Book",
+      "Pen",
+      "CellPhone"
+    ],
+    "ground_truth_plan": [
+      "find credit card",
+      "pick_up credit card",
+      "find floor lamp",
+      "toggle_on floor lamp",
+      "examine credit card",
+      "done"
+    ],
+    "seed_instruction": "Examine a credit card by the light of a floor lamp."
+  },
+  {
+    "id": "implicit_short_examine_in_light_11",
+    "task_type": "examine_in_light",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Pen Palmer was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. it Palmer said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "look at the it under the desk lamp.",
+    "target_object": "pen",
+    "scene_objects": [
+      "Pen",
+      "DeskLamp",
+      "Desk",
+      "Book",
+      "Laptop",
+      "Pencil",
+      "CellPhone"
+    ],
+    "ground_truth_plan": [
+      "find pen",
+      "pick_up pen",
+      "find desk lamp",
+      "toggle_on desk lamp",
+      "examine pen",
+      "done"
+    ],
+    "seed_instruction": "Look at the pen under the desk lamp."
+  },
+  {
+    "id": "implicit_short_examine_in_light_12",
+    "task_type": "examine_in_light",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Watch Wellington was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. the small device Wellington said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "examine the the wrist accessory by the light of a floor lamp.",
+    "target_object": "watch",
+    "scene_objects": [
+      "Watch",
+      "FloorLamp",
+      "SideTable",
+      "AlarmClock",
+      "CellPhone",
+      "Book"
+    ],
+    "ground_truth_plan": [
+      "find watch",
+      "pick_up watch",
+      "find floor lamp",
+      "toggle_on floor lamp",
+      "examine watch",
+      "done"
+    ],
+    "seed_instruction": "Examine the watch by the light of a floor lamp."
+  },
+  {
+    "id": "implicit_short_examine_in_light_13",
+    "task_type": "examine_in_light",
+    "re_type": "implicit",
+    "context_type": "short",
+    "context_memory": "Human: Hey, can you help me with something? Key King was asking about it earlier.\nRobot: Of course! What do you need help with?\nHuman: I need to take care of something. Key King said it was important.\nRobot: I'm ready to help. What should I do?",
+    "instruction": "inspect the that item under the desk lamp.",
+    "target_object": "key chain",
+    "scene_objects": [
+      "KeyChain",
+      "DeskLamp",
+      "Desk",
+      "CellPhone",
+      "Book",
+      "Pen",
+      "Watch"
+    ],
+    "ground_truth_plan": [
+      "find key chain",
+      "pick_up key chain",
+      "find desk lamp",
+      "toggle_on desk lamp",
+      "examine key chain",
+      "done"
+    ],
+    "seed_instruction": "Inspect the key chain under the desk lamp."
+  }
+]
